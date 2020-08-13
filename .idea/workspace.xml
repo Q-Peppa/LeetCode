@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cae1a42e-8d90-496d-896d-adaa3202291d" name="Default Changelist" comment="删除测试" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="ProjectId" id="1eNju37eSFK2i4l6iAcycoOxy6S" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/environment/maven/localRepository/mysql/mysql-connector-java/8.0.20/mysql-connector-java-8.0.20.jar" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.asiainfo.Main" />
+      <module name="LeetCode" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="LeetCode" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="LeetCode" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cae1a42e-8d90-496d-896d-adaa3202291d" name="Default Changelist" comment="" />
+      <created>1594169164141</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594169164141</updated>
+      <workItem from="1594169168968" duration="2249000" />
+      <workItem from="1594171491292" duration="100000" />
+      <workItem from="1594171623376" duration="6000" />
+      <workItem from="1594192042892" duration="16000" />
+      <workItem from="1597287230773" duration="1174000" />
+      <workItem from="1597289454105" duration="67000" />
+      <workItem from="1597289524614" duration="156000" />
+    </task>
+    <task id="LOCAL-00001" summary="nooooooooooooo">
+      <created>1594169742169</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594169742169</updated>
+    </task>
+    <task id="LOCAL-00002" summary="nooooooooooooo">
+      <created>1594169785513</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594169785513</updated>
+    </task>
+    <task id="LOCAL-00003" summary="把a-&gt;a改成了方法引用">
+      <created>1594170119285</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594170119285</updated>
+    </task>
+    <task id="LOCAL-00004" summary="修改了readme">
+      <created>1594170922241</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594170922241</updated>
+    </task>
+    <task id="LOCAL-00005" summary="修改了readme">
+      <created>1594171240922</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594171240922</updated>
+    </task>
+    <task id="LOCAL-00006" summary="reset ceshi">
+      <created>1597287258698</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597287258698</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Revert &quot;nooooooooooooo&quot;&#10;&#10;This reverts commit b6652faa">
+      <created>1597287362245</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597287362245</updated>
+    </task>
+    <task id="LOCAL-00008" summary="删除测试">
+      <created>1597287429573</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597287429573</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="nooooooooooooo" />
+    <MESSAGE value="把a-&gt;a改成了方法引用" />
+    <MESSAGE value="修改了readme" />
+    <MESSAGE value="reset ceshi" />
+    <MESSAGE value="Revert &quot;nooooooooooooo&quot;&#10;&#10;This reverts commit b6652faa" />
+    <MESSAGE value="删除测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除测试" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594171408757">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1594171408757" />
+    <state x="344" y="0" key="CommitChangelistDialog2" timestamp="1597287361566">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="344" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1597287361566" />
+    <state x="100" y="100" width="1336" height="634" key="DiffContextDialog" timestamp="1597287617609">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="100" y="100" width="1336" height="634" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1597287617609" />
+    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1594171385781">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1594171385781" />
+    <state x="579" y="318" key="Github.CreateGistDialog" timestamp="1594171313325">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="579" y="318" key="Github.CreateGistDialog/0.0.1536.834@0.0.1536.834" timestamp="1594171313325" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1594171420291">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1594171420291" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1594171420291">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1594171420291" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1594171420291">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1594171420291" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1594171420291">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1594171420291" />
+    <state x="403" y="177" key="MultipleFileMergeDialog" timestamp="1597287358090">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="403" y="177" key="MultipleFileMergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1597287358090" />
+    <state x="270" y="61" key="SettingsEditor" timestamp="1597289517386">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="270" y="61" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1597289517386" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1597287622585">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1597287622585" />
+    <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597287287077">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1597287287077" />
+  </component>
+</project>
