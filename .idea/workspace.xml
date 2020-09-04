@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cae1a42e-8d90-496d-896d-adaa3202291d" name="Default Changelist" comment="删除测试" />
+    <list default="true" id="cae1a42e-8d90-496d-896d-adaa3202291d" name="Default Changelist" comment="删除测试">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,6 +140,7 @@
       <workItem from="1597287230773" duration="1174000" />
       <workItem from="1597289454105" duration="67000" />
       <workItem from="1597289524614" duration="156000" />
+      <workItem from="1597289747694" duration="664000" />
     </task>
     <task id="LOCAL-00001" summary="nooooooooooooo">
       <created>1594169742169</created>
@@ -310,6 +314,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1597287622585" />
+    <state x="527" y="261" key="cloudConfig.PluginsDialog" timestamp="1597289795509">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="527" y="261" key="cloudConfig.PluginsDialog/0.0.1536.834@0.0.1536.834" timestamp="1597289795509" />
+    <state x="306" y="261" width="1100" height="496" key="cloudConfig.SelfSettingsDialog" timestamp="1597289786060">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="306" y="261" width="1100" height="496" key="cloudConfig.SelfSettingsDialog/0.0.1536.834@0.0.1536.834" timestamp="1597289786060" />
     <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597287287077">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

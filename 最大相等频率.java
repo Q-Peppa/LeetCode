@@ -1,6 +1,6 @@
 // 最大相等频率.java
 class Solution {
-
+//
 	public int maxEqualFreq(int[] nums) {
 		int len = nums.length;
 		int []sub = new int[100001];
