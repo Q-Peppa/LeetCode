@@ -19,11 +19,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cae1a42e-8d90-496d-896d-adaa3202291d" name="Default Changelist" comment="删除测试" />
+    <list default="true" id="cae1a42e-8d90-496d-896d-adaa3202291d" name="Default Changelist" comment="删除测试">
+      <change afterPath="$PROJECT_DIR$/.idea/LeetCode.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/N皇后.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
@@ -40,6 +53,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="6vbh8zdf" />
+  </component>
   <component name="ProjectId" id="1eNju37eSFK2i4l6iAcycoOxy6S" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -52,11 +68,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../environment/maven/localRepository/mysql/mysql-connector-java/8.0.20/mysql-connector-java-8.0.20.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.N皇后.js">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="LeetCode" />
       <option name="VM_PARAMETERS" />
@@ -114,7 +131,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="N皇后.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/N皇后.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.N皇后.js" />
+      </list>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -132,6 +158,7 @@
       <workItem from="1597287230773" duration="1174000" />
       <workItem from="1597289454105" duration="67000" />
       <workItem from="1597289524614" duration="156000" />
+      <workItem from="1629184959021" duration="1861000" />
     </task>
     <task id="LOCAL-00001" summary="nooooooooooooo">
       <created>1594169742169</created>
@@ -193,7 +220,10 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.configurationType" implementationName="Application" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -255,59 +285,5 @@
     <MESSAGE value="Revert &quot;nooooooooooooo&quot;&#10;&#10;This reverts commit b6652faa" />
     <MESSAGE value="删除测试" />
     <option name="LAST_COMMIT_MESSAGE" value="删除测试" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="361" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594171408757">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="361" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1594171408757" />
-    <state x="344" y="0" key="CommitChangelistDialog2" timestamp="1597287361566">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="344" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1597287361566" />
-    <state x="100" y="100" width="1336" height="634" key="DiffContextDialog" timestamp="1597287617609">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="100" y="100" width="1336" height="634" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1597287617609" />
-    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1594171385781">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1594171385781" />
-    <state x="579" y="318" key="Github.CreateGistDialog" timestamp="1594171313325">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="579" y="318" key="Github.CreateGistDialog/0.0.1536.834@0.0.1536.834" timestamp="1594171313325" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1594171420291">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1594171420291" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1594171420291">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1594171420291" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1594171420291">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1594171420291" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1594171420291">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1594171420291" />
-    <state x="403" y="177" key="MultipleFileMergeDialog" timestamp="1597287358090">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="403" y="177" key="MultipleFileMergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1597287358090" />
-    <state x="270" y="61" key="SettingsEditor" timestamp="1597289517386">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="270" y="61" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1597289517386" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1597287622585">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1597287622585" />
-    <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597287287077">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1597287287077" />
   </component>
 </project>
