@@ -20,3 +20,6 @@ var permute = function (nums) {
   dfs([])
   return res
 };
+var a = [1,2,3]
+a.unshift("123")
+console.log(a)
