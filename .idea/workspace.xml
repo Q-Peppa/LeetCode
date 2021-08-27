@@ -19,9 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cae1a42e-8d90-496d-896d-adaa3202291d" name="Default Changelist" comment="删除测试">
+    <list default="true" id="cae1a42e-8d90-496d-896d-adaa3202291d" name="Default Changelist" comment="组合总和2.js">
+      <change afterPath="$PROJECT_DIR$/将数组拆分成斐波那契序列.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/火柴拼正方形.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/全排列.js" beforeDir="false" afterPath="$PROJECT_DIR$/全排列.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/累加数.js" beforeDir="false" afterPath="$PROJECT_DIR$/累加数.js" afterDir="false" />
     </list>
+    <list id="978f92ce-7665-4a07-94b6-b9bc08287511" name="New changelist" comment="New changelist" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +54,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="6vbh8zdf" />
   </component>
@@ -66,7 +79,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Node.js.N皇后.js">
@@ -130,8 +143,21 @@
     <configuration name="N皇后.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/N皇后.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="累加数.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/累加数.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="全排列.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/全排列.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="将数组拆分成斐波那契序列.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/将数组拆分成斐波那契序列.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="火柴拼正方形.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/火柴拼正方形.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.累加数.js" />
         <item itemvalue="Node.js.N皇后.js" />
       </list>
     </recent_temporary>
@@ -155,6 +181,11 @@
       <workItem from="1597289454105" duration="67000" />
       <workItem from="1597289524614" duration="156000" />
       <workItem from="1629184959021" duration="1861000" />
+      <workItem from="1629270613685" duration="10573000" />
+      <workItem from="1629335250140" duration="4824000" />
+      <workItem from="1629355038184" duration="2205000" />
+      <workItem from="1629392676732" duration="296000" />
+      <workItem from="1629445391978" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="nooooooooooooo">
       <created>1594169742169</created>
