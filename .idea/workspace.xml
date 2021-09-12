@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cae1a42e-8d90-496d-896d-adaa3202291d" name="Default Changelist" comment="组合总和2.js">
-      <change afterPath="$PROJECT_DIR$/将数组拆分成斐波那契序列.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/火柴拼正方形.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/有效的括号字符串.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/全排列.js" beforeDir="false" afterPath="$PROJECT_DIR$/全排列.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/累加数.js" beforeDir="false" afterPath="$PROJECT_DIR$/累加数.js" afterDir="false" />
     </list>
     <list id="978f92ce-7665-4a07-94b6-b9bc08287511" name="New changelist" comment="New changelist" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,12 +74,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.2.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.9.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Node.js.N皇后.js">
+  <component name="RunManager" selected="Jest.test checkValidString">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="LeetCode" />
       <option name="VM_PARAMETERS" />
@@ -130,20 +130,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.asiainfo.Main" />
-      <module name="LeetCode" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="checkValidString.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/test/checkValidString.test.js" />
+      <method v="2" />
     </configuration>
-    <configuration name="N皇后.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/N皇后.js" working-dir="$PROJECT_DIR$">
+    <configuration name="test *(" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/checkValidString.test.js" />
+      <test-names>
+        <test-name value="test *(" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="test checkValidString" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/checkValidString.test.js" />
+      <test-names>
+        <test-name value="test checkValidString" />
+      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="累加数.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/累加数.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="有效的括号字符串.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/有效的括号字符串.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="全排列.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/全排列.js" working-dir="$PROJECT_DIR$">
@@ -157,8 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.test checkValidString" />
+        <item itemvalue="Jest.test *(" />
+        <item itemvalue="Jest.checkValidString.test.js" />
+        <item itemvalue="Node.js.有效的括号字符串.js" />
         <item itemvalue="Node.js.累加数.js" />
-        <item itemvalue="Node.js.N皇后.js" />
       </list>
     </recent_temporary>
   </component>
@@ -186,6 +215,7 @@
       <workItem from="1629355038184" duration="2205000" />
       <workItem from="1629392676732" duration="296000" />
       <workItem from="1629445391978" duration="5000" />
+      <workItem from="1631428299159" duration="2374000" />
     </task>
     <task id="LOCAL-00001" summary="nooooooooooooo">
       <created>1594169742169</created>
