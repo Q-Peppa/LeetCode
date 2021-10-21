@@ -2,34 +2,34 @@
  * @param {string} s
  * @return {boolean}
  */
-var checkValidString = function (s) {
+var h = function (s) {
   if (s.length === 0) return true
   let LeftStack = []
-  let starStack = []
+  let tolerance = 0
+
   for (let i = 0; i < s.length; i++) {
-    if (s[i] === "(") {
-      LeftStack.push(i)
-    } else if (s[i] === '*') {
-      starStack.push(i)
+    if (s[i] === "(" || s[i] === '*') {
+      LeftStack.push(s[i])
     } else {
       if (LeftStack.length > 0) {
-        LeftStack.pop()
-      } else if (starStack.length > 0) {
-        starStack.pop()
+        let val = LeftStack.pop()
+        if(val ==='*'){
+          tolerance++
+        }
       } else {
-        return false
+        return false;
       }
     }
   }
-  if(starStack.length < LeftStack.length ){
-    return false
-  }
-  while (LeftStack.length > 0 && starStack.length > 0) {
-    if (starStack.pop() < LeftStack.pop()) {
-      return false
+  for (let i = 0; i < LeftStack.length; i++) {
+    if (LeftStack[i] === '*') {
+      tolerance++
     }
   }
-  return !LeftStack.length
+  return LeftStack.length <= tolerance
+}
+var checkValidString = function (s) {
+  return h(s) && h(s.split("").reverse().join(""))
 };
 
 
