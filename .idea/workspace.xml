@@ -19,14 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cae1a42e-8d90-496d-896d-adaa3202291d" name="Default Changelist" comment="加一.js">
-      <change afterPath="$PROJECT_DIR$/数字的补数.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/求众数2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/给表达式添加运算符.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="cae1a42e-8d90-496d-896d-adaa3202291d" name="Default Changelist" comment="other" />
+    <list id="978f92ce-7665-4a07-94b6-b9bc08287511" name="New changelist" comment="New changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <list id="978f92ce-7665-4a07-94b6-b9bc08287511" name="New changelist" comment="New changelist" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,10 +81,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="D:\JetBrains\WebStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Node.js.求众数2.js">
+  <component name="RunManager" selected="Node.js.classProto.js">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="LeetCode" />
       <option name="VM_PARAMETERS" />
@@ -136,23 +133,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test checkValidString" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/checkValidString.test.js" />
-      <test-names>
-        <test-name value="test checkValidString" />
-      </test-names>
+    <configuration name="搜索二维矩阵 II.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/搜索二维矩阵 II.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="求众数2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/求众数2.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="奇偶链表.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/奇偶链表.js" working-dir="$PROJECT_DIR$">
+    <configuration name="计数质数.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/计数质数.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="数字的补数.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/数字的补数.js" working-dir="$PROJECT_DIR$">
@@ -170,16 +157,19 @@
     <configuration name="火柴拼正方形.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/火柴拼正方形.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="classProto.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/classProto.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="number-of-boomerangs.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/number-of-boomerangs.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.classProto.js" />
+        <item itemvalue="Node.js.搜索二维矩阵 II.js" />
+        <item itemvalue="Node.js.计数质数.js" />
         <item itemvalue="Node.js.求众数2.js" />
-        <item itemvalue="Node.js.数字的补数.js" />
         <item itemvalue="Node.js.number-of-boomerangs.js" />
-        <item itemvalue="Node.js.奇偶链表.js" />
-        <item itemvalue="Jest.test checkValidString" />
       </list>
     </recent_temporary>
   </component>
@@ -210,6 +200,7 @@
       <workItem from="1631428299159" duration="7734000" />
       <workItem from="1631514855227" duration="2749000" />
       <workItem from="1634810702953" duration="5886000" />
+      <workItem from="1635069795072" duration="5412000" />
     </task>
     <task id="LOCAL-00001" summary="nooooooooooooo">
       <created>1594169742169</created>
@@ -295,7 +286,42 @@
       <option name="project" value="LOCAL" />
       <updated>1634811171246</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="搜索二维矩阵 II.js">
+      <created>1635144503570</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1635144503571</updated>
+    </task>
+    <task id="LOCAL-00014" summary="D:\work\LeetCode\按位与.js">
+      <created>1635144536288</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1635144536288</updated>
+    </task>
+    <task id="LOCAL-00015" summary="D:\work\LeetCode\计数质数.js">
+      <created>1635144548990</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1635144548990</updated>
+    </task>
+    <task id="LOCAL-00016" summary="计数质数.js">
+      <created>1635144558059</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1635144558059</updated>
+    </task>
+    <task id="LOCAL-00017" summary="other">
+      <created>1635144568875</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1635144568875</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,6 +383,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="nooooooooooooo" />
     <MESSAGE value="把a-&gt;a改成了方法引用" />
     <MESSAGE value="修改了readme" />
@@ -366,6 +394,11 @@
     <MESSAGE value="有效的括号字符串.js" />
     <MESSAGE value="最近的LeetCode刷题" />
     <MESSAGE value="加一.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="加一.js" />
+    <MESSAGE value="搜索二维矩阵 II.js" />
+    <MESSAGE value="D:\work\LeetCode\按位与.js" />
+    <MESSAGE value="构造矩形.js" />
+    <MESSAGE value="计数质数.js" />
+    <MESSAGE value="other" />
+    <option name="LAST_COMMIT_MESSAGE" value="other" />
   </component>
 </project>
