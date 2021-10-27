@@ -1,10 +1,6 @@
-"use strict";
-class A{
+class A {
 
 }
-A.prototype = null
-console.log(Reflect.getOwnPropertyDescriptor(A,"prototype"))
-function f() {
+class B extends A{
 
 }
-console.log(Reflect.getOwnPropertyDescriptor(f,"prototype"))
