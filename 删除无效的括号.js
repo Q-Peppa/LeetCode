@@ -42,6 +42,8 @@ var check = function (s) {
     }
     return cnt === 0;
 }
-// console.log(removeInvalidParentheses(")("))
+console.log(removeInvalidParentheses(")("))
 // console.log(removeInvalidParentheses("(a)())()"))
 console.log(removeInvalidParentheses("())))))))))"))
+
+// (a)())()

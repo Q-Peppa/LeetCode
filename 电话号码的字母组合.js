@@ -32,4 +32,7 @@ var letterCombinations = function (digits) {
   dfs("" , 0)
   return res
 };
-console.log(letterCombinations("23"));
+console.log(letterCombinations("235"));
+
+
+// 桶
