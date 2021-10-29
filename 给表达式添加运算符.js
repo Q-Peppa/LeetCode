@@ -3,6 +3,6 @@
  * @param {number} target
  * @return {string[]}
  */
-var addOperators = function(num, target) {
+const addOperators = function (num, target) {
 
-};
+}

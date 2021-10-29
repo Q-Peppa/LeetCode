@@ -9,13 +9,12 @@ for (; e < 100; e++) {
     b = false
     continue
   }
-  for (var t = 5; t * t <= e; t += 6) if (e % t === 0 || e % (t + 2) === 0) {
-    b = false
-    continue
+  for (let t = 5; t * t <= e; t += 6) {
+    if (e % t === 0 || e % (t + 2) === 0) {
+      b = false
+      continue
+    }
   }
 
   b &&　console.log(e)
 }
-
-
-

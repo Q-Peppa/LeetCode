@@ -2,12 +2,11 @@
  * @param {string} num
  * @return {number[]}
  */
-var splitIntoFibonacci = function (num) {
+const splitIntoFibonacci = function (num) {
+  const res = []
 
-  let res = []
-
-  function dfs(cur, temp) {
-    let l = temp.length
+  function dfs (cur, temp) {
+    const l = temp.length
     if (l >= 3 && temp[l - 3] + temp[l - 2] !== temp[l - 1]) return false
     if (cur === num.length && l >= 3) {
       return true
@@ -24,15 +23,12 @@ var splitIntoFibonacci = function (num) {
         return true
       }
       temp.pop()
-
-
     }
   }
 
   dfs(0, res)
   console.log(res)
   return res
-};
+}
 
-splitIntoFibonacci("0123")
-
+splitIntoFibonacci('0123')

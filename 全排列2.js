@@ -2,21 +2,21 @@
  * @param {number[]} nums
  * @return {number[][]}
  */
-var permuteUnique = function(nums) {
-  let res = []
-  let used = {}
-  for (let i =0; i<nums.length ;i++){
+const permuteUnique = function (nums) {
+  const res = []
+  const used = {}
+  for (let i = 0; i < nums.length; i++) {
     used[i] = 0
   }
   nums.sort()
-  dfs = (avaliable = []) => {
+  const dfs = (avaliable = []) => {
     if (avaliable.length === nums.length) {
       res.push(avaliable.slice())
       return
     }
     for (let i = 0; i < nums.length; i++) {
-      if ( used[i] === 0) {
-        if (i > 0 && nums[i] === nums[i - 1] && used[i-1]) {
+      if (used[i] === 0) {
+        if (i > 0 && nums[i] === nums[i - 1] && used[i - 1]) {
           continue
         }
         used[i] = 1
@@ -25,9 +25,8 @@ var permuteUnique = function(nums) {
         used[i] = 0
         avaliable.pop()
       }
-
     }
   }
   dfs([])
   return res
-};
+}

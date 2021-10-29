@@ -2,22 +2,22 @@
  * @param {string} s
  * @return {boolean}
  */
-var h = function (s) {
+const h = function (s) {
   if (s.length === 0) return true
-  let LeftStack = []
+  const LeftStack = []
   let tolerance = 0
 
   for (let i = 0; i < s.length; i++) {
-    if (s[i] === "(" || s[i] === '*') {
+    if (s[i] === '(' || s[i] === '*') {
       LeftStack.push(s[i])
     } else {
       if (LeftStack.length > 0) {
-        let val = LeftStack.pop()
-        if(val ==='*'){
+        const val = LeftStack.pop()
+        if (val === '*') {
           tolerance++
         }
       } else {
-        return false;
+        return false
       }
     }
   }
@@ -28,9 +28,8 @@ var h = function (s) {
   }
   return LeftStack.length <= tolerance
 }
-var checkValidString = function (s) {
-  return h(s) && h(s.split("").reverse().join(""))
-};
-
+const checkValidString = function (s) {
+  return h(s) && h(s.split('').reverse().join(''))
+}
 
 module.exports = checkValidString

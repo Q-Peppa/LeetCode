@@ -1,7 +1,7 @@
 class Trie {
   deep = 0
 
-  constructor() {
+  constructor () {
     this.children = {}
   }
 
@@ -9,7 +9,7 @@ class Trie {
    *
    * @param str {string}
    */
-  insert(str) {
+  insert (str) {
     let node = this.children
     for (const strElement of str) {
       if (!node[strElement]) {
@@ -24,7 +24,7 @@ class Trie {
    *
    * @param str {string}
    */
-  search(str) {
+  search (str) {
     return this.searchPrefix(str)
   }
 
@@ -33,51 +33,49 @@ class Trie {
    * @param str {string}
    * @return boolean
    */
-  startsWith(str) {
-    return !!this.searchPrefix(str);
+  startsWith (str) {
+    return !!this.searchPrefix(str)
   }
 
-  searchPrefix(prefix) {
-    let node = this.children;
+  searchPrefix (prefix) {
+    const node = this.children
     const dfs = (index, node) => {
       if (index === prefix.length) return Number.isInteger(node.deep)
       const ch = prefix[index]
-      if (ch !== ".") {
+      if (ch !== '.') {
         const child = node[ch]
         if (child && dfs(index + 1, child)) return true
       } else {
-        for (let nodeEle of Object.keys(node)) {
-          if (nodeEle !== "deep" && dfs(index + 1, node[nodeEle])) return true
+        for (const nodeEle of Object.keys(node)) {
+          if (nodeEle !== 'deep' && dfs(index + 1, node[nodeEle])) return true
         }
       }
-
 
       return false
     }
     return dfs(0, node)
   }
 
-  collect(node, pre, q) {
-
+  collect (node, pre, q) {
     if (Number.isInteger(node.deep) && Object.keys(node).length === 1) {
       q.push(pre)
       return
     }
-    for (let c in node) {
+    for (const c in node) {
       this.collect(node[c], pre + c, q)
     }
   }
 
-  keys() {
-    let q = []
-    this.collect(this.searchPrefix(""), "", q)
+  keys () {
+    const q = []
+    this.collect(this.searchPrefix(''), '', q)
     return q
   }
 }
 
-var WordDictionary = function () {
+const WordDictionary = function () {
   this.obj = new Trie()
-};
+}
 
 /**
  * @param {string} word
@@ -85,7 +83,7 @@ var WordDictionary = function () {
  */
 WordDictionary.prototype.addWord = function (word) {
   this.obj.insert(word)
-};
+}
 
 /**
  * @param {string} word
@@ -93,7 +91,7 @@ WordDictionary.prototype.addWord = function (word) {
  */
 WordDictionary.prototype.search = function (word) {
   return this.obj.search(word)
-};
+}
 
 /**
  * Your WordDictionary object will be instantiated and called as such:

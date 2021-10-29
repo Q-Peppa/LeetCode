@@ -1,5 +1,5 @@
 class Trie {
-  constructor() {
+  constructor () {
     this.children = {}
   }
 
@@ -7,7 +7,7 @@ class Trie {
    *
    * @param str {string}
    */
-  insert(str) {
+  insert (str) {
     let node = this.children
     for (const strElement of str) {
       if (!node[strElement]) {
@@ -22,7 +22,7 @@ class Trie {
    *
    * @param str {string}
    */
-  search(str) {
+  search (str) {
     const node = this.searchPrefix(str)
     return node !== undefined && node.isEnd !== undefined
   }
@@ -32,19 +32,18 @@ class Trie {
    * @param str {string}
    * @return boolean
    */
-  startsWith(str) {
-    return !!this.searchPrefix(str);
+  startsWith (str) {
+    return !!this.searchPrefix(str)
   }
 
-  searchPrefix(prefix) {
-    let node = this.children;
+  searchPrefix (prefix) {
+    let node = this.children
     for (const ch of prefix) {
       if (!node[ch]) {
-        return false;
+        return false
       }
-      node = node[ch];
+      node = node[ch]
     }
-    return node;
+    return node
   }
 }
-

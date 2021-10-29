@@ -3,12 +3,12 @@
  * @param {number} target
  * @return {number[][]}
  */
-var combinationSum = function (candidates, target) {
-  let res = [],
-    path = []
+const combinationSum = function (candidates, target) {
+  const res = []
+  const path = []
   candidates.sort()
 
-  function dfs(deepth, currentSum) {
+  function dfs (deepth, currentSum) {
     if (currentSum === target) {
       res.push(path.slice())
       return
@@ -26,5 +26,5 @@ var combinationSum = function (candidates, target) {
 
   dfs(0, 0)
   return res
-};
-console.log(combinationSum([2, 3, 6, 7], 7));
+}
+console.log(combinationSum([2, 3, 6, 7], 7))
