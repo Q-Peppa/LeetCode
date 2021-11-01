@@ -1,6 +1,5 @@
 {
   "devDependencies": {
-    "@types/jquery": "^3.5.8",
     "eslint": "^8.1.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.2",
@@ -8,8 +7,5 @@
     "eslint-plugin-promise": "^5.1.1",
     "jest": "^27.1.1"
   },
-  "dependencies": {
-    "jquery": "^3.6.0",
-    "mathjs": "^9.5.1"
-  }
+  "dependencies": {}
 }
