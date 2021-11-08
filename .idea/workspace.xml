@@ -19,10 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cae1a42e-8d90-496d-896d-adaa3202291d" name="Default Changelist" comment="other" />
-    <list id="978f92ce-7665-4a07-94b6-b9bc08287511" name="New changelist" comment="New changelist">
+    <list default="true" id="cae1a42e-8d90-496d-896d-adaa3202291d" name="Default Changelist" comment="从根节点到叶节点的路径数字之和">
+      <change afterPath="$PROJECT_DIR$/1218. 最长定差子序列.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
+    <list id="978f92ce-7665-4a07-94b6-b9bc08287511" name="New changelist" comment="New changelist" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -201,6 +203,9 @@
       <workItem from="1631514855227" duration="2749000" />
       <workItem from="1634810702953" duration="5886000" />
       <workItem from="1635069795072" duration="5412000" />
+      <workItem from="1635754972320" duration="37000" />
+      <workItem from="1635755025103" duration="44000" />
+      <workItem from="1636100119813" duration="158000" />
     </task>
     <task id="LOCAL-00001" summary="nooooooooooooo">
       <created>1594169742169</created>
@@ -321,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635144568875</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="从根节点到叶节点的路径数字之和">
+      <created>1635755047893</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1635755047893</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,6 +411,7 @@
     <MESSAGE value="构造矩形.js" />
     <MESSAGE value="计数质数.js" />
     <MESSAGE value="other" />
-    <option name="LAST_COMMIT_MESSAGE" value="other" />
+    <MESSAGE value="从根节点到叶节点的路径数字之和" />
+    <option name="LAST_COMMIT_MESSAGE" value="从根节点到叶节点的路径数字之和" />
   </component>
 </project>

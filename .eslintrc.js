@@ -11,7 +11,8 @@ module.exports = {
     'no-unused-vars': 'off',
     'no-var': 'off',
     camelcase: 'off',
-    'no-irregular-whitespace': 'off'
+    'no-irregular-whitespace': 'off',
+    "no-extend-native":"off"
   },
   extends: 'standard'
 }
