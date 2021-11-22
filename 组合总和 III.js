@@ -19,11 +19,6 @@ const combinationSum3 = function (k, n) {
   return ans
 }
 
-console.time()
-for (let i = 0; i < 10000; i++) {
-  (combinationSum3(3, 9));
-  (combinationSum3(3, 7));
-  (combinationSum3(9, 45))
-}
 
-console.timeEnd()
+console.log(combinationSum3(3, 9));
+

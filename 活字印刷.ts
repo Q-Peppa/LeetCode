@@ -7,7 +7,7 @@ function numTilePossibilities(tiles: string): number {
   let dfs = (num: number[]): number => {
       let sum = 0
       for (let i=0; i<26;i++){
-        if(counter[i] > 0){
+        if(counter[i] > 0){                                                                                                                
           sum++
           counter[i]--
           sum+=dfs(counter)
@@ -21,3 +21,10 @@ function numTilePossibilities(tiles: string): number {
 
 console.log(numTilePossibilities('AAB') === 8 );
 console.log(numTilePossibilities('AAABBC')  === 188);
+
+let s ;
+
+// length
+if(typeof s === 'string'){
+  s.toUpperCase()
+}
