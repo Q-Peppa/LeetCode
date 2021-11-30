@@ -10,7 +10,7 @@ var Solution = function (nums) {
 /**
  * @return {number[]}
  */
-Solution.prototype.reset = function () { 
+Solution.prototype.reset = function () {
   this.ans = [...this.nums]
   return this.ans
 };
