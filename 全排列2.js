@@ -9,9 +9,9 @@ const permuteUnique = function (nums) {
     used[i] = 0
   }
   nums.sort()
-  const dfs = (avaliable = []) => {
-    if (avaliable.length === nums.length) {
-      res.push(avaliable.slice())
+  const dfs = (available = []) => {
+    if (available.length === nums.length) {
+      res.push(available.slice())
       return
     }
     for (let i = 0; i < nums.length; i++) {
@@ -20,10 +20,10 @@ const permuteUnique = function (nums) {
           continue
         }
         used[i] = 1
-        avaliable.push(nums[i])
-        dfs(avaliable)
+        available.push(nums[i])
+        dfs(available)
         used[i] = 0
-        avaliable.pop()
+        available.pop()
       }
     }
   }

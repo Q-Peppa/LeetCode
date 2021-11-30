@@ -14,8 +14,8 @@ function reorderedPowerOf2(n: number): boolean {
   return s.has(countNum(n))
 };
 
-console.log(reorderedPowerOf2(10) === false);
-console.log(reorderedPowerOf2(1) === true);
-console.log(reorderedPowerOf2(16) === true);
-console.log(reorderedPowerOf2(24) === false);
-console.log(reorderedPowerOf2(46) === true);
+console.log(!reorderedPowerOf2(10));
+console.log(reorderedPowerOf2(1));
+console.log(reorderedPowerOf2(16));
+console.log(!reorderedPowerOf2(24));
+console.log(reorderedPowerOf2(46));
