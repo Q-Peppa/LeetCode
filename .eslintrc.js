@@ -10,9 +10,9 @@ module.exports = {
   rules: {
     'no-unused-vars': 'off',
     'no-var': 'off',
-    camelcase: 'off',
+    'camelcase': 'off',
     'no-irregular-whitespace': 'off',
     "no-extend-native":"off"
   },
-  extends: 'standard'
+  extends: ['standard' , 'prettier']
 }

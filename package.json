@@ -1,16 +1,17 @@
 {
   "devDependencies": {
     "eslint": "^8.1.0",
-    "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.1",
-    "jest": "^27.1.1"
+    "jest": "^27.1.1",
+    "prettier": "^2.6.1"
   },
   "dependencies": {
     "lodash": "^4.17.21"
   },
   "scripts": {
-    "eslint-fix": "npx eslint --fix --ext .js"
+    "eslint-fix": "npx eslint --fix --ext .js",
+    "prettier" : "pnpm prettier --write src/*.js",
+    "precommit": "pnpm eslint-fix prettier"
   }
 }
