@@ -11,7 +11,7 @@
   },
   "scripts": {
     "eslint-fix": "npx eslint --fix --ext .js",
-    "prettier": "pnpm prettier --write src/*.js",
+    "prettier": "pnpx prettier --write ./src/*.js",
     "precommit": "pnpm eslint-fix prettier"
   }
 }
