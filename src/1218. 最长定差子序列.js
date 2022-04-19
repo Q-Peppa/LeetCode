@@ -1,4 +1,4 @@
-var longestSubsequence = function(arr, difference) {
+var longestSubsequence = function (arr, difference) {
   let ans = 0;
   const dp = new Map();
   for (const v of arr) {
@@ -7,4 +7,3 @@ var longestSubsequence = function(arr, difference) {
   }
   return ans;
 };
-

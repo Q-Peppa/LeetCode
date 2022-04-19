@@ -11,19 +11,19 @@
  * @return {number}
  */
 var sumNumbers = function (root) {
-  if (root === null) return 0
-  let sum = 0
+  if (root === null) return 0;
+  let sum = 0;
   let dfs = (root, currNum) => {
     if (root) {
       if (root.left == null && root.right == null) {
-        sum += currNum * 10 + root.val
-        return
+        sum += currNum * 10 + root.val;
+        return;
       }
-      currNum = currNum * 10 + root.val
-      dfs(root.left, currNum)
-      dfs(root.right, currNum)
+      currNum = currNum * 10 + root.val;
+      dfs(root.left, currNum);
+      dfs(root.right, currNum);
     }
-  }
-  dfs(root, 0)
-  return sum
+  };
+  dfs(root, 0);
+  return sum;
 };

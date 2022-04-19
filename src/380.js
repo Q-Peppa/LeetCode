@@ -1,9 +1,9 @@
-var RandomizedSet = function() {
+var RandomizedSet = function () {
   this.nums = [];
   this.indices = new Map();
 };
 
-RandomizedSet.prototype.insert = function(val) {
+RandomizedSet.prototype.insert = function (val) {
   if (this.indices.has(val)) {
     return false;
   }
@@ -13,7 +13,7 @@ RandomizedSet.prototype.insert = function(val) {
   return true;
 };
 
-RandomizedSet.prototype.remove = function(val) {
+RandomizedSet.prototype.remove = function (val) {
   if (!this.indices.has(val)) {
     return false;
   }
@@ -25,7 +25,7 @@ RandomizedSet.prototype.remove = function(val) {
   return true;
 };
 
-RandomizedSet.prototype.getRandom = function() {
+RandomizedSet.prototype.getRandom = function () {
   const randomIndex = Math.floor(Math.random() * this.nums.length);
   return this.nums[randomIndex];
 };
