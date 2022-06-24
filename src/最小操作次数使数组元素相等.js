@@ -3,10 +3,10 @@
  * @return {number}
  */
 const minMoves = function (nums) {
-  const min = Math.min(...nums)
-  let ans = 0
+  const min = Math.min(...nums);
+  let ans = 0;
   for (const i of nums) {
-    ans += i - min
+    ans += i - min;
   }
-  return ans
-}
+  return ans;
+};
