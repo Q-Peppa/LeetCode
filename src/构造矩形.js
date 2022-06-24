@@ -7,19 +7,19 @@
  * @return {number[]}
  */
 const constructRectangle = function (area) {
-  const max = ~~Math.sqrt(area);
+  const max = ~~Math.sqrt(area)
 
   for (let i = max; i > 0; --i) {
     if (area % i === 0) {
-      return [area / i, i];
+      return [area / i, i]
     }
   }
-};
+}
 
-console.log(constructRectangle(4));
-console.log(constructRectangle(8));
-console.log(constructRectangle(6));
-console.log(constructRectangle(9));
-console.log(constructRectangle(37));
-console.log(constructRectangle(122122));
-console.log(constructRectangle(9999999));
+console.log(constructRectangle(4))
+console.log(constructRectangle(8))
+console.log(constructRectangle(6))
+console.log(constructRectangle(9))
+console.log(constructRectangle(37))
+console.log(constructRectangle(122122))
+console.log(constructRectangle(9999999))

@@ -3,4 +3,4 @@
  * @param {number} target
  * @return {string[]}
  */
-const addOperators = function (num, target) {};
+const addOperators = function (num, target) {}
