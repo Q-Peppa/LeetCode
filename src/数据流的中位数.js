@@ -32,8 +32,8 @@ MedianFinder.prototype.addNum = function (num) {
  */
 MedianFinder.prototype.findMedian = function () {
   return (
-    (this.arr[Math.floor(this.arr.length / 2)]
-      + this.arr[Math.floor((this.arr.length - 1) / 2)])
-    / 2
+    (this.arr[Math.floor(this.arr.length / 2)] +
+      this.arr[Math.floor((this.arr.length - 1) / 2)]) /
+    2
   );
 };

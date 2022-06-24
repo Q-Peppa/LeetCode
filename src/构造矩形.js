@@ -15,11 +15,3 @@ const constructRectangle = function (area) {
     }
   }
 };
-
-console.log(constructRectangle(4));
-console.log(constructRectangle(8));
-console.log(constructRectangle(6));
-console.log(constructRectangle(9));
-console.log(constructRectangle(37));
-console.log(constructRectangle(122122));
-console.log(constructRectangle(9999999));

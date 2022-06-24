@@ -8,13 +8,8 @@ function countNum(n) {
 }
 function reorderedPowerOf2(n) {
   const s = new Set();
-  for (let i = 1; i < 1e9; i <<= 1) {
+  for (let i = 1; i < 1e9; i *= 2) {
     s.add(countNum(i));
   }
   return s.has(countNum(n));
 }
-console.log(reorderedPowerOf2(10) === false);
-console.log(reorderedPowerOf2(1) === true);
-console.log(reorderedPowerOf2(16) === true);
-console.log(reorderedPowerOf2(24) === false);
-console.log(reorderedPowerOf2(46) === true);
