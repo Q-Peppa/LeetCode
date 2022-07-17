@@ -3,8 +3,8 @@
  * @param {string} t
  * @return {string}
  */
-var minWindow = function(s, t) {
-  let map = new Map();
+const minWindow = function (s, t) {
+  const map = new Map();
   for (let i = 0; i < t.length; i++) {
     if (map.has(t[i])) {
       map.set(t[i], map.get(t[i]) + 1);
@@ -37,6 +37,6 @@ var minWindow = function(s, t) {
     }
     right++;
   }
-  return min === s.length + 1 ? "" : s.substring(left - 1, left - 1 + min);
+  return min === s.length + 1 ? '' : s.substring(left - 1, left - 1 + min);
 };
-console.log(minWindow('a', 'a'));;
+console.log(minWindow('a', 'a'));
