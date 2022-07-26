@@ -9,8 +9,8 @@ const combinationSum3 = function (k, n) {
       }
     }
     return (
-      temp.length === k
-      && temp.reduce((previous, value) => previous + value, 0) === n
+      temp.length === k &&
+      temp.reduce((previous, value) => previous + value, 0) === n
     );
   };
 

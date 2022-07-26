@@ -6,6 +6,9 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
-    "**/node_modules": true
-  }
+    "**/node_modules": true,
+    "**/.idea": true,
+  },
+  "editor.fontFamily": "fira code",
+  "editor.fontWeight": "normal"
 }

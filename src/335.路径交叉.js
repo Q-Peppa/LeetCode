@@ -17,19 +17,19 @@ const isSelfCrossing = function (distance) {
     }
     // Case 2: current line crosses the line 4 steps ahead of it
     if (
-      i >= 4
-      && distance[i - 1] === distance[i - 3]
-      && distance[i] + distance[i - 4] >= distance[i - 2]
+      i >= 4 &&
+      distance[i - 1] === distance[i - 3] &&
+      distance[i] + distance[i - 4] >= distance[i - 2]
     ) {
       return true;
     }
     // Case 3: current line crosses the line 6 steps ahead of it
     if (
-      i >= 5
-      && distance[i - 2] >= distance[i - 4]
-      && distance[i] + distance[i - 4] >= distance[i - 2]
-      && distance[i - 1] <= distance[i - 3]
-      && distance[i - 1] + distance[i - 5] >= distance[i - 3]
+      i >= 5 &&
+      distance[i - 2] >= distance[i - 4] &&
+      distance[i] + distance[i - 4] >= distance[i - 2] &&
+      distance[i - 1] <= distance[i - 3] &&
+      distance[i - 1] + distance[i - 5] >= distance[i - 3]
     ) {
       return true;
     }
