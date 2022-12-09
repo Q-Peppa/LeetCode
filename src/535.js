@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 /**
  * Encodes a URL to a shortened URL.
  *

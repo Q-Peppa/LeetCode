@@ -17,7 +17,7 @@
     "lodash": "^4.17.21"
   },
   "scripts": {
-    "eslint-fix": "cpnx eslint  src/**/*.js --fix",
+    "eslint-fix": "eslint  src/**/*.js --fix",
     "prettier": "pnpx prettier --write ./src/*.js"
   }
 }

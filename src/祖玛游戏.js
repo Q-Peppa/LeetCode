@@ -1,4 +1,6 @@
+// eslint-disable-next-line no-undef
 const _ = require('lodash');
+
 /**
  * @param {string} board
  * @param {string} hand

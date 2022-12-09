@@ -29,5 +29,3 @@ const h = function (s) {
 const checkValidString = function (s) {
   return h(s) && h(s.split('').reverse().join(''));
 };
-
-module.exports = checkValidString;
