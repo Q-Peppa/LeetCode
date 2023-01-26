@@ -1,4 +1,20 @@
 {
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "> leetcode",
+  "main": ".eslintrc.js",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Q-Peppa/LeetCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Q-Peppa/LeetCode/issues"
+  },
+  "homepage": "https://github.com/Q-Peppa/LeetCode#readme",
   "devDependencies": {
     "eslint": "^8.18.0",
     "eslint-config-airbnb": "^19.0.4",
