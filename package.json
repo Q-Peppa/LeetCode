@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "> leetcode",
   "main": ".eslintrc.js",
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Q-Peppa/LeetCode.git"
@@ -16,6 +15,7 @@
   },
   "homepage": "https://github.com/Q-Peppa/LeetCode#readme",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "^8.18.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
