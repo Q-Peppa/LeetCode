@@ -1,10 +1,10 @@
 let total = (arr) => {
-  let sum =  0;
+  let sum = 0;
   for (let i = 0; i < 26; i++) {
     sum += arr[i] > 0 ? 1 : 0;
   }
   return sum;
-}
+};
 /**
  * @param {string} word1
  * @param {string} word2
@@ -35,8 +35,7 @@ var isItPossible = function (word1, word2) {
         counter2[j]++;
         counter1[j]--;
       }
-
     }
   }
-  return false
+  return false;
 };
