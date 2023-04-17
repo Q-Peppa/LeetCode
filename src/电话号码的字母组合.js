@@ -33,5 +33,3 @@ const letterCombinations = function (digits) {
   return res;
 };
 console.log(letterCombinations('235'));
-
-// 桶
