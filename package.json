@@ -15,8 +15,9 @@
   },
   "homepage": "https://github.com/Q-Peppa/LeetCode#readme",
   "devDependencies": {
+    "@typescript-eslint/parser": "^5.59.1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.18.0",
+    "eslint": "^8.39.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
@@ -31,7 +32,8 @@
   "dependencies": {
     "@datastructures-js/priority-queue": "^5.3.0",
     "@datastructures-js/queue": "^4.2.1",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "typescript": "^5.0.4"
   },
   "scripts": {
     "eslint-fix": "eslint  src/**/*.js --fix",
