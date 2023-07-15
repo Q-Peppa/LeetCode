@@ -24,7 +24,8 @@ MedianFinder.prototype.addNum = function (num) {
       }
     }
     this.arr.splice(r + 1, 0, num);
-  }``
+  }
+  ``;
 };
 
 /**
