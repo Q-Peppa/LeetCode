@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "module": "commonjs",
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "target": "es5",
-    "sourceMap": true
-  },
-  "exclude": ["node_modules"]
-}

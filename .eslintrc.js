@@ -1,12 +1,10 @@
-// eslint-disable-next-line no-undef
 module.exports = {
   plugins: ['prettier'],
-  parser: '@typescript-eslint/parser',
   env: {
     browser: true,
     es2021: true,
   },
-  extends: 'eslint:recommended',
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -17,5 +15,6 @@ module.exports = {
     'no-unused-vars': 'off',
     'no-console': 'off',
     'no-undef': 'off',
+    'no-constant-condition': 'off',
   },
 };

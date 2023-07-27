@@ -18,24 +18,20 @@
     "@typescript-eslint/parser": "^5.59.9",
     "cross-env": "^7.0.3",
     "eslint": "^8.42.0",
-    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-prettier": "^5.x",
     "jest": "^29.5.0",
     "prettier": "^3.0.0"
   },
   "dependencies": {
-    "@datastructures-js/priority-queue": "^5.3.0",
+    "@datastructures-js/priority-queue": "5.3.0",
     "@datastructures-js/queue": "^4.2.3",
-    "lodash-es": "^4.17.21",
-    "typescript": "^5.x"
+    "lodash-es": "^4.17.21"
   },
   "scripts": {
     "eslint-fix": "eslint  src/**/*.js --fix",
     "prettier": "npx prettier --write ./src/*.js"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "cnpm@8.0.0"
 }
