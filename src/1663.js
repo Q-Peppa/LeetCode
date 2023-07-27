@@ -23,6 +23,6 @@ var getSmallestString = function (n, k) {
   return s.join('');
 };
 console.log(getSmallestString(3, 27));
-// Compare this snippet from src\6283.js:
+
 console.log('hello world');
 console.log(getSmallestString(5, 73));
