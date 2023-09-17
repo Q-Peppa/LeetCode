@@ -1,14 +1,23 @@
 {
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/Thumbs.db": true,
-    "**/node_modules": true,
-    "**/.idea": true,
+  "editor.fontFamily": "fira code medium",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.6,
+  "editor.fontSize": 16,
+  "eslint.enable": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true,
   },
-  "editor.fontFamily": "fira code",
-  "editor.fontWeight": "normal"
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.idea": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/node_modules": true,
+    "**/Thumbs.db": true
+  }
 }
