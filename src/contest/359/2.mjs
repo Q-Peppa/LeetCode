@@ -1,5 +1,3 @@
-import _ from "lodash-es";
-
 /**
  * @param {number} n
  * @param {number} k
@@ -14,15 +12,15 @@ var minimumSum = function (n, k) {
     if (res[i] === k) continue;
     for (let j = i + 1; j < n; j++) {
       if (res[i] + res[j] === k) {
-        let index = j
+        let index = j;
         while (index < n) {
-          if(res[index] < res[index+1]-1){
-            res[index]+=1
-            break
+          if (res[index] < res[index + 1] - 1) {
+            res[index] += 1;
+            break;
           }
-          res[index++]+=1
+          res[index++] += 1;
         }
-        i = -1
+        i = -1;
       }
     }
   }
@@ -33,6 +31,6 @@ console.log(minimumSum(5, 4)); // 18
 // 2,3
 console.log(minimumSum(2, 6)); // 3
 
-console.log(minimumSum(3, 5))  // 8
+console.log(minimumSum(3, 5)); // 8
 // 4,5
-console.log(minimumSum(4, 5))  // 14
+console.log(minimumSum(4, 5)); // 14

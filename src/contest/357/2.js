@@ -11,7 +11,6 @@ var canSplitArray = function (nums, m) {
   }
   if (sum < m) return false;
   const func = (left, right, curSum) => {
-    console.log(left, right, curSum);
     if (left === right) return true;
     if (curSum < m) return false;
     if (func(left + 1, right, curSum - nums[left])) {

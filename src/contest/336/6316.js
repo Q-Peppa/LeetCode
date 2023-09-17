@@ -22,6 +22,4 @@ var maxScore = function (nums) {
 
   return ans - 1;
 };
-
-ans = maxScore([1, 0, 0, 0, 0, 0, -1]);
-console.log(ans);
+console.log(maxScore([1, 0, 0, 0, 0, 0, -1]));

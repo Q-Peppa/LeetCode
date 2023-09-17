@@ -1,3 +1,4 @@
+const _ = require('lodash-es');
 /**
  * @param {string} s
  * @return {number}

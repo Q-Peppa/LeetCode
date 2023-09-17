@@ -28,7 +28,7 @@ var minLengthAfterRemovals = function (nums) {
   }
 };
 // [1,3,4,9]
-console.log(`node - test` , minLengthAfterRemovals([3, 4, 9]));
+console.log(`node - test`, minLengthAfterRemovals([3, 4, 9]));
 // [2,3,6,9]
 console.log(minLengthAfterRemovals([2, 3, 6, 9]));
 // [1,1,2]

@@ -1,5 +1,7 @@
 {
   "editor.fontFamily": "fira code medium",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.enable": true,
   "editor.fontLigatures": true,
   "editor.lineHeight": 1.6,
   "editor.fontSize": 16,

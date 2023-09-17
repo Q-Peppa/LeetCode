@@ -58,6 +58,3 @@ console.log(
     [0, 1, 0, 1],
   ]),
 ); // [1,2,4]
-
-const __ = 20;
-console.log(__dirname);

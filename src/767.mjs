@@ -16,7 +16,8 @@ var reorganizeString = function (s) {
   }
   seq = _.toPairs(seq).sort((a, b) => b[1] - a[1]);
   let ans = new Array(length);
-  let i = 0
+  let i = 0;
+
   while (seq.length) {
     let [k, v] = seq.shift();
     while (v--) {
@@ -29,5 +30,5 @@ var reorganizeString = function (s) {
 };
 
 console.log(reorganizeString('aab'));
-console.log(reorganizeString("aabbcc"));
-console.log(Array.from(Object.values({a:1 ,b:2})))
+console.log(reorganizeString('aabbcc'));
+console.log(Array.from(Object.values({ a: 1, b: 2 })));

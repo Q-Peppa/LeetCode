@@ -1,4 +1,3 @@
-const _ = require('lodash');
 /**
  * @param {number[]} nums
  * @param {number[]} queries
@@ -6,7 +5,6 @@ const _ = require('lodash');
  */
 var minOperations = function (nums, queries) {
   const ans = [];
-  const n = nums.length;
   let queryMin = queries.reduce((a, b) => Math.max(a, b), 9999999999999);
   let times = 0;
   for (let ele of nums) {
@@ -28,8 +26,7 @@ var minOperations = function (nums, queries) {
       ans.push();
     }
   }
-  console.log(_.sum(ans));
 
   return ans;
 };
-minOperations([3, 1, 6, 8], [1, 5]);
+console.log(minOperations([3, 1, 6, 8], [1, 5]));
