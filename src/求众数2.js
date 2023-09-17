@@ -3,20 +3,8 @@
  * @return {number[]}
  */
 const majorityElement = function (nums) {
-  const cnt = new Map();
-  const ans = new Set();
-
-  const target = Math.floor(nums.length / 3);
-  if (nums.length <= 2) {
-    return [...new Set(nums)];
-  }
-  for (const num of nums) {
-    cnt.set(num, (cnt.get(num) ?? 0) + 1);
-    if (cnt.get(num) > target) {
-      ans.add(num);
-    }
-  }
-  return [...ans];
+  nums.sort((a, b) => a - b);
+  return nums[Math.floor(nums.length / 2)];
 };
 console.log(majorityElement([3, 2, 3]));
 console.log(majorityElement([1]));

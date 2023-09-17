@@ -1,6 +1,3 @@
-// eslint-disable-next-line no-undef
-const _ = require('lodash');
-
 /**
  * @param {string} board
  * @param {string} hand
@@ -12,7 +9,7 @@ const findMinStep = function (board, hand) {
   const vis = new Set();
   const dfs = (b, h) => {
     if (b.length === 0) {
-      ans = _.min([ans, max - h.length]);
+      ans = Math.min(ans, max - h.length);
       return;
     }
     if (vis.has(b)) {

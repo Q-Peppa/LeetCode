@@ -7,7 +7,6 @@ const isAdditiveNumber = function (num) {
     const n = tmp.length;
     if (n >= 3 && tmp[n - 3] + tmp[n - 2] !== tmp[n - 1]) return false;
     if (cur === num.length && n >= 3) {
-      console.log(tmp);
       return true;
     }
     for (let i = cur; i < num.length; i++) {

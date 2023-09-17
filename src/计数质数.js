@@ -15,3 +15,7 @@ const countPrimes = function (n) {
   }
   return ans;
 };
+console.log('countPrimes(10)', countPrimes(10));
+console.log('countPrimes(0)', countPrimes(0));
+console.log('countPrimes(1)', countPrimes(1));
+console.log('countPrimes(100)', countPrimes(100));

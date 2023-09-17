@@ -1,8 +1,8 @@
 const combinationSum3 = function (k, n) {
-  let temp = [];
+  const temp = [];
   const ans = [];
   const check = (mask, k, n) => {
-    temp = [];
+    temp.length = 0;
     for (let i = 0; i < 9; ++i) {
       if ((1 << i) & mask) {
         temp.push(i + 1);
