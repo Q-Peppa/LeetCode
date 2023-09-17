@@ -26,7 +26,7 @@ var minimumSum = function (n, k) {
       }
     }
   }
-  console.log(res);
+  // console.log(res);
   return res.reduce((pre, cur) => pre + cur, 0);
 };
 console.log(minimumSum(5, 4)); // 18
