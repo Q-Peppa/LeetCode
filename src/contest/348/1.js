@@ -1,4 +1,5 @@
-const _ = require('lodash-es');
+import _ from 'lodash-es';
+
 /**
  * @param {string} s
  * @return {number}

@@ -3,7 +3,7 @@
  * @param {string} goal
  * @return {boolean}
  */
-const _ = require('lodash');
+import _ from 'lodash';
 
 const buddyStrings = function (s, goal) {
   const len = s.length;

@@ -27,11 +27,13 @@
   "dependencies": {
     "@datastructures-js/priority-queue": "5.3.0",
     "@datastructures-js/queue": "^4.2.3",
+    "lodash": "^4.17.21",
     "lodash-es": "^4.17.21"
   },
   "scripts": {
     "eslint-fix": "eslint  src/**/*.js --fix",
     "prettier": "npx prettier --write ./src/*.js"
   },
-  "packageManager": "cnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "type": "module"
 }
