@@ -4,7 +4,7 @@
   "prettier.enable": true,
   "editor.fontLigatures": true,
   "editor.lineHeight": 1.6,
-  "editor.fontSize": 16,
+  "editor.fontSize": 20,
   "eslint.enable": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
