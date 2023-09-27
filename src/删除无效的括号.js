@@ -25,7 +25,9 @@ const removeInvalidParentheses = function (s) {
       }
     }
 
-    if (ans.size) return [...ans];
+    // 这里不需要继续往下遍历了，因为已经找到了最小的删除括号数量
+    if (ans.size) return Array.from(ans);
+
     queue = tmp;
   }
   return [];
