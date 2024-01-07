@@ -1,0 +1,33 @@
+<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+<!-- have a button POST a click via AJAX -->
+<form hx-put="/contact/1" hx-target="this" hx-swap="outerHTML">
+  <div>
+    <label>First Name</label>
+    <input type="text" name="firstName" value="Joe">
+  </div>
+  <div class="form-group">
+    <label>Last Name</label>
+    <input type="text" name="lastName" value="Blow">
+  </div>
+  <div class="form-group">
+    <label>Email Address</label>
+    <input type="email" name="email" value="joe@blow.com">
+  </div>
+  <button class="btn">Submit</button>
+  <button class="btn" hx-get="/contact/1">Cancel</button>
+</form>
+<div hx-target="this" hx-swap="outerHTML">
+  <div><label>First Name</label>: Joe</div>
+  <div><label>Last Name</label>: Blow</div>
+  <div><label>Email</label>: joe@blow.com</div>
+  <button hx-get="/contact/1/edit" class="btn btn-primary">
+    Click To Edit
+  </button>
+</div>
+<tr hx-get="/contacts/?page=2"
+    hx-trigger="revealed"
+    hx-swap="afterend">
+  <td>Agent Smith</td>
+  <td>void29@null.org</td>
+  <td>55F49448C0</td>
+</tr>

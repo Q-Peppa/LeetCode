@@ -4,8 +4,8 @@ function conver(char) {
 /**
  * @param {string} source
  * @param {string} target
- * @param {character[]} original
- * @param {character[]} changed
+ * @param {string[]} original
+ * @param {string[]} changed
  * @param {number[]} cost
  * @return {number}
  */
