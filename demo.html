@@ -1,33 +1,33 @@
-<script src="https://unpkg.com/htmx.org@1.9.10"></script>
-<!-- have a button POST a click via AJAX -->
-<form hx-put="/contact/1" hx-target="this" hx-swap="outerHTML">
-  <div>
-    <label>First Name</label>
-    <input type="text" name="firstName" value="Joe">
-  </div>
-  <div class="form-group">
-    <label>Last Name</label>
-    <input type="text" name="lastName" value="Blow">
-  </div>
-  <div class="form-group">
-    <label>Email Address</label>
-    <input type="email" name="email" value="joe@blow.com">
-  </div>
-  <button class="btn">Submit</button>
-  <button class="btn" hx-get="/contact/1">Cancel</button>
-</form>
-<div hx-target="this" hx-swap="outerHTML">
-  <div><label>First Name</label>: Joe</div>
-  <div><label>Last Name</label>: Blow</div>
-  <div><label>Email</label>: joe@blow.com</div>
-  <button hx-get="/contact/1/edit" class="btn btn-primary">
-    Click To Edit
-  </button>
+<script src="//unpkg.com/alpinejs" defer>
+</script>
+<script>
+  document.addEventListener('alpine:init', () => {
+    Alpine.store('no_name', {
+      count: 0,
+      notify() {
+        this.count++;
+      }
+    });
+  });
+</script>
+<div x-data="{ open: false , search : '', list: [{name : 'lisi'} , {name :'mike'} , {name :'lay'} ] }">
+  <button @click="open = !open">Expand</button>
+
+  <span x-show="open">
+    Content...
+  </span>
+  <input type="text" x-model="search">
+  model : <span x-text="search"></span>
+  length : <span x-text="search.length"></span>
+  <hr>
+  <ul>
+    <template x-for="post in list">
+      <li x-text="post?.name"></li>
+    </template>
+  </ul>
+  <h4 x-on:click="$store.no_name?.notify()">click me</h4>
+  <h5 x-html="JSON.stringify($store)"></h5>
+
+  <h6 x-text="open"></h6>
+
 </div>
-<tr hx-get="/contacts/?page=2"
-    hx-trigger="revealed"
-    hx-swap="afterend">
-  <td>Agent Smith</td>
-  <td>void29@null.org</td>
-  <td>55F49448C0</td>
-</tr>
