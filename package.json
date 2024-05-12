@@ -2,7 +2,7 @@
   "name": "leetcode",
   "version": "1.0.0",
   "description": "> leetcode",
-  "main": ".eslintrc.cjs",
+  "main": "eslint.config.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Q-Peppa/LeetCode.git"
@@ -34,7 +34,7 @@
     }
   },
   "scripts": {
-    "eslint-fix": "eslint src/**/*.js --fix --config .eslintrc.cjs"
+    "eslint-fix": "eslint src/**/*.js --fix --config eslint.config.js"
   },
   "packageManager": "pnpm@8.0.0",
   "type": "module"
