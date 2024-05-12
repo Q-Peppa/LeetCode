@@ -7,7 +7,7 @@ function countAndSay(n) {
       while (res[i] === res[fast]) {
         ++fast;
       }
-      temp += fast - i ?? 1;
+      temp += fast - i;
       temp += res[i];
       i = fast - 1;
     }

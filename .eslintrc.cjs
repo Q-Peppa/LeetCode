@@ -1,20 +1,25 @@
-module.exports = {
-  plugins: ['prettier'],
-  env: {
-    browser: true,
-    es2021: true,
+const eslintConfigPrettier = require("eslint-config-prettier")
+const js = require("@eslint/js")
+const eslintPluginPrettierRecommended = require('eslint-plugin-prettier/recommended');
+
+module.exports = [
+  js.configs.recommended,
+  eslintPluginPrettierRecommended,
+  eslintConfigPrettier,
+  {
+    languageOptions: {
+      ecmaVersion: "latest",
+      sourceType:"module",
+    }
   },
-  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
-  overrides: [],
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-  },
-  rules: {
-    'prettier/prettier': 'warn',
-    'no-unused-vars': 'off',
-    'no-console': 'off',
-    'no-undef': 'off',
-    'no-constant-condition': 'off',
-  },
-};
+  {
+    files: ["src/**/*.js"],
+    rules: {
+      'prettier/prettier': 'warn',
+      'no-unused-vars': 'off',
+      'no-console': 'off',
+      'no-undef': 'off',
+      'no-constant-condition': 'off',
+    }
+  }
+]

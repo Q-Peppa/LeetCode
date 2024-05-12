@@ -9,7 +9,7 @@ var getSmallestString = function (n, k) {
   let s = 'a'.repeat(n).split('');
   let dealIndex = n - 1;
   if (total === k) return s.join('');
-  // eslint-disable-next-line no-constant-condition
+
   while (true) {
     let diff = k - total;
     if (diff < 26) {

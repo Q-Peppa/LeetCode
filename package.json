@@ -15,11 +15,12 @@
   },
   "homepage": "https://github.com/Q-Peppa/LeetCode#readme",
   "devDependencies": {
-    "cross-env": "^7.0.3",
-    "eslint": "^8.42.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^5.x",
-    "husky": "^8.0.3",
+    "@eslint/js": "^9.2.0",
+    "@types/eslint": "^8.56.10",
+    "eslint": "^9.2.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "husky": "^9.0.11",
     "prettier": "^3.0.0"
   },
   "dependencies": {
@@ -29,13 +30,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "cross-env NODE_ENV=production lint-staged",
-      "pre-push": "cross-env NODE_ENV=production lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "scripts": {
-    "eslint-fix": "eslint  src/**/*.js --fix",
-    "prettier": "npx prettier --write ./src/*.js"
+    "eslint-fix": "eslint src/**/*.js --fix --config .eslintrc.cjs"
   },
   "packageManager": "pnpm@8.0.0",
   "type": "module"
