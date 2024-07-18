@@ -9,7 +9,6 @@ var getSmallestString = function (n, k) {
   let s = 'a'.repeat(n).split('');
   let dealIndex = n - 1;
   if (total === k) return s.join('');
-
   while (true) {
     let diff = k - total;
     if (diff < 26) {

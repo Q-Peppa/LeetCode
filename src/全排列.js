@@ -21,4 +21,3 @@ const permute = function (nums) {
   return res;
 };
 console.log(permute([1, 2, 3]));
-// console.log(encodeURI("下载问卷"));
