@@ -9,7 +9,6 @@ var countPairs = function (n, edges) {
   const f = new Array(n).fill(0).map((_, i) => i);
   const find = (x) => {
     while (x !== f[x]) {
-      //    f[x] = f[f[x]]
       x = f[x];
     }
     return x;
