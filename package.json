@@ -36,6 +36,5 @@
   "scripts": {
     "eslint-fix": "eslint src/**/*.js --fix --config eslint.config.js"
   },
-  "packageManager": "pnpm@8.0.0",
   "type": "module"
 }
