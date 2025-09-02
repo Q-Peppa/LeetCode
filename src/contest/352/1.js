@@ -4,31 +4,31 @@
  * @return {number}
  */
 var longestAlternatingSubarray = function (nums, threshold) {
-  let len = 0;
-  const check = (l, r) => {
-    if (nums.slice(l, r).length === 1) return true;
-    // nums[i] % 2 != nums[i + 1] % 2
-    let f = true;
-    for (let i = l; i < r - 1; i++) {
-      if (nums[i] % 2 === nums[i + 1] % 2) {
-        f = false;
-        break;
-      }
-    }
-    return f;
-  };
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] % 2 !== 0) continue;
-    let j = i + 1;
-    let slice = nums.slice(i, j);
-    while (check(i, j) && slice.every((e) => e <= threshold)) {
-      len = Math.max(len, j - i);
-      j++;
-      slice = nums.slice(i, j);
-      if (j > nums.length) break;
-    }
-  }
-  return len;
+	let len = 0;
+	const check = (l, r) => {
+		if (nums.slice(l, r).length === 1) return true;
+		// nums[i] % 2 != nums[i + 1] % 2
+		let f = true;
+		for (let i = l; i < r - 1; i++) {
+			if (nums[i] % 2 === nums[i + 1] % 2) {
+				f = false;
+				break;
+			}
+		}
+		return f;
+	};
+	for (let i = 0; i < nums.length; i++) {
+		if (nums[i] % 2 !== 0) continue;
+		let j = i + 1;
+		let slice = nums.slice(i, j);
+		while (check(i, j) && slice.every((e) => e <= threshold)) {
+			len = Math.max(len, j - i);
+			j++;
+			slice = nums.slice(i, j);
+			if (j > nums.length) break;
+		}
+	}
+	return len;
 };
 
 // nums = [3,2,5,4], threshold = 5

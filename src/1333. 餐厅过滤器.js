@@ -12,7 +12,7 @@
  * 你需要根据这三个过滤器过滤餐馆，最后返回餐馆的 id，按照 rating 从高到低排序。
  * 如果 rating 相同，那么按 id 从高到低排序。
  **/
-import _ from 'lodash-es';
+import _ from "lodash-es";
 
 /**
  * @param {number[][]} restaurants
@@ -22,32 +22,32 @@ import _ from 'lodash-es';
  * @return {number[]}
  */
 var filterRestaurants = function (
-  restaurants,
-  veganFriendly,
-  maxPrice,
-  maxDistance,
+	restaurants,
+	veganFriendly,
+	maxPrice,
+	maxDistance,
 ) {
-  restaurants = restaurants
-    .filter((e) => e[2] >= veganFriendly)
-    .filter((e) => e[3] <= maxPrice)
-    .filter((e) => e[4] <= maxDistance);
+	restaurants = restaurants
+		.filter((e) => e[2] >= veganFriendly)
+		.filter((e) => e[3] <= maxPrice)
+		.filter((e) => e[4] <= maxDistance);
 
-  restaurants = _.orderBy(restaurants, [1, 0], ['desc', 'desc']);
-  // console.log(restaurants)
-  return _.map(restaurants, 0);
+	restaurants = _.orderBy(restaurants, [1, 0], ["desc", "desc"]);
+	// console.log(restaurants)
+	return _.map(restaurants, 0);
 };
 
 console.log(
-  filterRestaurants(
-    [
-      [1, 4, 1, 40, 10],
-      [2, 8, 0, 50, 5],
-      [3, 8, 1, 30, 4],
-      [4, 10, 0, 10, 3],
-      [5, 1, 1, 15, 1],
-    ],
-    1,
-    50,
-    10,
-  ), // [3,1,5]
+	filterRestaurants(
+		[
+			[1, 4, 1, 40, 10],
+			[2, 8, 0, 50, 5],
+			[3, 8, 1, 30, 4],
+			[4, 10, 0, 10, 3],
+			[5, 1, 1, 15, 1],
+		],
+		1,
+		50,
+		10,
+	), // [3,1,5]
 );

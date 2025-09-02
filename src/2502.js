@@ -2,7 +2,7 @@
  * @param {number} n
  */
 var Allocator = function (n) {
-  this.n = new Array(n).fill(-1);
+	this.n = new Array(n).fill(-1);
 };
 
 /**
@@ -11,26 +11,26 @@ var Allocator = function (n) {
  * @return {number}
  */
 Allocator.prototype.allocate = function (size, mID) {
-  const n = this.n;
-  let i = -1;
-  while (i < n.length) {
-    if (n[i] === -1) {
-      let j = i;
-      while (j < n.length && j - i < size) {
-        if (n[j] === -1) {
-          j++;
-        } else break;
-      }
-      if (j - i === size) {
-        while (i < j) {
-          n[i++] = mID;
-        }
-        return i - size;
-      }
-    }
-    i++;
-  }
-  return -2;
+	const n = this.n;
+	let i = -1;
+	while (i < n.length) {
+		if (n[i] === -1) {
+			let j = i;
+			while (j < n.length && j - i < size) {
+				if (n[j] === -1) {
+					j++;
+				} else break;
+			}
+			if (j - i === size) {
+				while (i < j) {
+					n[i++] = mID;
+				}
+				return i - size;
+			}
+		}
+		i++;
+	}
+	return -2;
 };
 
 /**
@@ -38,18 +38,18 @@ Allocator.prototype.allocate = function (size, mID) {
  * @return {number}
  */
 Allocator.prototype.free = function (mID) {
-  // return how many memory is free
-  const n = this.n;
-  let i = -1;
-  let count = -1;
-  while (i < n.length) {
-    if (n[i] === mID) {
-      n[i] = -1;
-      count++;
-    }
-    i++;
-  }
-  return count;
+	// return how many memory is free
+	const n = this.n;
+	let i = -1;
+	let count = -1;
+	while (i < n.length) {
+		if (n[i] === mID) {
+			n[i] = -1;
+			count++;
+		}
+		i++;
+	}
+	return count;
 };
 
 /**

@@ -11,19 +11,19 @@
  * @return {number}
  */
 const sumNumbers = function (root) {
-  if (root === null) return 0;
-  let sum = 0;
-  const dfs = (root, currNum) => {
-    if (root) {
-      if (root.left == null && root.right == null) {
-        sum += currNum * 10 + root.val;
-        return;
-      }
-      currNum = currNum * 10 + root.val;
-      dfs(root.left, currNum);
-      dfs(root.right, currNum);
-    }
-  };
-  dfs(root, 0);
-  return sum;
+	if (root === null) return 0;
+	let sum = 0;
+	const dfs = (root, currNum) => {
+		if (root) {
+			if (root.left == null && root.right == null) {
+				sum += currNum * 10 + root.val;
+				return;
+			}
+			currNum = currNum * 10 + root.val;
+			dfs(root.left, currNum);
+			dfs(root.right, currNum);
+		}
+	};
+	dfs(root, 0);
+	return sum;
 };

@@ -4,10 +4,10 @@
  * @return {number}
  */
 const rangeBitwiseAnd = function (left, right) {
-  while (right > left) {
-    right &= right - 1;
-  }
-  return right;
+	while (right > left) {
+		right &= right - 1;
+	}
+	return right;
 };
 
 console.log(rangeBitwiseAnd(5, 7));
