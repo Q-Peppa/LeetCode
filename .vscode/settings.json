@@ -21,5 +21,8 @@
     "**/CVS": true,
     "**/node_modules": true,
     "**/Thumbs.db": true
+  },
+  "code-runner.executorMap": {
+    "javascript": "node"
   }
 }
