@@ -3,9 +3,9 @@
  * @return {string}
  */
 var makeFancyString = function (s) {
-  let empty = "";
+  let empty = '';
   let count = 0,
-    pre = "";
+    pre = '';
   for (let i = 0; i < s.length; i++) {
     if (!pre) {
       pre = s[i];
@@ -23,6 +23,6 @@ var makeFancyString = function (s) {
   // console.log(`empty`, empty);
   return empty;
 };
-makeFancyString("leeetcode");
-makeFancyString("aaabaaaa");
-makeFancyString("aab");
+makeFancyString('leeetcode');
+makeFancyString('aaabaaaa');
+makeFancyString('aab');

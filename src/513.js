@@ -11,11 +11,11 @@
  * @return {number}
  */
 const findBottomLeftValue = function (root) {
-	const queue = [root];
-	while (queue.length) {
-		root = queue.shift();
-		if (root.right) queue.push(root.right);
-		if (root.left) queue.push(root.left);
-	}
-	return root.val;
+  const queue = [root];
+  while (queue.length) {
+    root = queue.shift();
+    if (root.right) queue.push(root.right);
+    if (root.left) queue.push(root.left);
+  }
+  return root.val;
 };

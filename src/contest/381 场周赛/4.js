@@ -5,7 +5,7 @@
  * @return {number[]}
  */
 var countOfPairs = function (n, x, y) {
-	// pass
+  // pass
 };
 
 console.log(countOfPairs(10 ** 5, 1, 8));

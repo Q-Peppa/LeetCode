@@ -30,7 +30,7 @@
     }
   },
   "scripts": {
-    "biome-fix": "biome format --write **/*.{js,ts}"
+    "biome-fix": "biome format --write src/**/*.js"
   },
   "type": "module"
 }

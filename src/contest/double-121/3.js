@@ -1,23 +1,24 @@
-import _ from "lodash";
-var minimumOperationsToMakeEqual = function (x, y) {
-	if (x <= y) return y - x;
+import _ from 'lodash';
 
-	const query = (a) => {
-		if (a <= y) return y - a;
-		let ans = a - y;
-		ans = Math.min(
-			ans,
-			query(Math.floor(a / 5) + 1 + (a % 5)),
-			query(Math.floor(a / 5) + 1 + 5 - (a % 5)),
-		);
-		ans = Math.min(
-			ans,
-			query(Math.floor(a / 11) + 1 + (a % 11)),
-			query(Math.floor(a / 11) + 1 + 11 - (a % 11)),
-		);
-		return ans;
-	};
-	return _.memoize(query)(x);
+var minimumOperationsToMakeEqual = function (x, y) {
+  if (x <= y) return y - x;
+
+  const query = (a) => {
+    if (a <= y) return y - a;
+    let ans = a - y;
+    ans = Math.min(
+      ans,
+      query(Math.floor(a / 5) + 1 + (a % 5)),
+      query(Math.floor(a / 5) + 1 + 5 - (a % 5)),
+    );
+    ans = Math.min(
+      ans,
+      query(Math.floor(a / 11) + 1 + (a % 11)),
+      query(Math.floor(a / 11) + 1 + 11 - (a % 11)),
+    );
+    return ans;
+  };
+  return _.memoize(query)(x);
 };
 
 console.log(minimumOperationsToMakeEqual(26, 1));

@@ -12,17 +12,17 @@
  * @return {number}
  */
 var numberOfSubstrings = function (s, k) {
-	let res = 0,
-		left = 0;
-	let tracker = {};
-	for (let i = 0; i < s.length; i++) {
-		const cur = s[i];
-		tracker[cur] = (tracker[cur] || 0) + 1;
-		while (tracker[cur] >= k) {
-			tracker[s[left]]--;
-			left++;
-		}
-		res += left;
-	}
-	return res;
+  let res = 0,
+    left = 0;
+  let tracker = {};
+  for (let i = 0; i < s.length; i++) {
+    const cur = s[i];
+    tracker[cur] = (tracker[cur] || 0) + 1;
+    while (tracker[cur] >= k) {
+      tracker[s[left]]--;
+      left++;
+    }
+    res += left;
+  }
+  return res;
 };
