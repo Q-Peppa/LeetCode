@@ -19,5 +19,5 @@ var convert = function (s, numRows) {
       }
     }
   }
-  return ans.join("");
+  return ans.join('');
 };
