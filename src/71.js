@@ -1,4 +1,4 @@
-const path = require("node:path");
+const path = require('node:path');
 /**
  * @param {string} p
  * @return {string}

@@ -41,6 +41,7 @@ var rearrangeBarcodes = function (barcodes) {
   if (rest) {
     for (let i = 0; i < rest.val; i++) {
       ans[i * 2 + 1] = rest.key;
+      ans[i++] = rest;
     }
   }
   ok(rest ? rest.val * 2 + 1 : 1);

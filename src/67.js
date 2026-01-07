@@ -4,7 +4,7 @@
  * @return {string}
  */
 var addBinary = function (a, b) {
-  let res = "";
+  let res = '';
   let n = Math.max(a.length, b.length),
     curry = 0;
   for (let i = 0; i < n; ++i) {
@@ -14,10 +14,10 @@ var addBinary = function (a, b) {
     curry = Math.floor(curry / 2);
   }
   if (curry > 0) {
-    res = "1" + res;
+    res = '1' + res;
   }
   return res;
 };
-function g(char = "") {
-  return char.charCodeAt(0) - "0".charCodeAt(0);
+function g(char = '') {
+  return char.charCodeAt(0) - '0'.charCodeAt(0);
 }
