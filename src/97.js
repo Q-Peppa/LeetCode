@@ -30,5 +30,5 @@ var isInterleave = function (s1, s2, s3) {
   }
   return dp[m][n];
 };
-const ans = isInterleave("aabcc", "dbbca", "aadbbcbcac");
+const ans = isInterleave('aabcc', 'dbbca', 'aadbbcbcac');
 console.log(ans);
