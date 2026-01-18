@@ -1,4 +1,4 @@
-import { MaxHeap } from "datastructures-js/heap";
+import { MaxHeap } from 'datastructures-js/heap';
 
 var AuctionSystem = function () {
   this.itemBids = new Map();

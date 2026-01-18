@@ -6,9 +6,9 @@ var vowelConsonantScore = function (s) {
   let vowels = 0,
     consonants = 0;
   for (let char of s) {
-    if ("aeiou".includes(char)) {
+    if ('aeiou'.includes(char)) {
       vowels++;
-    } else if (char >= "a" && char <= "z") {
+    } else if (char >= 'a' && char <= 'z') {
       consonants++;
     }
   }

@@ -35,7 +35,7 @@ var spellchecker = function (wordlist, queries) {
 
   // 将元音替换为通配符的函数
   const replaceVowels = (str) => {
-    return str.toLowerCase().replace(/[aeiou]/g, "*");
+    return str.toLowerCase().replace(/[aeiou]/g, '*');
   };
 
   // 预处理 wordlist
@@ -73,32 +73,32 @@ var spellchecker = function (wordlist, queries) {
     }
 
     // 无匹配
-    return "";
+    return '';
   });
 };
 
-const wordlist = ["KiTe", "kite", "hare", "Hare"];
+const wordlist = ['KiTe', 'kite', 'hare', 'Hare'];
 const queries = [
-  "kite",
-  "Kite",
-  "KiTe",
-  "Hare",
-  "HARE",
-  "Hear",
-  "hear",
-  "keti",
-  "keet",
-  "keto",
+  'kite',
+  'Kite',
+  'KiTe',
+  'Hare',
+  'HARE',
+  'Hear',
+  'hear',
+  'keti',
+  'keet',
+  'keto',
 ];
 console.log(spellchecker(wordlist, queries), [
-  "kite",
-  "KiTe",
-  "KiTe",
-  "Hare",
-  "hare",
-  "",
-  "",
-  "KiTe",
-  "",
-  "KiTe",
+  'kite',
+  'KiTe',
+  'KiTe',
+  'Hare',
+  'hare',
+  '',
+  '',
+  'KiTe',
+  '',
+  'KiTe',
 ]);

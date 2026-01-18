@@ -4,7 +4,7 @@
  */
 function lexSmallestAfterDeletion(s) {
   const n = s.length;
-  if (n === 0) return "";
+  if (n === 0) return '';
 
   const positions = Array.from({ length: 26 }, () => []);
   const lastIndex = new Array(26).fill(-1);
@@ -63,7 +63,7 @@ function lexSmallestAfterDeletion(s) {
     start = chosenPos + 1;
   }
 
-  return result.join("");
+  return result.join('');
 }
-console.log(lexSmallestAfterDeletion("aaccb"));
-console.log(lexSmallestAfterDeletion("z"));
+console.log(lexSmallestAfterDeletion('aaccb'));
+console.log(lexSmallestAfterDeletion('z'));

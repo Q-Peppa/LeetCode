@@ -23,7 +23,7 @@ let longestDecomposition = function (text) {
         return dfs(
           start + i + 1,
           end - i - 1,
-          endString.slice(i + 1, endString.length - i - 1)
+          endString.slice(i + 1, endString.length - i - 1),
         );
         // return;
       }
