@@ -29,7 +29,7 @@ var recoverTree = function (root) {
   inorder(root);
   if (first && second) {
     const temp = first.val;
-          first.val = second.val;
+    first.val = second.val;
     second.val = temp;
   }
 };
