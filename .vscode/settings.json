@@ -23,6 +23,6 @@
     "**/Thumbs.db": true
   },
   "code-runner.executorMap": {
-    "javascript": "node"
+    "javascript": "bun",
   }
 }
