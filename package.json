@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/Q-Peppa/LeetCode#readme",
   "devDependencies": {
-    "@biomejs/biome": "2.2.2",
+    "@biomejs/biome": "^2.3.11",
     "@commitlint/cli": "^20.3.1",
     "@commitlint/config-conventional": "^20.3.1",
     "husky": "^9.1.7",
@@ -31,6 +31,7 @@
   },
   "scripts": {
     "biome-fix": "biome format --write src",
+    "biome-format-check": "biome format ./src",
     "prepare": "husky"
   },
   "type": "module"
