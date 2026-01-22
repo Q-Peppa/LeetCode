@@ -74,3 +74,20 @@ var findOrder = function (numCourses, prerequisites) {
   }
   return [];
 };
+console.log(
+  findOrder(4, [
+    [1, 0],
+    [2, 0],
+    [3, 1],
+    [3, 2],
+  ]),
+  'ans is [0,1,2,3] or [0,2,1,3]',
+);
+console.log(findOrder(1, []), 'ans is [0]');
+console.log(
+  findOrder(2, [
+    [1, 0],
+    [0, 1],
+  ]),
+  'ans is []',
+);

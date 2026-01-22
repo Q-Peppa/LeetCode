@@ -4,37 +4,41 @@
  * @return {number}
  */
 var takeCharacters = function (s, k) {
-  if (k === 0) return 0;
-  if (s.length < k * 3) return -1;
-  let [aTimes, bTimes, cTimes] = [0, 0, 0];
-  for (let i = 0; i < s.length; i++) {
-    if (s[i] === 'a') aTimes++;
-    else if (s[i] === 'b') bTimes++;
-    else cTimes++;
-  }
-  if (aTimes < k || bTimes < k || cTimes < k) return -1;
-  let [aIndex, bIndex, cIndex] = [[], [], []];
-  for (let i = 0; i < s.length; i++) {
-    if (i > s.length / 2) {
-      if (s[i] === 'a') aIndex.push(s.length - i - 1);
-      else if (s[i] === 'b') bIndex.push(s.length - i - 1);
-      else cIndex.push(s.length - i - 1);
-    } else {
-      if (s[i] === 'a') aIndex.push(i);
-      else if (s[i] === 'b') bIndex.push(i);
-      else cIndex.push(i);
-    }
-  }
-  aIndex.sort((a, b) => a - b);
-  bIndex.sort((a, b) => a - b);
-  cIndex.sort((a, b) => a - b);
-  console.log(aIndex, bIndex, cIndex);
-};
-console.log(takeCharacters('aabaaaacaabc', 2));
-/**
- * a 0 1
- * b 2 1
- * c 0 4
- */
+  const n = s.length;
+  let [countA, countB, countC] = [0, 0, 0];
 
-console.log(takeCharacters('a', 1));
+  for (const c of s) {
+    if (c === 'a') countA++;
+    else if (c === 'b') countB++;
+    else countC++;
+  }
+
+  if (countA < k || countB < k || countC < k) return -1;
+
+  const maxA = countA - k;
+  const maxB = countB - k;
+  const maxC = countC - k;
+
+  let [a, b, c] = [0, 0, 0];
+  let maxWindow = 0;
+  let left = 0;
+
+  for (let right = 0; right < n; right++) {
+    if (s[right] === 'a') a++;
+    else if (s[right] === 'b') b++;
+    else c++;
+
+    while (a > maxA || b > maxB || c > maxC) {
+      if (s[left] === 'a') a--;
+      else if (s[left] === 'b') b--;
+      else c--;
+      left++;
+    }
+
+    maxWindow = Math.max(maxWindow, right - left + 1);
+  }
+
+  return n - maxWindow;
+};
+console.log(takeCharacters('aabaaaacaabc', 2), 'ans is 8');
+console.log(takeCharacters('a', 1), 'ans is -1');
