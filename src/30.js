@@ -4,39 +4,73 @@
  * @return {number[]}
  */
 var findSubstring = function (s, words) {
-  if (s.length === 0 || words.length === 0) {
-    return [];
+  if (!s || !words || words.length === 0) return [];
+
+  const wordLen = words[0].length;
+  const wordCount = words.length;
+  const totalLen = wordLen * wordCount;
+  const n = s.length;
+  const result = [];
+
+  if (n < totalLen) return [];
+
+  // Frequency map for words
+  const counts = new Map();
+  for (const word of words) {
+    counts.set(word, (counts.get(word) || 0) + 1);
   }
-  var result = [];
-  var wordLen = words[0].length;
-  var wordCount = words.length;
-  var wordMap = {};
-  for (let i = 0; i < words.length; i++) {
-    if (wordMap[words[i]] === undefined) {
-      wordMap[words[i]] = 1;
-    } else {
-      wordMap[words[i]]++;
-    }
-  }
-  for (let i = 0; i < s.length - wordLen * wordCount + 1; i++) {
-    var tempMap = {};
-    for (var i = 0; i < wordCount; i++) {
-      var word = s.substring(i + i * wordLen, i + (i + 1) * wordLen);
-      if (wordMap[word] === undefined) {
-        break;
-      }
-      if (tempMap[word] === undefined) {
-        tempMap[word] = 1;
+
+  // Iterate with offset from 0 to wordLen - 1
+  for (let i = 0; i < wordLen; i++) {
+    let left = i;
+    let right = i;
+    let currentMap = new Map();
+    let count = 0;
+
+    while (right + wordLen <= n) {
+      const w = s.substring(right, right + wordLen);
+      right += wordLen;
+
+      if (counts.has(w)) {
+        currentMap.set(w, (currentMap.get(w) || 0) + 1);
+        count++;
+
+        // If we have more of 'w' than needed, shrink from left
+        while (currentMap.get(w) > counts.get(w)) {
+          const leftWord = s.substring(left, left + wordLen);
+          currentMap.set(leftWord, currentMap.get(leftWord) - 1);
+          count--;
+          left += wordLen;
+        }
+
+        // Window size matches
+        if (count === wordCount) {
+          result.push(left);
+        }
       } else {
-        tempMap[word]++;
-      }
-      if (tempMap[word] > wordMap[word]) {
-        break;
-      }
-      if (i === wordCount - 1) {
-        result.push(i);
+        // Reset window
+        currentMap.clear();
+        count = 0;
+        left = right;
       }
     }
   }
+
   return result;
 };
+
+// Time Complexity: O(N * M), N = s.length, M = word.length
+// Space Complexity: O(K * M), K = words.length
+
+console.log(
+  findSubstring('barfoothefoobarman', ['foo', 'bar']),
+  'Expected: [0,9]',
+);
+console.log(
+  findSubstring('wordgoodgoodgoodbestword', ['word', 'good', 'best', 'word']),
+  'Expected: []',
+);
+console.log(
+  findSubstring('barfoofoobarthefoobarman', ['bar', 'foo', 'the']),
+  'Expected: [6,9,12]',
+);
