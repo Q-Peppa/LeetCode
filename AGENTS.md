@@ -80,9 +80,9 @@ class MyClass {
 ```
 
 ### Comment Style
-- JSDoc for all function/method documentation
-- Inline comments: English or Chinese acceptable
-- Comment complex algorithms and data structures
+- **Minimal Comments**: Only include JSDoc and essential algorithm explanations.
+- **Avoid**: Redundant comments for obvious logic (e.g., "Loop i from 0 to n").
+- **Language**: English or Chinese acceptable for necessary comments.
 
 ### Linting Rules (src/**/*.js)
 - noUndeclaredVariables: OFF
