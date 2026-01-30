@@ -50,12 +50,3 @@ var isScramble = function (s1, s2) {
 
   return helper(s1, s2);
 };
-
-console.log(isScramble('great', 'rgeat'), '1', 'ans is true');
-console.log(isScramble('abcde', 'caebd'), '2', 'ans is false');
-console.log(isScramble('a', 'a'), '3', 'ans is true');
-console.log(
-  isScramble('eebaacbcbcadaaedceaaacadccd', 'eadcaacabaddaceacbceaabeccd'),
-  '4',
-  'ans is true',
-);
