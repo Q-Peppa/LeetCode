@@ -110,6 +110,11 @@ var separateSquares = function (squares) {
 
     if (currArea + intervalArea >= half) {
       // The line is in this interval
+      if (xLen === 0) {
+        currArea += intervalArea;
+        currY = yEnd;
+        continue;
+      }
       const needed = half - currArea;
       const yLine = yStart + needed / xLen;
       return yLine;

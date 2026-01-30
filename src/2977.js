@@ -9,6 +9,7 @@
 var minimumCost = function (source, target, original, changed, cost) {
   const n = source.length;
   if (n !== target.length) return -1;
+  if (source === target) return 0;
 
   // Build set of all unique strings involved
   const uniqueStrings = new Set();
@@ -74,8 +75,12 @@ var minimumCost = function (source, target, original, changed, cost) {
         if (targetStr.length !== len) continue;
         if (target.substring(i, i + len) !== targetStr) continue;
         if (dist[strIdx][targetIdx] === INF) continue;
+        if (dp[i] === INF) continue;
 
-        dp[i + len] = Math.min(dp[i + len], dp[i] + dist[strIdx][targetIdx]);
+        const newCost = dp[i] + dist[strIdx][targetIdx];
+        if (newCost < dp[i + len]) {
+          dp[i + len] = newCost;
+        }
       }
     }
   }

@@ -22,7 +22,11 @@ var minCost = function (n, edges) {
   pq.enqueue(0, 0);
 
   while (!pq.isEmpty()) {
-    const u = pq.dequeue();
+    const result = pq.dequeue();
+    const u =
+      typeof result === 'object' && 'element' in result
+        ? result.element
+        : result;
 
     if (u === n - 1) return dist[u];
 

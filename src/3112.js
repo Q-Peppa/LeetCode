@@ -15,7 +15,11 @@ var minimumTime = function (n, edges, disappear) {
   const answer = Array(n).fill(-1);
   answer[0] = 0;
   while (!pq.isEmpty()) {
-    const [t, u] = pq.dequeue().element;
+    const result = pq.dequeue();
+    const [t, u] =
+      typeof result === 'object' && 'element' in result
+        ? result.element
+        : result;
     if (t !== answer[u]) {
       continue;
     }
