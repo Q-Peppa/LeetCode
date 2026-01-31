@@ -17,8 +17,8 @@
     "@biomejs/biome": "^2.3.11",
     "@commitlint/cli": "^20.3.1",
     "@commitlint/config-conventional": "^20.3.1",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.2.7"
+    "lint-staged": "^16.2.7",
+    "simple-git-hooks": "^2.13.1"
   },
   "dependencies": {
     "datastructures-js": "^13.0.0"
@@ -28,5 +28,9 @@
     "biome-format-check": "biome format ./src",
     "prepare": "husky"
   },
-  "type": "module"
+  "type": "module",
+  "simple-git-hooks":{
+    "pre-commit": "bun lint-staged",
+    "commit-msg": "bun commitlint --edit $1"
+  }
 }
