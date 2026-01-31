@@ -4,10 +4,10 @@
 
 ```bash
 # Format specific file(s) - USE THIS for single file changes
-biome format --write src/<problem-number>.js
+bun exec biome format --write src/<problem-number>.js
 
 # Format multiple specific files
-biome format --write src/1984.js src/1985.js
+bun exec biome format --write src/1984.js src/1985.js
 
 # Format all JavaScript files (use sparingly)
 pnpm biome-fix
