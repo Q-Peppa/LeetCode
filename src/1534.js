@@ -5,7 +5,6 @@
  * @param {number} c
  * @return {number}
  */
-var countGoodTriplets = countGoodTriplets;
 
 function countGoodTriplets(arr, a, b, c) {
   let count = 0;

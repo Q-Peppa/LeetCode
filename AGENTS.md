@@ -4,23 +4,23 @@
 
 ```bash
 # Format specific file(s) - USE THIS for single file changes
-bun exec biome format --write src/<problem-number>.js
+bun biome format --write src/<problem-number>.js
 
 # Format multiple specific files
-bun exec biome format --write src/1984.js src/1985.js
+bun biome format --write src/1984.js src/1985.js
 
 # Format all JavaScript files (use sparingly)
-pnpm biome-fix
+bun biome-fix
 # Or: biome format --write src
 
 # Lint/check specific file
-biome check src/<problem-number>.js
+bun biome check src/<problem-number>.js
 
 # Fix both formatting and linting for specific file
-biome check --write src/<problem-number>.js
+bun biome check --write src/<problem-number>.js
 
 # Test a specific solution
-node src/<problem-number>.js
+bun src/<problem-number>.js
 
 # Run lint-staged (pre-commit)
 bun lint-staged
