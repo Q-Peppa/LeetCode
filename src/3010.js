@@ -21,4 +21,4 @@ var minimumCost = function (nums) {
 
 console.log(minimumCost([1, 2, 3, 12]), 6, 'ans is 6');
 console.log(minimumCost([5, 4, 3]), 12, 'ans is 12');
-console.log(minimumCost([10, 3, 1, 1]), 14, 'ans is 14');
+console.log(minimumCost([10, 3, 1, 1]), 12, 'ans is 12');
