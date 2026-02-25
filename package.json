@@ -14,9 +14,9 @@
   },
   "homepage": "https://github.com/Q-Peppa/LeetCode#readme",
   "devDependencies": {
-    "@biomejs/biome": "^2.3.11",
-    "@commitlint/cli": "^20.3.1",
-    "@commitlint/config-conventional": "^20.3.1",
+    "@biomejs/biome": "^2.4.4",
+    "@commitlint/cli": "^20.4.2",
+    "@commitlint/config-conventional": "^20.4.2",
     "lint-staged": "^16.2.7",
     "simple-git-hooks": "^2.13.1"
   },
@@ -25,11 +25,10 @@
   },
   "scripts": {
     "biome-fix": "biome format --write src",
-    "biome-format-check": "biome format ./src",
-    "prepare": "husky"
+    "biome-format-check": "biome format ./src"
   },
   "type": "module",
-  "simple-git-hooks":{
+  "simple-git-hooks": {
     "pre-commit": "bun lint-staged",
     "commit-msg": "bun commitlint --edit $1"
   }
