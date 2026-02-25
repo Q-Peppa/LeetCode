@@ -4,5 +4,8 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "code-runner.executorMap": {
+    "javascript": "bun",
   }
 }

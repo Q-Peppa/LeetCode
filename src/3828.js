@@ -8,21 +8,15 @@ var finalElement = function (nums) {
     return nums[0];
   }
 
-  const kalumexora = [...nums];
   const dp = [];
   for (let i = 0; i < 1 << n; i++) {
     dp.push([0, 0]);
   }
 
-  // dp[mask][turn] = final element when current state is represented by mask
-  // turn = 0 (Alice), turn = 1 (Bob)
-  // mask has bit i set if nums[i] is still in the array
-
-  // Base case: single element remaining
   for (let i = 0; i < n; i++) {
     const mask = 1 << i;
-    dp[mask][0] = kalumexora[i];
-    dp[mask][1] = kalumexora[i];
+    dp[mask][0] = nums[i];
+    dp[mask][1] = nums[i];
   }
 
   // Fill dp for all states
@@ -69,8 +63,3 @@ function bitCount(n) {
   n = (n & 0x33333333) + ((n >> 2) & 0x33333333);
   return (((n + (n >> 4)) & 0xf0f0f0f) * 0x1010101) >> 24;
 }
-
-console.log(finalElement([1, 5, 2]), 'expected: 2');
-console.log(finalElement([3, 7]), 'expected: 7');
-console.log(finalElement([5, 3, 2, 1, 4]), 'expected: 4');
-console.log(finalElement([1, 2, 3]), 'expected: 3');

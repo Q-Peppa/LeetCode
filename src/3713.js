@@ -1,3 +1,8 @@
+/**
+ *
+ * @param {string} s
+ * @returns {number}
+ */
 var longestBalanced = function (s) {
   const n = s.length;
   let res = 0;
