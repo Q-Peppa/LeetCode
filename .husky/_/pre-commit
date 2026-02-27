@@ -9,4 +9,4 @@ if [ -f "$SIMPLE_GIT_HOOKS_RC" ]; then
     . "$SIMPLE_GIT_HOOKS_RC"
 fi
 
-npx @biomejs/biome check --staged --write --no-errors-on-unmatched
+staged=$(git diff --name-only --cached --diff-filter=ACMR); npx @biomejs/biome check --staged --write --no-errors-on-unmatched; [ -z "$staged" ] || echo "$staged" | xargs git add --
