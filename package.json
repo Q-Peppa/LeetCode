@@ -29,7 +29,7 @@
   },
   "type": "module",
   "simple-git-hooks": {
-    "pre-commit": "npx @biomejs/biome check --staged --write --no-errors-on-unmatched",
+    "pre-commit": "staged=$(git diff --name-only --cached --diff-filter=ACMR); npx @biomejs/biome check --staged --write --no-errors-on-unmatched; [ -z \"$staged\" ] || echo \"$staged\" | xargs git add --",
     "commit-msg": "bun commitlint --edit $1"
   }
 }
