@@ -14,6 +14,7 @@ JavaScript, plus reusable utilities for common data structures.
 	union-find)
 - [src/contest/](src/contest/) — weekly and biweekly contest submissions
 - [contest/](contest/) — additional contest archives
+- [docs/priority-queue-tutorial.md](docs/priority-queue-tutorial.md) — datastructures-js priority queue tutorial
 
 ## Getting started
 
