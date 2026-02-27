@@ -3,40 +3,60 @@
  * @param {string} t
  * @return {string}
  */
-const minWindow = function (s, t) {
-  const map = new Map();
+var minWindow = function (s, t) {
+  const need = new Map();
   for (let i = 0; i < t.length; i++) {
-    if (map.has(t[i])) {
-      map.set(t[i], map.get(t[i]) + 1);
-    } else {
-      map.set(t[i], 1);
-    }
+    need.set(t[i], (need.get(t[i]) ?? 0) + 1);
   }
+
   let left = 0;
-  let right = 0;
-  let min = s.length + 1;
-  let count = 0;
-  while (right < s.length) {
-    if (map.has(s[right])) {
-      map.set(s[right], map.get(s[right]) - 1);
-      if (map.get(s[right]) >= 0) {
-        count++;
+  let matched = 0;
+  let bestLeft = 0;
+  let bestLen = Number.POSITIVE_INFINITY;
+
+  for (let right = 0; right < s.length; right++) {
+    const c = s[right];
+    if (need.has(c)) {
+      need.set(c, need.get(c) - 1);
+      if (need.get(c) >= 0) {
+        matched++;
       }
     }
-    while (count === t.length) {
-      if (right - left + 1 < min) {
-        min = right - left + 1;
+
+    while (matched === t.length) {
+      const len = right - left + 1;
+      if (len < bestLen) {
+        bestLen = len;
+        bestLeft = left;
       }
-      if (map.has(s[left])) {
-        map.set(s[left], map.get(s[left]) + 1);
-        if (map.get(s[left]) > 0) {
-          count--;
+
+      const d = s[left];
+      if (need.has(d)) {
+        need.set(d, need.get(d) + 1);
+        if (need.get(d) > 0) {
+          matched--;
         }
       }
       left++;
     }
-    right++;
   }
-  return min === s.length + 1 ? '' : s.substring(left - 1, left - 1 + min);
+
+  return bestLen === Number.POSITIVE_INFINITY
+    ? ''
+    : s.slice(bestLeft, bestLeft + bestLen);
 };
-console.log(minWindow('a', 'a'));
+
+const testCases = [
+  ['ADOBECODEBANC', 'ABC', 'BANC'],
+  ['a', 'a', 'a'],
+  ['a', 'aa', ''],
+  ['ab', 'b', 'b'],
+];
+
+for (const [s, t, expected] of testCases) {
+  const actual = minWindow(s, t);
+  console.log(actual === expected, { s, t, actual, expected });
+}
+
+// Time complexity: O(|s| + |t|)
+// Space complexity: O(|charset of t|)

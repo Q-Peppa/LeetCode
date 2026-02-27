@@ -1,7 +1,7 @@
 {
   "name": "leetcode",
   "version": "1.0.0",
-  "description": "> leet code",
+  "description": "> leetcode",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Q-Peppa/LeetCode.git"
