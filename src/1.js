@@ -15,8 +15,8 @@ var twoSum = function (nums, target) {
   return [];
 };
 
-console.log(twoSum([2, 7, 11, 15], 9), '1', 'ans is [0,1]');
+console.log(twoSum([2, 7, 11, 15], 9), '1', 'answer is [1,0]');
 
-console.log(twoSum([3, 2, 4], 6), '2', 'ans is [1,2]');
+console.log(twoSum([3, 2, 4], 6), '2', 'answer is [2,1]');
 
-console.log(twoSum([3, 3], 6), '3', 'ans is [0,1]');
+console.log(twoSum([3, 3], 6), '3', 'answer is [1,0]');
