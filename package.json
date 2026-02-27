@@ -17,7 +17,6 @@
     "@biomejs/biome": "^2.4.4",
     "@commitlint/cli": "^20.4.2",
     "@commitlint/config-conventional": "^20.4.2",
-    "lint-staged": "^16.2.7",
     "simple-git-hooks": "^2.13.1"
   },
   "dependencies": {
@@ -25,11 +24,12 @@
   },
   "scripts": {
     "biome-fix": "biome format --write src",
-    "biome-format-check": "biome format ./src"
+    "biome-format-check": "biome format ./src",
+    "prepare": "bunx simple-git-hooks"
   },
   "type": "module",
   "simple-git-hooks": {
-    "pre-commit": "bun lint-staged",
+    "pre-commit": "npx @biomejs/biome check --staged --write --no-errors-on-unmatched",
     "commit-msg": "bun commitlint --edit $1"
   }
 }
