@@ -26,7 +26,7 @@ bun src/<problem-number>.js
 bun lint-staged
 ```
 
-**IMPORTANT**: Always format only the file(s) you modified, not the entire src directory. This is faster and avoids unnecessary changes.
+**IMPORTANT (AI Execution Policy)**: AI agents should not run any `biome` format/check commands automatically after code changes. Finish the code implementation directly; run Biome only when explicitly requested by the user.
 
 ## Code Style Guidelines
 
@@ -139,7 +139,6 @@ Types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert
 
 3. **Verification**:
    - Run `node src/<problem>.js` to test
-   - Run `biome format --write src/<problem>.js` to format only the changed file
    - Verify complexity analysis is included
 
 ## Best Practices
