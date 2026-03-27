@@ -1,2 +1,2 @@
-# Normalize text files in the index and check out CRLF in the working tree
-* text=auto eol=crlf
+# Normalize text files in the index and check out LF in the working tree
+* text=auto eol=lf

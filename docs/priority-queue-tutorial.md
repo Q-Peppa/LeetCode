@@ -5,7 +5,7 @@
 ## 1. 安装与导入
 
 ```bash
-pnpm add @datastructures-js/priority-queue
+npm install @datastructures-js/priority-queue
 ```
 
 ```js

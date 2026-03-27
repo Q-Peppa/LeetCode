@@ -17,6 +17,7 @@
     "url": "https://github.com/Q-Peppa/LeetCode/issues"
   },
   "homepage": "https://github.com/Q-Peppa/LeetCode#readme",
+  "packageManager": "npm@11.12.1",
   "devDependencies": {
     "@biomejs/biome": "^2.4.9",
     "@commitlint/cli": "^20.4.2",
@@ -27,13 +28,14 @@
     "datastructures-js": "^13.0.0"
   },
   "scripts": {
-    "fix": "biome format --write src",
-    "biome-format-check": "biome format ./src",
-    "prepare": "npx simple-git-hooks"
+    "format": "biome format --write src",
+    "check": "biome check src",
+    "check:write": "biome check --write src",
+    "prepare": "simple-git-hooks"
   },
   "type": "module",
   "simple-git-hooks": {
-    "pre-commit": "staged=$(git diff --name-only --cached --diff-filter=ACMR); npx @biomejs/biome check --staged --write --no-errors-on-unmatched; [ -z \"$staged\" ] || echo \"$staged\" | xargs git add --",
-    "commit-msg": "npx commitlint --edit $1"
+    "pre-commit": "npx @biomejs/biome check --staged --write --no-errors-on-unmatched && staged=$(git diff --name-only --cached --diff-filter=ACMR) && { [ -z \"$staged\" ] || printf '%s\\n' \"$staged\" | while IFS= read -r file; do [ -z \"$file\" ] || git add -- \"$file\"; done; }",
+    "commit-msg": "npx commitlint --edit \"$1\""
   }
 }
