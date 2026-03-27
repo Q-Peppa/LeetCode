@@ -4,26 +4,25 @@
 
 ```bash
 # Format specific file(s) - USE THIS for single file changes
-bun biome format --write src/<problem-number>.js
+npm exec -- biome format --write src/<problem-number>.js
 
 # Format multiple specific files
-bun biome format --write src/1984.js src/1985.js
+npm exec -- biome format --write src/1984.js src/1985.js
 
 # Format all JavaScript files (use sparingly)
-bun biome-fix
-# Or: biome format --write src
+npm run format
 
 # Lint/check specific file
-bun biome check src/<problem-number>.js
+npm exec -- biome check src/<problem-number>.js
 
 # Fix both formatting and linting for specific file
-bun biome check --write src/<problem-number>.js
+npm exec -- biome check --write src/<problem-number>.js
 
 # Test a specific solution
-bun src/<problem-number>.js
+node src/<problem-number>.js
 
-# Run lint-staged (pre-commit)
-bun lint-staged
+# Run project-wide checks
+npm run check
 ```
 
 **IMPORTANT (AI Execution Policy)**: AI agents should not run any `biome` format/check commands automatically after code changes. Finish the code implementation directly; run Biome only when explicitly requested by the user.
@@ -115,7 +114,7 @@ console.log(twoSum([3, 2, 4], 6), "2", "ans is [1,2]");
 
 ## Pre-commit Hooks
 
-Husky runs `bun lint-staged` before each commit:
+simple-git-hooks runs Biome on staged files before each commit:
 1. Formats all staged JS files with Biome
 2. Runs Biome linter on staged files
 
@@ -156,7 +155,7 @@ Types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert
 ## Environment
 
 - **Runtime**: Node.js 22.14.0 with `--harmony` flag
-- **Package Manager**: pnpm (primary), bun (for hooks)
+- **Package Manager**: npm 11.x
 - **Preloaded**: lodash.js 4.17.21
 - **datastructures-js**: @datastructures-js/binary-search-tree, deque, graph, heap, linked-list, priority-queue, queue, set, stack, trie
 - **Note**: For Binary Search Tree, Trie, and Graph, import explicitly to avoid name conflicts

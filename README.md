@@ -21,12 +21,12 @@ JavaScript, plus reusable utilities for common data structures.
 Prerequisites:
 
 - Node.js 22.x
-- pnpm (recommended)
+- npm 11.x
 
 Install dependencies:
 
 ```bash
-pnpm install
+npm install
 ```
 
 ## Run a solution
@@ -50,10 +50,13 @@ This project uses Biome for formatting and linting.
 
 ```bash
 # Format all JS files in src
-pnpm biome-fix
+npm run format
 
 # Lint without writing changes
-biome check src
+npm run check
+
+# Fix formatting and lint issues
+npm run check:write
 ```
 
 ## Conventions
