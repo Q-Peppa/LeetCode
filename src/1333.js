@@ -21,33 +21,28 @@ import _ from 'lodash-es';
  * @param {number} maxDistance
  * @return {number[]}
  */
-var filterRestaurants = function (
-  restaurants,
-  veganFriendly,
-  maxPrice,
-  maxDistance,
-) {
-  restaurants = restaurants
-    .filter((e) => e[2] >= veganFriendly)
-    .filter((e) => e[3] <= maxPrice)
-    .filter((e) => e[4] <= maxDistance);
+var filterRestaurants = (restaurants, veganFriendly, maxPrice, maxDistance) => {
+	restaurants = restaurants
+		.filter((e) => e[2] >= veganFriendly)
+		.filter((e) => e[3] <= maxPrice)
+		.filter((e) => e[4] <= maxDistance);
 
-  restaurants = _.orderBy(restaurants, [1, 0], ['desc', 'desc']);
-  // console.log(restaurants)
-  return _.map(restaurants, 0);
+	restaurants = _.orderBy(restaurants, [1, 0], ['desc', 'desc']);
+	// console.log(restaurants)
+	return _.map(restaurants, 0);
 };
 
 console.log(
-  filterRestaurants(
-    [
-      [1, 4, 1, 40, 10],
-      [2, 8, 0, 50, 5],
-      [3, 8, 1, 30, 4],
-      [4, 10, 0, 10, 3],
-      [5, 1, 1, 15, 1],
-    ],
-    1,
-    50,
-    10,
-  ), // [3,1,5]
+	filterRestaurants(
+		[
+			[1, 4, 1, 40, 10],
+			[2, 8, 0, 50, 5],
+			[3, 8, 1, 30, 4],
+			[4, 10, 0, 10, 3],
+			[5, 1, 1, 15, 1],
+		],
+		1,
+		50,
+		10,
+	), // [3,1,5]
 );

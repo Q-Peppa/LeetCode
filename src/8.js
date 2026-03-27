@@ -2,6 +2,4 @@
  * @param {string} s
  * @return {number}
  */
-var myAtoi = function (s) {
-  return parseInt(s);
-};
+var myAtoi = (s) => parseInt(s, 10);

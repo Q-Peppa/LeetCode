@@ -23,82 +23,82 @@
  * @param {string[]} queries
  * @return {string[]}
  */
-var spellchecker = function (wordlist, queries) {
-  // 完全匹配（区分大小写）
-  const exactMatch = new Set(wordlist);
+var spellchecker = (wordlist, queries) => {
+	// 完全匹配（区分大小写）
+	const exactMatch = new Set(wordlist);
 
-  // 大小写不匹配（key: 小写，value: 第一个出现的原始单词）
-  const caseInsensitive = new Map();
+	// 大小写不匹配（key: 小写，value: 第一个出现的原始单词）
+	const caseInsensitive = new Map();
 
-  // 元音错误匹配（key: 元音替换为通配符后的字符串，value: 第一个出现的原始单词）
-  const vowelError = new Map();
+	// 元音错误匹配（key: 元音替换为通配符后的字符串，value: 第一个出现的原始单词）
+	const vowelError = new Map();
 
-  // 将元音替换为通配符的函数
-  const replaceVowels = (str) => {
-    return str.toLowerCase().replace(/[aeiou]/g, '*');
-  };
+	// 将元音替换为通配符的函数
+	const replaceVowels = (str) => {
+		return str.toLowerCase().replace(/[aeiou]/g, '*');
+	};
 
-  // 预处理 wordlist
-  for (const word of wordlist) {
-    // 处理大小写不匹配
-    const lower = word.toLowerCase();
-    if (!caseInsensitive.has(lower)) {
-      caseInsensitive.set(lower, word);
-    }
+	// 预处理 wordlist
+	for (const word of wordlist) {
+		// 处理大小写不匹配
+		const lower = word.toLowerCase();
+		if (!caseInsensitive.has(lower)) {
+			caseInsensitive.set(lower, word);
+		}
 
-    // 处理元音错误
-    const vowelKey = replaceVowels(word);
-    if (!vowelError.has(vowelKey)) {
-      vowelError.set(vowelKey, word);
-    }
-  }
+		// 处理元音错误
+		const vowelKey = replaceVowels(word);
+		if (!vowelError.has(vowelKey)) {
+			vowelError.set(vowelKey, word);
+		}
+	}
 
-  // 处理每个查询
-  return queries.map((query) => {
-    // 优先级1：完全匹配
-    if (exactMatch.has(query)) {
-      return query;
-    }
+	// 处理每个查询
+	return queries.map((query) => {
+		// 优先级1：完全匹配
+		if (exactMatch.has(query)) {
+			return query;
+		}
 
-    // 优先级2：大小写不匹配
-    const lowerQuery = query.toLowerCase();
-    if (caseInsensitive.has(lowerQuery)) {
-      return caseInsensitive.get(lowerQuery);
-    }
+		// 优先级2：大小写不匹配
+		const lowerQuery = query.toLowerCase();
+		if (caseInsensitive.has(lowerQuery)) {
+			return caseInsensitive.get(lowerQuery);
+		}
 
-    // 优先级3：元音错误
-    const vowelKey = replaceVowels(query);
-    if (vowelError.has(vowelKey)) {
-      return vowelError.get(vowelKey);
-    }
+		// 优先级3：元音错误
+		const vowelKey = replaceVowels(query);
+		if (vowelError.has(vowelKey)) {
+			return vowelError.get(vowelKey);
+		}
 
-    // 无匹配
-    return '';
-  });
+		// 无匹配
+		return '';
+	});
 };
 
 const wordlist = ['KiTe', 'kite', 'hare', 'Hare'];
 const queries = [
-  'kite',
-  'Kite',
-  'KiTe',
-  'Hare',
-  'HARE',
-  'Hear',
-  'hear',
-  'keti',
-  'keet',
-  'keto',
+	'kite',
+	'Kite',
+	'KiTe',
+	'Hare',
+	'HARE',
+	'Hear',
+	'hear',
+	'keti',
+	'keet',
+	'keto',
 ];
 console.log(spellchecker(wordlist, queries), [
-  'kite',
-  'KiTe',
-  'KiTe',
-  'Hare',
-  'hare',
-  '',
-  '',
-  'KiTe',
-  '',
-  'KiTe',
+	'kite',
+	'KiTe',
+	'KiTe',
+	'Hare',
+	'hare',
+	'',
+	'',
+	'KiTe',
+	'',
+	'KiTe',
 ]);

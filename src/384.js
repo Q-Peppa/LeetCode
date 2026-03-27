@@ -2,23 +2,23 @@
  * @param {number[]} nums
  */
 class Solution {
-  constructor(nums) {
-    this.nums = [...nums];
-    this.ans = [...nums];
-  }
-  /**
-   * @return {number[]}
-   */
-  reset() {
-    this.ans = [...this.nums];
-    return this.ans;
-  }
-  /**
-   * @return {number[]}
-   */
-  shuffle() {
-    return _.shuffle(this.ans);
-  }
+	constructor(nums) {
+		this.nums = [...nums];
+		this.ans = [...nums];
+	}
+	/**
+	 * @return {number[]}
+	 */
+	reset() {
+		this.ans = [...this.nums];
+		return this.ans;
+	}
+	/**
+	 * @return {number[]}
+	 */
+	shuffle() {
+		return _.shuffle(this.ans);
+	}
 }
 
 /**

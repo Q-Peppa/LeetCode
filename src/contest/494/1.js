@@ -2,6 +2,4 @@
  * @param {number[]} nums1
  * @return {boolean}
  */
-var uniformArray = function (nums1) {
-  return 1;
-};
+var uniformArray = (_nums1) => 1;

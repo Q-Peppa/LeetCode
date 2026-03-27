@@ -2,18 +2,18 @@
  * @param {string} s
  * @return {number}
  */
-var vowelConsonantScore = function (s) {
-  let vowels = 0,
-    consonants = 0;
-  for (let char of s) {
-    if ('aeiou'.includes(char)) {
-      vowels++;
-    } else if (char >= 'a' && char <= 'z') {
-      consonants++;
-    }
-  }
-  if (consonants === 0) return 0;
-  return Math.floor(vowels / consonants);
+var vowelConsonantScore = (s) => {
+	let vowels = 0,
+		consonants = 0;
+	for (const char of s) {
+		if ('aeiou'.includes(char)) {
+			vowels++;
+		} else if (char >= 'a' && char <= 'z') {
+			consonants++;
+		}
+	}
+	if (consonants === 0) return 0;
+	return Math.floor(vowels / consonants);
 };
 /**
  * 

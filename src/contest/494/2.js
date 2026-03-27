@@ -2,26 +2,26 @@
  * @param {number[]} nums1
  * @return {boolean}
  */
-var uniformArray = function (nums1) {
-  let minimumOdd = Infinity;
+var uniformArray = (nums1) => {
+	let minimumOdd = Infinity;
 
-  for (const num of nums1) {
-    if ((num & 1) === 1) {
-      minimumOdd = Math.min(minimumOdd, num);
-    }
-  }
+	for (const num of nums1) {
+		if ((num & 1) === 1) {
+			minimumOdd = Math.min(minimumOdd, num);
+		}
+	}
 
-  if (minimumOdd === Infinity) {
-    return true;
-  }
+	if (minimumOdd === Infinity) {
+		return true;
+	}
 
-  for (const num of nums1) {
-    if ((num & 1) === 0 && num < minimumOdd) {
-      return false;
-    }
-  }
+	for (const num of nums1) {
+		if ((num & 1) === 0 && num < minimumOdd) {
+			return false;
+		}
+	}
 
-  return true;
+	return true;
 };
 
 console.log(uniformArray([1]), 'case1', 'ans = true');

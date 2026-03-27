@@ -3,6 +3,6 @@
  * @param {number} threshold
  * @return {number}
  */
-var maxSideLength = function (mat, threshold) {
-  // TODO
+var maxSideLength = (_mat, _threshold) => {
+	// TODO
 };

@@ -1,11 +1,11 @@
 {
-  "chat.fontSize": 20,
-  "chat.fontFamily": "Maple Mono Normal NL NF CN Light",
-  "editor.fontSize": 26,
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  }
+	"chat.fontSize": 20,
+	"chat.fontFamily": "Maple Mono Normal NL NF CN Light",
+	"editor.fontSize": 26,
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	}
 }

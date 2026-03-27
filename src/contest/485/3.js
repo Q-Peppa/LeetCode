@@ -1,8 +1,8 @@
 import { MaxHeap } from 'datastructures-js/heap';
 
 var AuctionSystem = function () {
-  this.itemBids = new Map();
-  this.itemHeaps = new Map();
+	this.itemBids = new Map();
+	this.itemHeaps = new Map();
 };
 
 /**
@@ -12,19 +12,19 @@ var AuctionSystem = function () {
  * @return {void}
  */
 AuctionSystem.prototype.addBid = function (userId, itemId, bidAmount) {
-  let bids = this.itemBids.get(itemId);
-  if (!bids) {
-    bids = new Map();
-    this.itemBids.set(itemId, bids);
-  }
-  bids.set(userId, bidAmount);
+	let bids = this.itemBids.get(itemId);
+	if (!bids) {
+		bids = new Map();
+		this.itemBids.set(itemId, bids);
+	}
+	bids.set(userId, bidAmount);
 
-  let heap = this.itemHeaps.get(itemId);
-  if (!heap) {
-    heap = new MaxHeap((value) => (BigInt(value[0]) << 32n) + BigInt(value[1]));
-    this.itemHeaps.set(itemId, heap);
-  }
-  heap.insert([bidAmount, userId]);
+	let heap = this.itemHeaps.get(itemId);
+	if (!heap) {
+		heap = new MaxHeap((value) => (BigInt(value[0]) << 32n) + BigInt(value[1]));
+		this.itemHeaps.set(itemId, heap);
+	}
+	heap.insert([bidAmount, userId]);
 };
 
 /**
@@ -34,11 +34,11 @@ AuctionSystem.prototype.addBid = function (userId, itemId, bidAmount) {
  * @return {void}
  */
 AuctionSystem.prototype.updateBid = function (userId, itemId, newAmount) {
-  const bids = this.itemBids.get(itemId);
-  bids.set(userId, newAmount);
+	const bids = this.itemBids.get(itemId);
+	bids.set(userId, newAmount);
 
-  const heap = this.itemHeaps.get(itemId);
-  heap.insert([newAmount, userId]);
+	const heap = this.itemHeaps.get(itemId);
+	heap.insert([newAmount, userId]);
 };
 
 /**
@@ -47,8 +47,8 @@ AuctionSystem.prototype.updateBid = function (userId, itemId, newAmount) {
  * @return {void}
  */
 AuctionSystem.prototype.removeBid = function (userId, itemId) {
-  const bids = this.itemBids.get(itemId);
-  bids.delete(userId);
+	const bids = this.itemBids.get(itemId);
+	bids.delete(userId);
 };
 
 /**
@@ -56,19 +56,19 @@ AuctionSystem.prototype.removeBid = function (userId, itemId) {
  * @return {number}
  */
 AuctionSystem.prototype.getHighestBidder = function (itemId) {
-  const bids = this.itemBids.get(itemId);
-  if (!bids || bids.size === 0) return -1;
+	const bids = this.itemBids.get(itemId);
+	if (!bids || bids.size === 0) return -1;
 
-  const heap = this.itemHeaps.get(itemId);
+	const heap = this.itemHeaps.get(itemId);
 
-  while (heap && heap.root()) {
-    const [amount, userId] = heap.root();
-    const current = bids.get(userId);
-    if (current === amount) return userId;
-    heap.extractRoot();
-  }
+	while (heap?.root()) {
+		const [amount, userId] = heap.root();
+		const current = bids.get(userId);
+		if (current === amount) return userId;
+		heap.extractRoot();
+	}
 
-  return -1;
+	return -1;
 };
 
 /**

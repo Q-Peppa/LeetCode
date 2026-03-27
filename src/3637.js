@@ -2,38 +2,38 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-var isTrionic = function (nums) {
-  const n = nums.length;
-  if (n < 4) {
-    return false;
-  }
+var isTrionic = (nums) => {
+	const n = nums.length;
+	if (n < 4) {
+		return false;
+	}
 
-  let i = 0;
+	let i = 0;
 
-  // nums[0...p] strictly increasing
-  while (i + 1 < n && nums[i] < nums[i + 1]) {
-    i++;
-  }
-  const p = i;
-  if (p === 0) {
-    return false;
-  }
+	// nums[0...p] strictly increasing
+	while (i + 1 < n && nums[i] < nums[i + 1]) {
+		i++;
+	}
+	const p = i;
+	if (p === 0) {
+		return false;
+	}
 
-  // nums[p...q] strictly decreasing
-  while (i + 1 < n && nums[i] > nums[i + 1]) {
-    i++;
-  }
-  const q = i;
-  if (q === p || q === n - 1) {
-    return false;
-  }
+	// nums[p...q] strictly decreasing
+	while (i + 1 < n && nums[i] > nums[i + 1]) {
+		i++;
+	}
+	const q = i;
+	if (q === p || q === n - 1) {
+		return false;
+	}
 
-  // nums[q...n-1] strictly increasing
-  while (i + 1 < n && nums[i] < nums[i + 1]) {
-    i++;
-  }
+	// nums[q...n-1] strictly increasing
+	while (i + 1 < n && nums[i] < nums[i + 1]) {
+		i++;
+	}
 
-  return i === n - 1;
+	return i === n - 1;
 };
 
 console.log(isTrionic([1, 3, 2, 4]), '1', 'ans is true');

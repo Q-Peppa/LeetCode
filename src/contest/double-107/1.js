@@ -5,20 +5,20 @@
  * @returns {boolean}
  */
 const eqRe = (a, b) => {
-  return a === b.split('').reverse().join('');
+	return a === b.split('').reverse().join('');
 };
 /**
  * @param {string[]} words
  * @return {number}
  */
-var maximumNumberOfStringPairs = function (words) {
-  let ans = 0;
-  for (let i = 0; i < words.length; i++) {
-    for (let j = i + 1; j < words.length; j++) {
-      if (eqRe(words[i], words[j])) ans++;
-    }
-  }
-  return ans;
+var maximumNumberOfStringPairs = (words) => {
+	let ans = 0;
+	for (let i = 0; i < words.length; i++) {
+		for (let j = i + 1; j < words.length; j++) {
+			if (eqRe(words[i], words[j])) ans++;
+		}
+	}
+	return ans;
 };
 
 //["cd","ac","dc","ca","zz"]

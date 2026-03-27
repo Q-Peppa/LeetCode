@@ -3,7 +3,5 @@
  * @param {string} s
  * @return {boolean}
  */
-var isAcronym = function (words, s) {
-  return words.map((e) => e[0]).join('') === s;
-};
+var isAcronym = (words, s) => words.map((e) => e[0]).join('') === s;
 console.log(isAcronym(['an', 'apple'], 'aa'));

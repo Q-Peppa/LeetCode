@@ -2,19 +2,19 @@
  * @param {number} n
  * @return {number}
  */
-var concatenatedBinary = function (n) {
-  const MOD = 1000000007n;
-  let ans = 0n;
-  let bitLen = 0;
+var concatenatedBinary = (n) => {
+	const MOD = 1000000007n;
+	let ans = 0n;
+	let bitLen = 0;
 
-  for (let i = 1; i <= n; i++) {
-    if ((i & (i - 1)) === 0) {
-      bitLen++;
-    }
-    ans = ((ans << BigInt(bitLen)) + BigInt(i)) % MOD;
-  }
+	for (let i = 1; i <= n; i++) {
+		if ((i & (i - 1)) === 0) {
+			bitLen++;
+		}
+		ans = ((ans << BigInt(bitLen)) + BigInt(i)) % MOD;
+	}
 
-  return Number(ans);
+	return Number(ans);
 };
 
 console.log(concatenatedBinary(1), '1', 'ans is 1');

@@ -3,11 +3,11 @@
  * @param {number} right
  * @return {number}
  */
-const rangeBitwiseAnd = function (left, right) {
-  while (right > left) {
-    right &= right - 1;
-  }
-  return right;
+const rangeBitwiseAnd = (left, right) => {
+	while (right > left) {
+		right &= right - 1;
+	}
+	return right;
 };
 
 console.log(rangeBitwiseAnd(5, 7));

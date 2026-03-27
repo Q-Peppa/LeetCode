@@ -3,6 +3,4 @@
  * @param {number} t
  * @return {number}
  */
-var theMaximumAchievableX = function (num, t) {
-  return num + 2 * t;
-};
+var theMaximumAchievableX = (num, t) => num + 2 * t;

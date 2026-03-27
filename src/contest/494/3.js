@@ -3,30 +3,30 @@
  * @param {number} target
  * @return {number}
  */
-var minRemovals = function (nums, target) {
-  const maxXor = 1 << 14;
-  let dp = new Int16Array(maxXor).fill(-1);
-  dp[0] = 0;
+var minRemovals = (nums, target) => {
+	const maxXor = 1 << 14;
+	let dp = new Int16Array(maxXor).fill(-1);
+	dp[0] = 0;
 
-  for (const num of nums) {
-    const next = new Int16Array(dp);
+	for (const num of nums) {
+		const next = new Int16Array(dp);
 
-    for (let xorValue = 0; xorValue < maxXor; xorValue++) {
-      if (dp[xorValue] === -1) {
-        continue;
-      }
+		for (let xorValue = 0; xorValue < maxXor; xorValue++) {
+			if (dp[xorValue] === -1) {
+				continue;
+			}
 
-      next[xorValue ^ num] = Math.max(next[xorValue ^ num], dp[xorValue] + 1);
-    }
+			next[xorValue ^ num] = Math.max(next[xorValue ^ num], dp[xorValue] + 1);
+		}
 
-    dp = next;
-  }
+		dp = next;
+	}
 
-  if (dp[target] === -1) {
-    return -1;
-  }
+	if (dp[target] === -1) {
+		return -1;
+	}
 
-  return nums.length - dp[target];
+	return nums.length - dp[target];
 };
 
 console.log(minRemovals([1, 2, 3], 0), 'case1', 'ans = 0');

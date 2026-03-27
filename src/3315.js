@@ -1,21 +1,26 @@
+const findTrailingOnes = (p) => {
+	let k = 0;
+	while (((p >> k) & 1) === 1) {
+		k += 1;
+	}
+	return k;
+};
+
 /**
  * @param {number[]} nums
  * @return {number[]}
  */
-var minBitwiseArray = function (nums) {
-  return nums.map((p) =>
-    p === 2
-      ? -1
-      : ((t) =>
-          (t = (() => {
-            let k = 0;
-            while (((p >> k) & 1) === 1) k += 1;
-            return k;
-          })()) === 0
-            ? -1
-            : p - (1 << (t - 1)))(),
-  );
-};
+var minBitwiseArray = (nums) =>
+	nums.map((p) => {
+		if (p === 2) {
+			return -1;
+		}
+		const t = findTrailingOnes(p);
+		if (t === 0) {
+			return -1;
+		}
+		return p - (1 << (t - 1));
+	});
 console.log(minBitwiseArray([2, 3, 5, 7]), [-1, 1, 4, 3]);
 /**
  * You are given an array nums consisting of n prime integers.

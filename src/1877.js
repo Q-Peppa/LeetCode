@@ -2,14 +2,14 @@
  * @param {number[]} nums
  * @return {number}
  */
-var minPairSum = function (nums) {
-  nums.sort((a, b) => a - b);
-  let max = 0;
-  let n = nums.length;
-  for (let i = 0; i < n / 2; i++) {
-    max = Math.max(max, nums[i] + nums[n - 1 - i]);
-  }
-  return max;
+var minPairSum = (nums) => {
+	nums.sort((a, b) => a - b);
+	let max = 0;
+	const n = nums.length;
+	for (let i = 0; i < n / 2; i++) {
+		max = Math.max(max, nums[i] + nums[n - 1 - i]);
+	}
+	return max;
 };
 
 // The pair sum of a pair(a, b) is equal to a + b.The maximum pair sum is the largest pair sum in a list of pairs.
