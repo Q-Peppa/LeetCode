@@ -1,2 +1,2 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Normalize text files in the index and check out CRLF in the working tree
+* text=auto eol=crlf
