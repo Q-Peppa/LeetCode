@@ -1,7 +1,11 @@
 {
   "name": "leetcode",
   "version": "1.0.0",
-  "description": "> leetcode",
+  "description": "> leet code",
+  "engines": {
+    "node": ">=22",
+    "npm": ">=11"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Q-Peppa/LeetCode.git"
@@ -14,7 +18,7 @@
   },
   "homepage": "https://github.com/Q-Peppa/LeetCode#readme",
   "devDependencies": {
-    "@biomejs/biome": "^2.4.4",
+    "@biomejs/biome": "^2.4.9",
     "@commitlint/cli": "^20.4.2",
     "@commitlint/config-conventional": "^20.4.2",
     "simple-git-hooks": "^2.13.1"
@@ -23,13 +27,13 @@
     "datastructures-js": "^13.0.0"
   },
   "scripts": {
-    "biome-fix": "biome format --write src",
+    "fix": "biome format --write src",
     "biome-format-check": "biome format ./src",
-    "prepare": "bunx simple-git-hooks"
+    "prepare": "npx simple-git-hooks"
   },
   "type": "module",
   "simple-git-hooks": {
     "pre-commit": "staged=$(git diff --name-only --cached --diff-filter=ACMR); npx @biomejs/biome check --staged --write --no-errors-on-unmatched; [ -z \"$staged\" ] || echo \"$staged\" | xargs git add --",
-    "commit-msg": "bun commitlint --edit $1"
+    "commit-msg": "npx commitlint --edit $1"
   }
 }
