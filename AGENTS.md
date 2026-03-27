@@ -35,7 +35,7 @@ npm run check
 - **Quotes**: Single quotes
 - **Semicolons**: Always required
 - **Trailing commas**: Required for multi-line structures
-- **Line endings**: CRLF
+- **Line endings**: LF
 - **Arrow function parentheses**: Always required
 
 ### Type Hints & Documentation
