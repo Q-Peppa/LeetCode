@@ -4,7 +4,7 @@
  * @param {number} query_glass
  * @return {number}
  */
-var champagneTower = (poured, query_row, query_glass) => {
+const champagneTower = (poured, query_row, query_glass) => {
 	const glasses = Array.from({ length: query_row + 1 }, () =>
 		Array(query_row + 1).fill(0),
 	);

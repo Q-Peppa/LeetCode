@@ -5,7 +5,7 @@
  * @param {number[]} vFences
  * @return {number}
  */
-var maximizeSquareArea = (m, n, hFences, vFences) => {
+const maximizeSquareArea = (m, n, hFences, vFences) => {
 	const mod = 10 ** 9 + 7;
 	hFences.sort((a, b) => a - b);
 	vFences.sort((a, b) => a - b);

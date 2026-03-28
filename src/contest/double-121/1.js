@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var missingInteger = (nums) => {
+const missingInteger = (nums) => {
 	const res = [];
 	let end = nums[0];
 	for (let i = 1; i < nums.length; i++) {

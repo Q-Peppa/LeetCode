@@ -11,7 +11,7 @@ const isPrime = (n) => {
  * @param {number[]} nums
  * @return {boolean}
  */
-var primeSubOperation = (nums) => {
+const primeSubOperation = (nums) => {
 	const n = nums.length;
 
 	let min = -1;

@@ -3,7 +3,7 @@
  * @param {string} pattern
  * @return {string[]}
  */
-var findAndReplacePattern = (words, pattern) => {
+const findAndReplacePattern = (words, pattern) => {
 	const map = new Map();
 	for (let i = 0; i < pattern.length; i++) {
 		if (!map.has(pattern[i])) {

@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number[][]}
  */
-var divideArray = (nums, k) => {
+const divideArray = (nums, k) => {
 	nums.sort((a, b) => a - b);
 	const l = nums.length;
 	if (l % 3 !== 0) return [];

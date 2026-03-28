@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var sumCounts = (nums) => {
+const sumCounts = (nums) => {
 	const mod = 10 ** 9 + 7;
 	const query = (i, j) => {
 		const slice = nums.slice(i, j + 1);

@@ -12,7 +12,7 @@
  * @param {string} s
  * @return {string[]}
  */
-var letterCasePermutation = (s) => {
+const letterCasePermutation = (s) => {
 	// 判断字符 A = 65
 	const ok = (c) => {
 		return c.charCodeAt() >= 65;

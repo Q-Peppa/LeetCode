@@ -2,7 +2,7 @@
  * @param {number[][]} intervals
  * @return {number[][]}
  */
-var merge = (intervals) => {
+const merge = (intervals) => {
 	if (intervals.length === 0) return [];
 	intervals.sort((a, b) => a[0] - b[0]);
 	const m = [],

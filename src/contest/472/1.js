@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-var constructTransformedArray = (nums) => {
+const constructTransformedArray = (nums) => {
 	const res = [];
 	const n = nums.length;
 	for (let i = 0; i < n; i++) {

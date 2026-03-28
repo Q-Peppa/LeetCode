@@ -2,7 +2,7 @@
  * @param {string[][]} access_times
  * @return {string[]}
  */
-var findHighAccessEmployees = (access_times) => {
+const findHighAccessEmployees = (access_times) => {
 	const map = {};
 	const diffMinuets = (a, b) => {
 		// a 0532 b 0621

@@ -1,4 +1,4 @@
-var maximumXorProduct = (a, b, n) => {
+const maximumXorProduct = (a, b, n) => {
 	const m = 1000000007;
 	a = BigInt(a);
 	b = BigInt(b);

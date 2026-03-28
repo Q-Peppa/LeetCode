@@ -3,7 +3,7 @@
  * @param {number} children
  * @return {number}
  */
-var distMoney = (money, children) => {
+const distMoney = (money, children) => {
 	if (money < children) return -1;
 	if (money < 8) return 0;
 	let rest = money - children;

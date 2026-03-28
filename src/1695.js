@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var maximumUniqueSubarray = (nums) => {
+const maximumUniqueSubarray = (nums) => {
 	let l, r;
 	const s = new Set();
 	let res = 0;

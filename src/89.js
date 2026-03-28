@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number[]}
  */
-var grayCode = (n) => {
+const grayCode = (n) => {
 	if (n === 0) return [0];
 	const result = [0];
 	for (let i = 0; i < n; i++) {

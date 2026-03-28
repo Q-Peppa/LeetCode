@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var maxSubArray = (nums) => {
+const maxSubArray = (nums) => {
 	if (nums.length === 0) return 0;
 	let maxEndingHere = nums[0];
 	let maxSoFar = nums[0];

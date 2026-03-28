@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var countWays = (nums) => {
+const countWays = (nums) => {
 	const n = nums.length;
 	if (n === 1) return 1;
 	nums.sort((a, b) => a - b);

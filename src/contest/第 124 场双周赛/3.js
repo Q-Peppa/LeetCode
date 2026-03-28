@@ -3,7 +3,7 @@
  * @return {number}
  */
 
-var maxOperations = (nums) => {
+const maxOperations = (nums) => {
 	const head = nums[0] + nums[1];
 	const tail = nums[nums.length - 1] + nums[nums.length - 2];
 	const headAddTail = nums[0] + nums[nums.length - 1];

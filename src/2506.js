@@ -2,7 +2,7 @@
  * @param {string[]} words
  * @return {number}
  */
-var similarPairs = (words) => {
+const similarPairs = (words) => {
 	const n = words.length;
 	const w = [];
 	for (let i = 0; i < n; i++) {

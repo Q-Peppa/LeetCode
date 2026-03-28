@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var minimumCost = (nums) => {
+const minimumCost = (nums) => {
 	const n = nums.length;
 	let min1 = Infinity;
 	let min2 = Infinity;

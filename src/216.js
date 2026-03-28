@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number[][]}
  */
-var combinationSum3 = (k, target) => {
+const combinationSum3 = (k, target) => {
 	const res = [],
 		cur = [];
 

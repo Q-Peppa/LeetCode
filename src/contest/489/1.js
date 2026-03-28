@@ -2,7 +2,7 @@
  * @param {number[]} bulbs
  * @return {number[]}
  */
-var toggleLightBulbs = (bulbs) => {
+const toggleLightBulbs = (bulbs) => {
 	const res = [],
 		t = {};
 	for (const bulb of bulbs) {

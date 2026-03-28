@@ -7,7 +7,7 @@ const toSorted = (nums) => {
  * @param {number[]} nums
  * @return {number}
  */
-var sumImbalanceNumbers = (nums) => {
+const sumImbalanceNumbers = (nums) => {
 	let ans = 0;
 	const check = (sorted) => {
 		let unblanced = 0;

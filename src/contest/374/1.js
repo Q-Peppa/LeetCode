@@ -2,7 +2,7 @@
  * @param {number[]} mountain
  * @return {number[]}
  */
-var findPeaks = (mountain) => {
+const findPeaks = (mountain) => {
 	// if (mountain.length <= 2) return [];
 	const res = [];
 	for (let i = 1; i < mountain.length - 1; i++) {

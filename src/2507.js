@@ -9,7 +9,7 @@ const isPrime = (n) => {
  * @param {number} n
  * @return {number}
  */
-var smallestValue = (n) => {
+const smallestValue = (n) => {
 	if (isPrime(n)) return n;
 	// Continuously replace n with the sum of its prime factors.
 	const copy = n;

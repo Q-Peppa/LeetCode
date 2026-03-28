@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-var numSteps = (s) => {
+const numSteps = (s) => {
 	let steps = 0;
 	let carry = 0;
 	for (let i = s.length - 1; i > 0; i--) {

@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var maximumLength = (nums) => {
+const maximumLength = (nums) => {
 	nums = nums.map((e) => e & 1);
 	const [a, b] = helper(nums);
 	const c = helper2(nums);

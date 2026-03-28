@@ -6,7 +6,7 @@ const isOnlyNumber = (str) => {
  * @param {string[]} strs
  * @return {number}
  */
-var maximumValue = (strs) => {
+const maximumValue = (strs) => {
 	let max = 0;
 	for (let i = 0; i < strs.length; i++) {
 		const str = strs[i];

@@ -3,7 +3,7 @@
  * @param {number} additionalTank
  * @return {number}
  */
-var distanceTraveled = (mainTank, additionalTank) => {
+const distanceTraveled = (mainTank, additionalTank) => {
 	let ans = 0;
 	while (mainTank >= 5) {
 		mainTank -= 5;

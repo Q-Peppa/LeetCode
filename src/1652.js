@@ -5,7 +5,7 @@ import _ from 'lodash';
  * @param {number} k
  * @return {number[]}
  */
-var decrypt = (code, k) => {
+const decrypt = (code, k) => {
 	const l = code.length;
 	if (k === 0) return new Array(code.length).fill(0);
 	const r = new Array(code.length).fill(0);

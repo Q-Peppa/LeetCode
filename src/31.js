@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
  */
-var nextPermutation = (nums) => {
+const nextPermutation = (nums) => {
 	const swap = (i, j) => {
 		const temp = nums[i];
 		nums[i] = nums[j];

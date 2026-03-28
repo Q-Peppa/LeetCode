@@ -1,9 +1,9 @@
 /**
  * @param {string[]} words
- * @param {character} x
+ * @param {string} x
  * @return {number[]}
  */
-var findWordsContaining = (words, x) => {
+const findWordsContaining = (words, x) => {
 	const res = [];
 	let index = 0;
 	for (const e of words) {

@@ -1,4 +1,4 @@
-var maxScore = (nums1, nums2, k) => {
+const maxScore = (nums1, nums2, k) => {
 	const n = nums1.length;
 	const m = nums2.length;
 

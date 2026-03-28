@@ -2,7 +2,7 @@
  * @param {number[][]} grid
  * @return {number}
  */
-var maxScore = (grid) => {
+const maxScore = (grid) => {
 	// 注意!!!, 此代码无法通过测试 , 但是这一题的理念是, a2 - a1 + a3 - a2.... 所以实质是求一个起点方块,
 	// 一个终点方块, 使得终点方块的值最大, 起点方块的值最小 , 但是每次只能向下或者向右移动.
 	const m = grid.length;

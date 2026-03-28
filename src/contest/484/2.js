@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var centeredSubarrays = (nums) => {
+const centeredSubarrays = (nums) => {
 	let ans = 0;
 	const n = nums.length;
 	for (let i = 0; i < n; i++) {

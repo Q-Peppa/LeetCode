@@ -4,7 +4,7 @@ import { Union } from './utils/union.js';
  * @param {number[][]} isConnected
  * @return {number}
  */
-var findCircleNum = (isConnected) => {
+const findCircleNum = (isConnected) => {
 	const n = isConnected.length;
 	const union = new Union(n);
 

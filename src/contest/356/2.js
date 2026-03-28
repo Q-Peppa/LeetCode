@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var countCompleteSubarrays = (nums) => {
+const countCompleteSubarrays = (nums) => {
 	const size = new Set(nums).size;
 	let ans = 0;
 	const l = nums.length;

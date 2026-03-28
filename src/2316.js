@@ -5,7 +5,7 @@ import * as assert from 'node:assert';
  * @param {number[][]} edges
  * @return {number}
  */
-var countPairs = (n, edges) => {
+const countPairs = (n, edges) => {
 	const f = new Array(n).fill(0).map((_, i) => i);
 	const find = (x) => {
 		while (x !== f[x]) {

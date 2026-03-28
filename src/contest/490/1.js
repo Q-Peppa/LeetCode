@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var scoreDifference = (nums) => {
+const scoreDifference = (nums) => {
 	let f, s;
 	f = s = 0;
 	let b = true;

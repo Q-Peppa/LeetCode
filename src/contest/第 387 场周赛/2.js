@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number}
  */
-var countSubmatrices = (grid, k) => {
+const countSubmatrices = (grid, k) => {
 	const m = grid.length;
 	for (let i = 0; i < m; i++) {
 		for (let j = 0; j < grid[i].length; j++) {

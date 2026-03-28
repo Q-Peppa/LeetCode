@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var finalElement = (nums) => {
+const finalElement = (nums) => {
 	const n = nums.length;
 	if (n === 1) {
 		return nums[0];

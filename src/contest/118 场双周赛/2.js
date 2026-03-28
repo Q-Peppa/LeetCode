@@ -1,11 +1,11 @@
 /**
- * @param {number} n
- * @param {number} m
+ * @param _n
+ * @param _m
  * @param {number[]} hBars
  * @param {number[]} vBars
  * @return {number}
  */
-var maximizeSquareHoleArea = (_n, _m, hBars, vBars) => {
+const maximizeSquareHoleArea = (_n, _m, hBars, vBars) => {
 	hBars.sort((a, b) => a - b);
 	vBars.sort((a, b) => a - b);
 	const maxLen = (arr) => {

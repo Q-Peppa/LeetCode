@@ -4,7 +4,7 @@ import _ from 'lodash';
  * @param {number[]} nums
  * @return {number[]}
  */
-var numberGame = (nums) => {
+const numberGame = (nums) => {
 	nums.sort((a, b) => a - b);
 	nums = _.chunk(nums, 2);
 	nums = nums.map((e) => e.reverse());

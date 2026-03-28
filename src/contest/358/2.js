@@ -1,4 +1,4 @@
-var addTwoNumbers = (l1, l2) => {
+const addTwoNumbers = (l1, l2) => {
 	const reverseList = (head) => {
 		if (!head?.next) return head;
 		const newHead = reverseList(head.next);
@@ -40,7 +40,7 @@ function ListNode(val, next) {
  * @param {ListNode} head
  * @return {ListNode}
  */
-var doubleIt = (head) => addTwoNumbers(head, structuredClone(head));
+const doubleIt = (head) => addTwoNumbers(head, structuredClone(head));
 
 const ArrayToList = (arr) => {
 	const head = new ListNode(arr[0]);

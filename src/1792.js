@@ -3,7 +3,7 @@
  * @param {number} extraStudents
  * @return {number}
  */
-var maxAverageRatio = (classes, extraStudents) => {
+const maxAverageRatio = (classes, extraStudents) => {
 	const q = new PriorityQueue((a, b) => {
 		return (
 			(b[1] + 1) * b[1] * (a[1] - a[0]) < (a[1] + 1) * a[1] * (b[1] - b[0])

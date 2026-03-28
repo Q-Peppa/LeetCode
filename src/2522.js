@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number}
  */
-var minimumPartition = (s, k) => {
+const minimumPartition = (s, k) => {
 	const length = s.length;
 	const temp = [];
 	let i = 0,

@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var maxSelectedElements = (nums) => {
+const maxSelectedElements = (nums) => {
 	nums.sort((a, b) => a - b);
 	const dp = new Array(nums.length + 1).fill(1);
 	dp[0] = 1;

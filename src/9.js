@@ -2,7 +2,7 @@
  * @param {number} x
  * @return {boolean}
  */
-var isPalindrome = (x) => x >= 0 && ok(x);
+const isPalindrome = (x) => x >= 0 && ok(x);
 function ok(x) {
 	return x < 10 ? true : help(x) === x;
 }

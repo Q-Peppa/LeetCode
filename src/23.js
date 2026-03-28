@@ -584,7 +584,7 @@ class pri_que {
  * @param {ListNode[]} lists
  * @return {ListNode}
  */
-var mergeKLists = (lists) => {
+const mergeKLists = (lists) => {
 	const q = new pri_que((a, b) => a.val - b.val);
 	lists.forEach((list) => {
 		while (list) {

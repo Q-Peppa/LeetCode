@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number}
  */
-var minOperations = (s, k) => {
+const minOperations = (s, k) => {
 	const n = s.length;
 	if (k > n) {
 		return -1;

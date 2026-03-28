@@ -2,7 +2,7 @@
  * @param {string[]} s
  * @return {string}
  */
-var longestCommonPrefix = (s) => {
+const longestCommonPrefix = (s) => {
 	const str = `&${s.join('&')}`;
 	let maxStr = '';
 	let regStr = '&';

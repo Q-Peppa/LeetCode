@@ -2,7 +2,7 @@
  * @param {number[][]} grid
  * @return {number[]}
  */
-var findMissingAndRepeatedValues = (grid) => {
+const findMissingAndRepeatedValues = (grid) => {
 	const l = grid.length;
 	const m = new Map();
 	const res = [];

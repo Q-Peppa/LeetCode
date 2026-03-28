@@ -11,7 +11,7 @@ const bitCount = (k) => {
  * @param {number} k
  * @return {number}
  */
-var sumIndicesWithKSetBits = (nums, k) => {
+const sumIndicesWithKSetBits = (nums, k) => {
 	let ans = 0;
 	for (let i = 0; i < nums.length; i++) {
 		if (bitCount(i) === k) ans += nums[i];

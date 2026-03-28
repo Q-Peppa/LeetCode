@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number}
  */
-var numOfWays = (n) => {
+const numOfWays = (n) => {
 	const MOD = 1e9 + 7;
 	let a = BigInt(6); // patterns like ABA
 	let b = BigInt(6);

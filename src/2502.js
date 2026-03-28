@@ -1,7 +1,7 @@
 /**
  * @param {number} n
  */
-var Allocator = function (n) {
+const Allocator = function (n) {
 	this.n = new Array(n).fill(-1);
 };
 

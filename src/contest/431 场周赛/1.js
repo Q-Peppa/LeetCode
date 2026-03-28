@@ -8,7 +8,7 @@ const lcm = (a, b) => {
  * @param {number[]} nums
  * @return {number}
  */
-var maxLength = (nums) => {
+const maxLength = (nums) => {
 	let res = 0;
 	for (let i = 0; i < nums.length; i++) {
 		let pre = nums[i];

@@ -46,7 +46,7 @@ const s = (str) => {
  * @param {string[]} words
  * @return {number[]}
  */
-var numSmallerByFrequency = (queries, words) => {
+const numSmallerByFrequency = (queries, words) => {
 	const nums = words.map((w) => s(w));
 	nums.sort((a, b) => a - b);
 	return queries.map((e) => {

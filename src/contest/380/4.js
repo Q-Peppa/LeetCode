@@ -39,7 +39,7 @@ function kmp(source, pattern) {
  * @param {number} k
  * @return {number[]}
  */
-var beautifulIndices = (s, a, b, k) => {
+const beautifulIndices = (s, a, b, k) => {
 	const range = s.length - a.length;
 	const bindex = [],
 		aindex = [];

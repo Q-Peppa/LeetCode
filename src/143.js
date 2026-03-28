@@ -43,7 +43,7 @@ const mergeList = (l1, l2) => {
  * @param {ListNode} head
  * @return {void} Do not return anything, modify head in-place instead.
  */
-var reorderList = (head) => {
+const reorderList = (head) => {
 	if (!head?.next) return head;
 
 	const mid = middleList(head);

@@ -2,7 +2,7 @@
  * @param {number[][]} intervals
  * @return {number[][]}
  */
-var merge = (intervals) => {
+const merge = (intervals) => {
 	if (intervals.length === 0) return [];
 	intervals.sort((a, b) => a[0] - b[0]);
 	const m = [],
@@ -21,7 +21,7 @@ var merge = (intervals) => {
  * @param {number[][]} meetings
  * @return {number}
  */
-var countDays = (days, meetings) => {
+const countDays = (days, meetings) => {
 	// meetings[i] = [start_i, end_i]
 	meetings = merge(meetings);
 	let count = 0;

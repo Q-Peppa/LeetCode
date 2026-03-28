@@ -3,7 +3,7 @@
  * @param {string} num2
  * @return {string}
  */
-var multiply = (num1, num2) => {
+const multiply = (num1, num2) => {
 	if ('0' === num1 || '0' === num2) return '0';
 	if ('1' === num1) return num2;
 	if ('1' === num2) return num1;

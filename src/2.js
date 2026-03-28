@@ -3,7 +3,7 @@
  * @param {ListNode} l2
  * @return {ListNode}
  */
-var addTwoNumbers = (l1, l2) => {
+const addTwoNumbers = (l1, l2) => {
 	let res = new ListNode(0);
 	const ans = res;
 	ans.next = res;

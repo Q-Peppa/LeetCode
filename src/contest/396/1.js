@@ -1,4 +1,4 @@
-var isValid = (word) => {
+const isValid = (word) => {
 	const vowels = 'aeiou';
 	const consonants = 'bcdfghjklmnpqrstvwxyz';
 	let v = 0,

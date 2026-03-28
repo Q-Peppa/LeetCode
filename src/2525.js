@@ -5,7 +5,7 @@
  * @param {number} mass
  * @return {string}
  */
-var categorizeBox = (length, width, height, mass) => {
+const categorizeBox = (length, width, height, mass) => {
 	const total = length * width * height;
 	const max = 10 ** 9;
 	const isBulky =

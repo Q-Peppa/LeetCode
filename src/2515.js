@@ -4,7 +4,7 @@
  * @param {number} startIndex
  * @return {number}
  */
-var closetTarget = (words, target, startIndex) => {
+const closetTarget = (words, target, startIndex) => {
 	if (!words.includes(target)) return -1;
 	// 0-indexed circular string array words
 	let right = 0;

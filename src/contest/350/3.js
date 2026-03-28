@@ -3,7 +3,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var specialPerm = (nums) => {
+const specialPerm = (nums) => {
 	const ans = allPermutations(nums);
 	const M = 10 ** 9 + 7;
 	let res = 0;
@@ -23,7 +23,7 @@ var specialPerm = (nums) => {
 	}
 	return res;
 };
-var allPermutations = (nums) => {
+const allPermutations = (nums) => {
 	const ans = [];
 	const vis = [];
 	const dfs = (cur) => {

@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {string}
  */
-var lastNonEmptyString = (s) => {
+const lastNonEmptyString = (s) => {
 	let maxQ = 0,
 		feq = {};
 	for (const char of s) {

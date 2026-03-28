@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {string}
  */
-var shortestBeautifulSubstring = (s, k) => {
+const shortestBeautifulSubstring = (s, k) => {
 	const res = [];
 	let minL = 0;
 	const count = (ss) => {

@@ -10,7 +10,7 @@ const findTrailingOnes = (p) => {
  * @param {number[]} nums
  * @return {number[]}
  */
-var minBitwiseArray = (nums) =>
+const minBitwiseArray = (nums) =>
 	nums.map((p) => {
 		if (p === 2) {
 			return -1;

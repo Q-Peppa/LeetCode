@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number}
  */
-var smallestNumber = (n) => {
+const smallestNumber = (n) => {
 	const check = () => {
 		if (n === 1) return true;
 		return ((n + 1) & n) === 0;

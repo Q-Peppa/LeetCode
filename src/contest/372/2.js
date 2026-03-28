@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-var minimumSteps = (s) => {
+const minimumSteps = (s) => {
 	if (s.length === 1) return 0;
 	if (s.length === 2) return s === '10' ? 1 : 0;
 	let z = 0,

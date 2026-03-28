@@ -1,7 +1,7 @@
 /**
  * 随机哈希偏移版 - 解决 N 很大且要求绝对精度的场景
  */
-var countSequences = (nums, k) => {
+const countSequences = (nums, k) => {
 	const primeHashMap = new Map();
 	const getPrimeHash = (p) => {
 		if (!primeHashMap.has(p)) {

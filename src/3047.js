@@ -3,7 +3,7 @@
  * @param {number[][]} topRight
  * @return {number}
  */
-var largestSquareArea = (bottomLeft, topRight) => {
+const largestSquareArea = (bottomLeft, topRight) => {
 	let maxArea = 0;
 	const n = bottomLeft.length;
 

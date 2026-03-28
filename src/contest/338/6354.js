@@ -5,7 +5,7 @@
  * @param {number} k
  * @return {number}
  */
-var kItemsWithMaximumSum = (numOnes, numZeros, numNegOnes, k) => {
+const kItemsWithMaximumSum = (numOnes, numZeros, numNegOnes, k) => {
 	if (k <= numOnes) return k;
 	if (k <= numOnes + numZeros) return numOnes;
 	if (k <= numOnes + numZeros + numNegOnes)

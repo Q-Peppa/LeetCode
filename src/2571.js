@@ -9,7 +9,7 @@ const easy = (n) => {
  * @param {number} n
  * @return {number}
  */
-var minOperations = (n) => {
+const minOperations = (n) => {
 	const pow2 = [];
 	for (let i = 0; i < 20; i++) {
 		pow2.push(2 ** i);

@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var incremovableSubarrayCount = (nums) => {
+const incremovableSubarrayCount = (nums) => {
 	const n = nums.length;
 	const mod = 1e9 + 7;
 	const sorted = Array.from(new Set(nums.slice().sort((a, b) => a - b)));

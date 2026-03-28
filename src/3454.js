@@ -2,7 +2,7 @@
  * @param {number[][]} squares
  * @return {number}
  */
-var separateSquares = (squares) => {
+const separateSquares = (squares) => {
 	// Collect all x coordinates for compression
 	const xSet = new Set();
 	const events = [];

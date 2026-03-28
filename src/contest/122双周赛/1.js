@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var minimumCost = (nums) => {
+const minimumCost = (nums) => {
 	const n = nums.length;
 	if (n === 3) return nums[0] + nums[1] + nums[2];
 	let ans = 1e9;

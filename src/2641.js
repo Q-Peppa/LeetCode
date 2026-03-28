@@ -1,4 +1,4 @@
-var replaceValueInTree = (root) => {
+const replaceValueInTree = (root) => {
 	root.val = 0;
 	let q = [root];
 	while (q.length) {

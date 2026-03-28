@@ -3,7 +3,7 @@
  * @param {number[]} tasks
  * @return {number}
  */
-var minProcessingTime = (processorTime, tasks) => {
+const minProcessingTime = (processorTime, tasks) => {
 	tasks.sort((a, b) => b - a);
 	tasks = _.chunk(tasks, 4);
 	processorTime.sort((a, b) => a - b);

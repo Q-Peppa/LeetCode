@@ -7,7 +7,7 @@
  * @param {number} f
  * @return {number}
  */
-var minMovesToCaptureTheQueen = (a, b, c, d, e, f) => {
+const minMovesToCaptureTheQueen = (a, b, c, d, e, f) => {
 	// 车坐标为a,b , 象坐标为c,d, 后e,f
 	// 象一次就能吃到 , 算斜率 , 和原点的斜率相同
 	let noC = true;

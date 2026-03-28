@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-var resultArray = (nums) => {
+const resultArray = (nums) => {
 	const arr1 = [nums[0]];
 	const arr2 = [nums[1]];
 	for (let i = 2; i < nums.length; i++) {

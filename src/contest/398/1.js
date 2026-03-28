@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-var isArraySpecial = (nums) => {
+const isArraySpecial = (nums) => {
 	if (nums.length <= 1) return true;
 	const pair = []; // 存储相邻两个数字;
 	for (let i = 0; i < nums.length - 1; i++) {

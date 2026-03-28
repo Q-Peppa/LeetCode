@@ -2,9 +2,9 @@
  * @param {number} numRows
  * @return {number[][]}
  */
-var generate = (numRows) => f.slice(0, numRows);
+const generate = (numRows) => f.slice(0, numRows);
 
-var f = [
+const f = [
 	[1],
 	[1, 1],
 	[1, 2, 1],

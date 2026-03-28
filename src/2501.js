@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var longestSquareStreak = (nums) => {
+const longestSquareStreak = (nums) => {
 	// find subsequences and it length at least 2, and after sorting the subsequence, each element (except the first element) is the square of the previous number.
 	// return the length of the longest subsequence or -1 if no such subsequence exists.
 

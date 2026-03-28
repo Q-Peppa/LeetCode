@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var minimumPairRemoval = (nums) => {
+const minimumPairRemoval = (nums) => {
 	if (!Array.isArray(nums) || nums.length <= 1) return 0;
 
 	const isNonDecreasing = (arr) => {

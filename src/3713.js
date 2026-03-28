@@ -3,7 +3,7 @@
  * @param {string} s
  * @returns {number}
  */
-var longestBalanced = (s) => {
+const longestBalanced = (s) => {
 	const n = s.length;
 	let res = 0;
 

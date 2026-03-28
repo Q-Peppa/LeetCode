@@ -3,7 +3,7 @@
  * @param {string} b
  * @return {string}
  */
-var addBinary = (a, b) => {
+const addBinary = (a, b) => {
 	let res = '';
 	let n = Math.max(a.length, b.length),
 		curry = 0;

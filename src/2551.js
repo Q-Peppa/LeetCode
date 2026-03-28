@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number}
  */
-var putMarbles = (weights, k) => {
+const putMarbles = (weights, k) => {
 	let res = [];
 	for (let i = 0; i < weights.length - 1; i++) {
 		res.push(weights[i] + weights[i + 1]);

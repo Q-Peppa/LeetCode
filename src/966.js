@@ -23,7 +23,7 @@
  * @param {string[]} queries
  * @return {string[]}
  */
-var spellchecker = (wordlist, queries) => {
+const spellchecker = (wordlist, queries) => {
 	// 完全匹配（区分大小写）
 	const exactMatch = new Set(wordlist);
 

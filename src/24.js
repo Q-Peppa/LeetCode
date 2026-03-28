@@ -1,6 +1,6 @@
-var swapPairs = (head) => {
+const swapPairs = (head) => {
 	if (head === null || head.next === null) return head;
-	var { next } = head;
+	const { next } = head;
 	head.next = swapPairs(next.next);
 	next.next = head;
 	return next;

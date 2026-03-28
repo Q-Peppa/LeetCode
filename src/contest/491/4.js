@@ -4,7 +4,7 @@
  * @param {number} m
  * @return {number}
  */
-var countSubarrays = (nums, k, m) => {
+const countSubarrays = (nums, k, m) => {
 	if (k <= 0 || nums.length === 0) {
 		return 0;
 	}

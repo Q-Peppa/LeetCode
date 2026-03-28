@@ -4,7 +4,7 @@
  * @param {number} x
  * @return {number}
  */
-var minOperations = (s1, s2, x) => {
+const minOperations = (s1, s2, x) => {
 	let diff = 0;
 	const pos = [];
 	for (let i = 0; i < s1.length; i++) {

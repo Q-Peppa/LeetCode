@@ -35,7 +35,7 @@ function listToArray(head) {
  * @param {number} n
  * @return {ListNode}
  */
-var removeNthFromEnd = (head, n) => {
+const removeNthFromEnd = (head, n) => {
 	const dummy = new ListNode(0, head);
 	let fast = dummy;
 	let slow = dummy;

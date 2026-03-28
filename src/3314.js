@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-var minBitwiseArray = (nums) => {
+const minBitwiseArray = (nums) => {
 	const res = [];
 	for (const v of nums) {
 		let found = -1;

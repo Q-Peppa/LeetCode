@@ -3,7 +3,7 @@
  * @param {string} needle
  * @return {number}
  */
-var strStr = (haystack, needle) => {
+const strStr = (haystack, needle) => {
 	if (needle.length === 0) return 0;
 	const pi = new Array(needle.length).fill(0);
 	for (let i = 1, j = 0; i < needle.length; i++) {

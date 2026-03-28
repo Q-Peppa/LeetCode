@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-var minimumOperationsToMakeEqual = (x, y) => {
+const minimumOperationsToMakeEqual = (x, y) => {
 	if (x <= y) return y - x;
 
 	const query = (a) => {

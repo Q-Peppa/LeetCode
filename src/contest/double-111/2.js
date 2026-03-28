@@ -3,7 +3,7 @@
  * @param {string} str2
  * @return {boolean}
  */
-var canMakeSubsequence = (str1, str2) => {
+const canMakeSubsequence = (str1, str2) => {
 	let i = 0,
 		j = 0;
 	while (i < str1.length && j < str2.length) {

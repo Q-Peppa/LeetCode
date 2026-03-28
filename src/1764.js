@@ -3,7 +3,7 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-var canChoose = (groups, nums) => {
+const canChoose = (groups, nums) => {
 	let k = 0;
 	const findByKmp = (arr) => {
 		const m = arr.length,

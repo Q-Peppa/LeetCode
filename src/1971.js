@@ -26,7 +26,7 @@ class DepthPaths {
  * @param {number} destination
  * @return {boolean}
  */
-var validPath = (n, edges, source, destination) => {
+const validPath = (n, edges, source, destination) => {
 	const map = Array.from({ length: n }, () => []);
 	for (const [k, v] of edges) {
 		console.log('k,v ', k, v);

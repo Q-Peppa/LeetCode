@@ -3,7 +3,7 @@
  * @param {number} n
  * @return {number}
  */
-var myPow = (x, n) => (n > 0 ? pow(x, n) : 1 / pow(x, -n));
+const myPow = (x, n) => (n > 0 ? pow(x, n) : 1 / pow(x, -n));
 
 function pow(a, b, _n) {
 	//quick a ^ b then mod n , a maybe is double , and b maybe is negitive

@@ -1,6 +1,6 @@
 import { MaxHeap } from 'datastructures-js/heap';
 
-var AuctionSystem = function () {
+const AuctionSystem = function () {
 	this.itemBids = new Map();
 	this.itemHeaps = new Map();
 };

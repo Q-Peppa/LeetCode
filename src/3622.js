@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {boolean}
  */
-var checkDivisibility = (n) => {
+const checkDivisibility = (n) => {
 	let total = 0;
 	let muti = 1;
 	const copy = n;

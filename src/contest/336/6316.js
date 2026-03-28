@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var maxScore = (nums) => {
+const maxScore = (nums) => {
 	const pos = nums.filter((item) => item > 0);
 	const zero = nums.filter((item) => item === 0);
 	if (pos.length === 0) {

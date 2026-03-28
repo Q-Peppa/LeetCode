@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var findValueOfPartition = (nums) => {
+const findValueOfPartition = (nums) => {
 	let minDiff = 0x3f3f3f3f;
 	nums.sort((a, b) => a - b);
 	for (let i = 1; i < nums.length; i++) {

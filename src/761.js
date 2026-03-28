@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {string}
  */
-var makeLargestSpecial = (s) => {
+const makeLargestSpecial = (s) => {
 	if (s.length <= 2) return s;
 	const specials = [];
 	let count = 0;

@@ -21,7 +21,12 @@ import _ from 'lodash-es';
  * @param {number} maxDistance
  * @return {number[]}
  */
-var filterRestaurants = (restaurants, veganFriendly, maxPrice, maxDistance) => {
+const filterRestaurants = (
+	restaurants,
+	veganFriendly,
+	maxPrice,
+	maxDistance,
+) => {
 	restaurants = restaurants
 		.filter((e) => e[2] >= veganFriendly)
 		.filter((e) => e[3] <= maxPrice)

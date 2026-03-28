@@ -3,7 +3,7 @@
  * @param {number[]} queries
  * @return {number[]}
  */
-var maxPoints = (grid, queries) => {
+const maxPoints = (grid, queries) => {
 	const m = grid.length;
 	const n = grid[0].length;
 	const k = queries.length;

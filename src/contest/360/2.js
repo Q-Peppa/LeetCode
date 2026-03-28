@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number}
  */
-var minimumPossibleSum = (n, target) => {
+const minimumPossibleSum = (n, target) => {
 	const sum = (i, j) => {
 		return ((i + j) * (j - i + 1)) / 2;
 	};

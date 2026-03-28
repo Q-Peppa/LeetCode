@@ -1,4 +1,4 @@
-var almostPalindromic = (s) => {
+const almostPalindromic = (s) => {
 	const n = s.length;
 	if (n <= 1) return 0;
 	const dp = Array.from({ length: n }, () => new Int32Array(n));

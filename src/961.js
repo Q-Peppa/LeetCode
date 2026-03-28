@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var repeatedNTimes = (nums) => {
+const repeatedNTimes = (nums) => {
 	const n = nums.length;
 	while (true) {
 		const idx1 = Math.floor(Math.random() * n);

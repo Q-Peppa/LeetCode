@@ -10,7 +10,7 @@
  * @param {TreeNode} root
  * @return {void} Do not return anything, modify root in-place instead.
  */
-var recoverTree = (root) => {
+const recoverTree = (root) => {
 	let first = null;
 	let second = null;
 	let prev = null;

@@ -2,7 +2,7 @@
  * @param {number[]} batteryPercentages
  * @return {number}
  */
-var countTestedDevices = (batteryPercentages) => {
+const countTestedDevices = (batteryPercentages) => {
 	let res = 0;
 	for (let i = 0; i < batteryPercentages.length; i++) {
 		let f = true;

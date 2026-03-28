@@ -5,7 +5,7 @@ import { MinPriorityQueue } from '@datastructures-js/priority-queue';
  * @param {number[][]} edges
  * @return {number}
  */
-var minCost = (n, edges) => {
+const minCost = (n, edges) => {
 	/** @type {number[][][]} */
 	const graph = Array.from({ length: n }, () => []);
 

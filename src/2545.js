@@ -10,4 +10,4 @@
  * @param {number} k
  * @return {number[][]}
  */
-var sortTheStudents = (score, k) => _.orderBy(score, [k], 'desc');
+const sortTheStudents = (score, k) => _.orderBy(score, [k], 'desc');

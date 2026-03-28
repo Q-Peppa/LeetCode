@@ -8,7 +8,7 @@ const join = (a, b) => {
  * @param {string[]} words
  * @return {number}
  */
-var minimizeConcatenatedLength = (words) => {
+const minimizeConcatenatedLength = (words) => {
 	const n = words.length;
 	let ans = words[0];
 	for (let i = 0; i < n; i++) {

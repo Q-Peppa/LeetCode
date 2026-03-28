@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number}
  */
-var minimumSum = (n, k) => {
+const minimumSum = (n, k) => {
 	const res = Array.from({ length: n }, (_, i) => i + 1);
 	// console.log(res);
 	// if (_.sum(res) < k) return _.sum(res);

@@ -4,7 +4,7 @@
  * @param {number} target2
  * @return {number}
  */
-var alternatingXOR = (nums, target1, target2) => {
+const alternatingXOR = (nums, target1, target2) => {
 	/** @type {number} */
 	const mod = 1000000007;
 	/** @type {number} */

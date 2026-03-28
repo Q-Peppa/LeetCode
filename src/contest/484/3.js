@@ -2,7 +2,7 @@
  * @param {string[]} words
  * @return {number}
  */
-var countPairs = (words) => {
+const countPairs = (words) => {
 	const map = new Map();
 	let count = 0;
 

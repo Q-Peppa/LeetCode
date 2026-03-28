@@ -61,7 +61,7 @@ class TopoSort {
  * @param {number[][]} prerequisites
  * @return {number[]}
  */
-var findOrder = (numCourses, prerequisites) => {
+const findOrder = (numCourses, prerequisites) => {
 	const map = new Array(numCourses).fill(0).map(() => []);
 	for (const [v, w] of prerequisites) {
 		map[v].push(w);

@@ -11,7 +11,7 @@ const max = (a, b) => {
  * @param {number[]} change
  * @return {string}
  */
-var maximumNumber = (num, change) => {
+const maximumNumber = (num, change) => {
 	//
 	let ans = num;
 

@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var minPairSum = (nums) => {
+const minPairSum = (nums) => {
 	nums.sort((a, b) => a - b);
 	let max = 0;
 	const n = nums.length;

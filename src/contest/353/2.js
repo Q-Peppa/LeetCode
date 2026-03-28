@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number}
  */
-var maximumJumps = (nums, target) => {
+const maximumJumps = (nums, target) => {
 	const dp = new Array(nums.length).fill(-1);
 	const canJump = (i, j) => {
 		const temp = nums[j] - nums[i];

@@ -3,7 +3,7 @@
  * @param {number[]} nums2
  * @return {number}
  */
-var minSum = (nums1, nums2) => {
+const minSum = (nums1, nums2) => {
 	nums1.sort((a, b) => a - b);
 	nums2.sort((a, b) => a - b);
 	const ori = nums1.filter((e) => e === 0).length;

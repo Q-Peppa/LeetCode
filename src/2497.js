@@ -1,4 +1,4 @@
-var maxStarSum = (vals, edges, k) => {
+const maxStarSum = (vals, edges, k) => {
 	const n = vals.length;
 	const a = [];
 	const graph = new Array(n).fill(0).map(() => []);

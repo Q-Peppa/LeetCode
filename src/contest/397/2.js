@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number}
  */
-var maximumEnergy = (energy, k) => {
+const maximumEnergy = (energy, k) => {
 	// 每k个跳跃一次, 求数组的最大和
 	const n = energy.length;
 	let dp = new Array(n).fill(-1e9);

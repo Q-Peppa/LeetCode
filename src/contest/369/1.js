@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number}
  */
-var findKOr = (nums, k) => {
+const findKOr = (nums, k) => {
 	if (k === nums.length) {
 		if (k === 1) return nums[0];
 		let res = nums[0];

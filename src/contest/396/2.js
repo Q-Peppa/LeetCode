@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number}
  */
-var minimumOperationsToMakeKPeriodic = (word, k) => {
+const minimumOperationsToMakeKPeriodic = (word, k) => {
 	const n = word.length;
 	const dict = {};
 	for (let i = 0; i < n; i += k) {

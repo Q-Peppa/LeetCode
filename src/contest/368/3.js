@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var minGroupsForValidAssignment = (nums) => {
+const minGroupsForValidAssignment = (nums) => {
 	const n = nums.length;
 	const m = new Map();
 	for (const ele of nums) {

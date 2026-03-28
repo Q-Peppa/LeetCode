@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number}
  */
-var minCost = (grid, k) => {
+const minCost = (grid, k) => {
 	const m = grid.length;
 	const n = grid[0].length;
 	const INF = Number.MAX_SAFE_INTEGER;

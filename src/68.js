@@ -3,7 +3,7 @@
  * @param {number} maxWidth
  * @return {string[]}
  */
-var fullJustify = (words, maxWidth) => {
+const fullJustify = (words, maxWidth) => {
 	const res = [];
 	let i = 0;
 

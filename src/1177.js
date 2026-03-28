@@ -1,4 +1,4 @@
-var f = (str, k) => {
+const f = (str, k) => {
 	const times = _.countBy(str);
 	let odd = 0;
 	for (const v of Object.values(times)) {
@@ -11,7 +11,7 @@ var f = (str, k) => {
  * @param {number[][]} queries
  * @return {boolean[]}
  */
-var canMakePaliQueries = (s, queries) => {
+const canMakePaliQueries = (s, queries) => {
 	const pre = new Array(s.length + 1).fill(0);
 	pre[0] = 1;
 	let t = s[0];

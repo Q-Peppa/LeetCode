@@ -2,7 +2,7 @@
  * @param {number} x
  * @return {number}
  */
-var reverse = (x) => {
+const reverse = (x) => {
 	const f = x < 0;
 	let sum = 0;
 	let k = Math.abs(x);

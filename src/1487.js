@@ -2,7 +2,7 @@
  * @param {string[]} names
  * @return {string[]}
  */
-var getFolderNames = (names) => {
+const getFolderNames = (names) => {
 	const prefix = {};
 	const ans = [];
 	for (let i = 0; i < names.length; i++) {

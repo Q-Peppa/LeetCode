@@ -2,7 +2,7 @@
  * @param {number[][]} mat
  * @return {number[]}
  */
-var rowAndMaximumOnes = (mat) => {
+const rowAndMaximumOnes = (mat) => {
 	let maxTimes = -1;
 	let ans;
 	for (let i = 0; i < mat.length; i++) {

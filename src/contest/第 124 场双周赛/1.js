@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var maxOperations = (nums) => {
+const maxOperations = (nums) => {
 	let ans = 0;
 	const head = nums[0] + nums[1];
 	for (let i = 2; i < nums.length; i += 2) {

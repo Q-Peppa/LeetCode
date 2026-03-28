@@ -1,4 +1,4 @@
-var maxProduct = (root) => {
+const maxProduct = (root) => {
 	let sum = 0;
 	let best = 0;
 

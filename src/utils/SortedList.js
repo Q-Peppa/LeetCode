@@ -1,4 +1,4 @@
-var SortedList = function ({ compare = (a, b) => a - b }) {
+const SortedList = function ({ compare = (a, b) => a - b }) {
 	this.compare = compare;
 	this.list = [];
 };

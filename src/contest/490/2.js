@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {boolean}
  */
-var isDigitorialPermutation = (n) => {
+const isDigitorialPermutation = (n) => {
 	// 1. 预计算 0-9 的阶乘
 	const FACT = new Int32Array(10);
 	FACT[0] = 1;

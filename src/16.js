@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number}
  */
-var threeSumClosest = (nums, target) => {
+const threeSumClosest = (nums, target) => {
 	const { abs } = Math;
 	nums.sort((a, b) => a - b);
 	let ans = nums[0] + nums[1] + nums[2];

@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number}
  */
-var minCost = (n) => (n * (n - 1)) / 2;
+const minCost = (n) => (n * (n - 1)) / 2;
 
 console.log(minCost(1), 'case1', 'ans = 0');
 console.log(minCost(2), 'case2', 'ans = 1');

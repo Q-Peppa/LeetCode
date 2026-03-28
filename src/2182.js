@@ -5,7 +5,7 @@
  * @param {number} repeatLimit
  * @return {string}
  */
-var repeatLimitedString = (s, repeatLimit) => {
+const repeatLimitedString = (s, repeatLimit) => {
 	const N = 26;
 	const cnt = new Array(N).fill(0);
 	for (const c of s) {

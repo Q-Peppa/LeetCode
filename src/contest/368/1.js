@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var minimumSum = (nums) => {
+const minimumSum = (nums) => {
 	// i < j < k
 	//nums[i] < nums[j] 且 nums[k] < nums[j]
 	let ans = 9999999999;

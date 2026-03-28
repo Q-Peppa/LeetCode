@@ -12,7 +12,7 @@ const isReverse = (num) => {
  * @param {number[]} nums
  * @return {number}
  */
-var minimumCost = (nums) => {
+const minimumCost = (nums) => {
 	nums.sort((a, b) => a - b);
 
 	const mid = Math.floor(nums.length / 2);

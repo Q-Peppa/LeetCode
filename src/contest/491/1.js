@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {string}
  */
-var trimTrailingVowels = (s) => {
+const trimTrailingVowels = (s) => {
 	const vowels = 'aeiou';
 	let i = s.length - 1;
 	while (i >= 0 && vowels.includes(s[i])) {

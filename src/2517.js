@@ -1,4 +1,4 @@
-var maximumTastiness = (price, k) => {
+const maximumTastiness = (price, k) => {
 	price.sort((a, b) => a - b);
 	let left = 0,
 		right = price[price.length - 1] - price[0];

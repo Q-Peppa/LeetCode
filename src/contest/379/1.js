@@ -2,7 +2,7 @@
  * @param {number[][]} dimensions
  * @return {number}
  */
-var areaOfMaxDiagonal = (dimensions) => {
+const areaOfMaxDiagonal = (dimensions) => {
 	let max = 0,
 		ans = 0;
 	for (const [hei, wid] of dimensions) {

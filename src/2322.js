@@ -1,4 +1,4 @@
-var minimumScore = (nums, edges) => {
+const minimumScore = (nums, edges) => {
 	const n = nums.length;
 
 	// 建邻接表

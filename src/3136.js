@@ -2,7 +2,7 @@
  * @param {string} word
  * @return {boolean}
  */
-var isValid = (word) =>
+const isValid = (word) =>
 	word &&
 	word.length > 2 &&
 	!word.match(/[^0-9a-zA-Z]/) &&

@@ -2,7 +2,7 @@
  * @param {number} num
  * @return {number}
  */
-var countDigits = (num) => {
+const countDigits = (num) => {
 	if (num < 10) return 1;
 	const everyNum = num.toString().split('');
 	let res = 0;

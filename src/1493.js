@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var longestSubarray = (nums) => {
+const longestSubarray = (nums) => {
 	const dp = [];
 	let res = 0;
 	let t = 0;

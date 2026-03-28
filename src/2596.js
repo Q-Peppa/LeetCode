@@ -2,7 +2,7 @@
  * @param {number[][]} grid
  * @return {boolean}
  */
-var checkValidGrid = (grid) => {
+const checkValidGrid = (grid) => {
 	const n = grid.length;
 	let cur = 0;
 	const end = n * n - 1;

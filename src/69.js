@@ -2,7 +2,7 @@
  * @param {number} x
  * @return {number}
  */
-var mySqrt = (x) => {
+const mySqrt = (x) => {
 	let l = 0,
 		r = x,
 		ans = -1;

@@ -3,7 +3,7 @@
  * @param {number[][]} queries
  * @return {boolean[]}
  */
-var isArraySpecial = (nums, queries) => {
+const isArraySpecial = (nums, queries) => {
 	const n = nums.length;
 	const m = queries.length;
 	const ans = new Array(m).fill(false);

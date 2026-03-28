@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number[][]}
  */
-var findPrimePairs = (n) => {
+const findPrimePairs = (n) => {
 	const prime = new Array(n).fill(1);
 	prime[0] = 0;
 	prime[1] = 0;

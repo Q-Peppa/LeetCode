@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var incremovableSubarrayCount1 = (nums) => {
+const incremovableSubarrayCount1 = (nums) => {
 	let ans = 0;
 	const query = (temp) => {
 		if (temp.length <= 1) return true;
@@ -30,7 +30,7 @@ var incremovableSubarrayCount1 = (nums) => {
  * @param {number[]} nums
  * @return {number}
  */
-var incremovableSubarrayCount = (nums) => {
+const incremovableSubarrayCount = (nums) => {
 	const n = nums.length;
 	let l = 0;
 	while (l < n - 1 && nums[l] < nums[l + 1]) l++;

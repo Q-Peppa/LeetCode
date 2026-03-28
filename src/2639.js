@@ -27,7 +27,7 @@ class Matrix {
 		this.height = g.length;
 	}
 }
-var findColumnWidth = (grid) => {
+const findColumnWidth = (grid) => {
 	const matrix = new Matrix(grid);
 	matrix.mutateGrid(matrix.swapLineAndColumn());
 	const res = [];

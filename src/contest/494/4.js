@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var countGoodSubarrays = (nums) => {
+const countGoodSubarrays = (nums) => {
 	const n = nums.length;
 	const left = new Array(n).fill(-1);
 	const right = new Array(n).fill(n);

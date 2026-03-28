@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number[][]}
  */
-var generateMatrix = (n) => {
+const generateMatrix = (n) => {
 	const matrix = new Array(n);
 	for (let i = 0; i < n; i++) {
 		matrix[i] = new Array(n);

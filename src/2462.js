@@ -582,7 +582,7 @@ class pri_que {
  * @param {number} candidates
  * @return {number}
  */
-var totalCost = (costs, k, candidates) => {
+const totalCost = (costs, k, candidates) => {
 	const lq = new pri_que((a, b) => a - b);
 	const rq = new pri_que((a, b) => a - b);
 	let left = -1;

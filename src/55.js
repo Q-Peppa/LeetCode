@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-var canJump = (nums) => {
+const canJump = (nums) => {
 	if (nums.length <= 1) return true;
 	let maxReach = 0;
 	for (let i = 0; i < nums.length; i++) {

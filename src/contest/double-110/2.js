@@ -13,7 +13,7 @@ const gcd = (a, b) => {
  * @param {ListNode} head
  * @return {ListNode}
  */
-var insertGreatestCommonDivisors = (head) => {
+const insertGreatestCommonDivisors = (head) => {
 	if (head?.next === null) return head; // one node
 	const arr = [];
 	let chead = head;

@@ -2,7 +2,7 @@
  * @param {number[][]} lists
  * @return {number}
  */
-var minMergeCost = (lists) => {
+const minMergeCost = (lists) => {
 	const n = lists.length;
 	const dp = new Array(1 << n).fill(Infinity);
 

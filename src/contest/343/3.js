@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {string}
  */
-var makeSmallestPalindrome = (s) => {
+const makeSmallestPalindrome = (s) => {
 	const myS = s.split('');
 	for (let i = 0; i < myS.length; i++) {
 		if (myS[i] !== myS[myS.length - 1 - i]) {

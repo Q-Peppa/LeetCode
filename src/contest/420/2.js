@@ -11,7 +11,7 @@
  * @param {number} k
  * @return {number}
  */
-var numberOfSubstrings = (s, k) => {
+const numberOfSubstrings = (s, k) => {
 	let res = 0,
 		left = 0;
 	const tracker = {};

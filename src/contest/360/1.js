@@ -2,7 +2,7 @@
  * @param {string} moves
  * @return {number}
  */
-var furthestDistanceFromOrigin = (moves) => {
+const furthestDistanceFromOrigin = (moves) => {
 	let cn, ans;
 	cn = ans = 0;
 	for (const c of moves) {

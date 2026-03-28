@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-var residuePrefixes = (s) => {
+const residuePrefixes = (s) => {
 	let count = 0;
 	const distinctSet = new Set();
 

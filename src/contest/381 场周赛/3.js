@@ -4,7 +4,7 @@ import { MaxPriorityQueue } from '@datastructures-js/priority-queue';
  * @param {string} word
  * @return {number}
  */
-var minimumPushes = (word) => {
+const minimumPushes = (word) => {
 	const count = {};
 	for (let i = 0; i < word.length; i++) {
 		count[word[i]] = (count[word[i]] || 0) + 1;

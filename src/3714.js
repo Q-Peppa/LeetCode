@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-var longestBalanced = (s) => {
+const longestBalanced = (s) => {
 	let maxLength = 0;
 
 	// Case 1: Substring has 'a', 'b', and 'c'

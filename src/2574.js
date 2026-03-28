@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-var leftRigthDifference = (nums) => {
+const leftRigthDifference = (nums) => {
 	const left = [0];
 	const right = [0];
 	for (let i = 0; i < nums.length - 1; i++) {

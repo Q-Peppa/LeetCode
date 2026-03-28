@@ -4,7 +4,7 @@
  * @param {number} valueDifference
  * @return {number[]}
  */
-var findIndices = (nums, indexDifference, valueDifference) => {
+const findIndices = (nums, indexDifference, valueDifference) => {
 	const n = nums.length;
 	const abs = Math.abs;
 	for (let i = 0; i < n; ++i) {

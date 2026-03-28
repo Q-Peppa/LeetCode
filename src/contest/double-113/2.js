@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var minLengthAfterRemovals = (nums) => {
+const minLengthAfterRemovals = (nums) => {
 	if (nums.length === 1) return 1;
 	if (new Set(nums).size === 1) return nums.length;
 	const ans = {};

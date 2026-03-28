@@ -4,7 +4,7 @@
  * @param {number} right
  * @return {number}
  */
-var vowelStrings = (words, left, right) => {
+const vowelStrings = (words, left, right) => {
 	const vowels = ['a', 'e', 'i', 'o', 'u'];
 	let ans = 0;
 	for (let i = left; i <= right; i++) {

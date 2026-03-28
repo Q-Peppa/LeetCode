@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {string}
  */
-var reorganizeString = (s) => {
+const reorganizeString = (s) => {
 	const length = s.length;
 	if (s.length === 1) return s;
 	if (s.length === 2) {

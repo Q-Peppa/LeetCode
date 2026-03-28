@@ -28,7 +28,7 @@
 		"datastructures-js": "^13.0.0"
 	},
 	"scripts": {
-		"format": "biome format --write",
+		"format": "biome format --write src",
 		"check": "biome check src",
 		"prepare": "simple-git-hooks"
 	},

@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-var longestValidParentheses = (s) => {
+const longestValidParentheses = (s) => {
 	const dp = new Array(s.length).fill(0);
 	dp[0] = 0;
 	let ans = 0;

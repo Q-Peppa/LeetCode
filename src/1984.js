@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number}
  */
-var minimumDifference = (nums, k) => {
+const minimumDifference = (nums, k) => {
 	nums.sort((a, b) => a - b);
 
 	let minDiff = Infinity;

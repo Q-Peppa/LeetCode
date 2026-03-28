@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number}
  */
-var countSubarrays = (nums, k) => {
+const countSubarrays = (nums, k) => {
 	const n = nums.length;
 	let ans = 0n;
 	const minDq = new Deque();

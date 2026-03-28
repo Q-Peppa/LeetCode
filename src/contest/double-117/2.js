@@ -3,7 +3,7 @@
  * @param {number} limit
  * @return {number}
  */
-var distributeCandies = (n, limit) => {
+const distributeCandies = (n, limit) => {
 	// 背包 总容量为n , 分为3个包, 每个包的容量不超过limit, 返回总方案
 	let ans = 0;
 	const dp = Array.from({ length: n + 1 }, () =>

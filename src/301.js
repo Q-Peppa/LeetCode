@@ -32,7 +32,7 @@ const removeInvalidParentheses = (s) => {
 	}
 	return [];
 };
-var check = (s) => {
+const check = (s) => {
 	let cnt = 0;
 	for (const c of s) {
 		if (c === '(') {

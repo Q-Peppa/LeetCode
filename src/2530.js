@@ -73,7 +73,7 @@ class MaxPriorityQueue {
  * @return {number}
  */
 
-var maxKelements = (nums, k) => {
+const maxKelements = (nums, k) => {
 	const pq = new MaxPriorityQueue();
 	nums.forEach((num) => {
 		pq.enqueue(num);

@@ -2,7 +2,7 @@
  * @param {number[][]} points
  * @return {number}
  */
-var numberOfPairs = (points) => {
+const numberOfPairs = (points) => {
 	let total = 0;
 	points.sort((a, b) => {
 		if (a[0] === b[0]) return b[1] - a[1];

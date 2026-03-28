@@ -2,7 +2,7 @@
  * @param {number[]} nums1
  * @return {boolean}
  */
-var uniformArray = (nums1) => {
+const uniformArray = (nums1) => {
 	let minimumOdd = Infinity;
 
 	for (const num of nums1) {

@@ -10,7 +10,7 @@ const total = (arr) => {
  * @param {string} word2
  * @return {boolean}
  */
-var isItPossible = (word1, word2) => {
+const isItPossible = (word1, word2) => {
 	const counter1 = new Array(26).fill(0);
 	const counter2 = new Array(26).fill(0);
 

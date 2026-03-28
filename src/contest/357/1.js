@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {string}
  */
-var finalString = (s) => {
+const finalString = (s) => {
 	let ans = '';
 	for (const c of s) {
 		if (c !== 'i') {

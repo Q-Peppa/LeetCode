@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {string[]}
  */
-var generateParenthesis = (n) => {
+const generateParenthesis = (n) => {
 	if (n === 1) return ['()'];
 	const res = [];
 	const gen = (path, l, r) => {

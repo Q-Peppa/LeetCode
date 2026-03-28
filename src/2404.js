@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var mostFrequentEven = (nums) => {
+const mostFrequentEven = (nums) => {
 	const obj = new Map();
 	for (const v of nums) {
 		if (!obj.has(v)) {

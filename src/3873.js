@@ -72,7 +72,7 @@ function getNodeId(map, value, nextId) {
  * @param {number[][]} points
  * @return {number}
  */
-var maxActivated = (points) => {
+const maxActivated = (points) => {
 	const n = points.length;
 	if (n === 0) {
 		return 1;

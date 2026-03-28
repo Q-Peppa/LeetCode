@@ -3,7 +3,7 @@
  * @param {number} m
  * @return {number[]}
  */
-var divisibilityArray = (word, m) => {
+const divisibilityArray = (word, m) => {
 	const ans = [];
 	let cur = 0;
 	// word.slice(0,i) % m

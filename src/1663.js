@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {string}
  */
-var getSmallestString = (n, k) => {
+const getSmallestString = (n, k) => {
 	const total = n;
 
 	const s = 'a'.repeat(n).split('');

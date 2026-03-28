@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-var minChanges = (s) => {
+const minChanges = (s) => {
 	if (s.length <= 2) {
 		switch (s) {
 			case '00':

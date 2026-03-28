@@ -2,7 +2,7 @@
  * @param {number[][]} squares
  * @return {number}
  */
-var separateSquares = (squares) => {
+const separateSquares = (squares) => {
 	let totalArea = 0;
 	let minY = Infinity;
 	let maxY = -Infinity;

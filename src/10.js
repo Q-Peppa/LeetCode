@@ -3,7 +3,7 @@
  * @param {string} p
  * @return {boolean}
  */
-var isMatch = (s, p) => {
+const isMatch = (s, p) => {
 	const m = s.length;
 	const n = p.length;
 	const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(false));

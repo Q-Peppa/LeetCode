@@ -11,7 +11,7 @@ function deal(nums) {
  * @param {number[][]} queries
  * @return {boolean[]}
  */
-var isArraySpecial = (nums, queries) => {
+const isArraySpecial = (nums, queries) => {
 	const res = deal(nums);
 	if (res.length === 1) {
 		return queries.map((_e) => true);

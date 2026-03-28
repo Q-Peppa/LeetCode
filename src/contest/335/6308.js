@@ -11,13 +11,13 @@
  * @param {number} k
  * @return {number}
  */
-var kthLargestLevelSum = (root, k) => {
+const kthLargestLevelSum = (root, k) => {
 	const res = levelOrder(root);
 	if (res.length < k) return -1;
 	res.sort((a, b) => b - a);
 	return res[k - 1];
 };
-var levelOrder = (root) => {
+const levelOrder = (root) => {
 	let res = [];
 	const queue = [root];
 	while (queue.length) {

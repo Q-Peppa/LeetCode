@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number}
  */
-var minRemovals = (nums, target) => {
+const minRemovals = (nums, target) => {
 	const maxXor = 1 << 14;
 	let dp = new Int16Array(maxXor).fill(-1);
 	dp[0] = 0;

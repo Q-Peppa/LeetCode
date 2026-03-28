@@ -4,7 +4,7 @@ const _ = require('lodash');
  * @param {number[][]} nums2
  * @return {number[][]}
  */
-var mergeArrays = (nums1, nums2) =>
+const mergeArrays = (nums1, nums2) =>
 	_.mergeWith(nums1, nums2, (a, b) => {
 		if (a[0] === b[0]) {
 			return [[a[0], a[1] + b[1]]];

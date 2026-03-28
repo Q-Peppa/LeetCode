@@ -10,7 +10,7 @@ const help = (needs) => {
  * @param {number[]} needs
  * @return {number}
  */
-var shoppingOffers = (price, special, needs) => {
+const shoppingOffers = (price, special, needs) => {
 	// 先直接计算价钱
 	let sum = 0;
 	let res = 0;

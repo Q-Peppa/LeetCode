@@ -3,7 +3,7 @@
  * @param {T[][]} grid
  * @return {number}
  */
-var minimumOperationsToWriteY = (grid) => {
+const minimumOperationsToWriteY = (grid) => {
 	const n = grid.length;
 	const center = Math.floor(n / 2);
 	const yNumber = n + center;

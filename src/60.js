@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {string}
  */
-var getPermutation = (n, k) => {
+const getPermutation = (n, k) => {
 	const numbers = [];
 	for (let i = 1; i <= n; i++) {
 		numbers.push(i);

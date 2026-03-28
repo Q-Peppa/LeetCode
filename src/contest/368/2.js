@@ -66,7 +66,7 @@ class SegmentTree {
  * @param {number[]} nums
  * @return {number}
  */
-var minimumSum = (nums) => {
+const minimumSum = (nums) => {
 	// 区间最值
 	const segmentTree = new SegmentTree(nums, Math.min);
 	const n = nums.length;

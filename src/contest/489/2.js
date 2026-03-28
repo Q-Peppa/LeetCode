@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var firstUniqueFreq = (nums) => {
+const firstUniqueFreq = (nums) => {
 	const t = {},
 		freqCount = {};
 	for (const num of nums) {

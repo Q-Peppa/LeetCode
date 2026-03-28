@@ -19,7 +19,7 @@ const checkRepeat = (s) => {
  * @param {string} s
  * @return {number}
  */
-var longestSemiRepetitiveSubstring = (s) => {
+const longestSemiRepetitiveSubstring = (s) => {
 	if (s.length <= 2) return s.length;
 	let max = -9999;
 	for (let i = 0; i < s.length; i++) {

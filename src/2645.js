@@ -2,7 +2,7 @@
  * @param {string} word
  * @return {number}
  */
-var addMinimum = (word) => {
+const addMinimum = (word) => {
 	let ans = 0;
 	for (let i = 0; i < word.length; ) {
 		if (word[i] === 'a' && word[i + 1] === 'b' && word[i + 2] === 'c') {

@@ -2,7 +2,7 @@
  * @param {number[][]} grid
  * @return {number}
  */
-var deleteGreatestValue = (grid) => {
+const deleteGreatestValue = (grid) => {
 	let sum = 0;
 	const row = grid.length;
 	const col = grid[0].length;

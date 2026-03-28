@@ -3,7 +3,7 @@
  * @param {number} m
  * @return {boolean}
  */
-var canSplitArray = (nums, m) => {
+const canSplitArray = (nums, m) => {
 	if (nums.length <= 2) return true;
 	let sum = 0;
 	for (const v of nums) {

@@ -3,7 +3,7 @@
  * @param {number[]} queries
  * @return {number[]}
  */
-var minOperations = (nums, queries) => {
+const minOperations = (nums, queries) => {
 	const ans = [];
 	const queryMin = queries.reduce((a, b) => Math.max(a, b), 9999999999999);
 	let times = 0;

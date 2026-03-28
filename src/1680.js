@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number}
  */
-var concatenatedBinary = (n) => {
+const concatenatedBinary = (n) => {
 	const MOD = 1000000007n;
 	let ans = 0n;
 	let bitLen = 0;

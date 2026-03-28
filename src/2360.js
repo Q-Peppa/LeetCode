@@ -51,7 +51,7 @@ class DC {
  * @param {number[]} edges
  * @return {number}
  */
-var longestCycle = (edges) => {
+const longestCycle = (edges) => {
 	const map = new Array(edges.length).fill(0).map(() => []);
 	for (const i of edges) {
 		if (edges[i] < 0) continue;

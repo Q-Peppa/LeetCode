@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var dominantIndices = (nums) => {
+const dominantIndices = (nums) => {
 	// 处理边界情况：数组长度小于2时，没有主导元素
 	if (nums.length < 2) {
 		return 0;

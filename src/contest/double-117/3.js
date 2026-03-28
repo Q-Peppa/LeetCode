@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number}
  */
-var stringCount = (n) => {
+const stringCount = (n) => {
 	if (n < 3) return 0;
 	const mod = 10 ** 9 + 7;
 	let pre = 12;

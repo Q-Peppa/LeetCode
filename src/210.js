@@ -1,4 +1,4 @@
-var findOrder = (numCourses, prerequisites) => {
+const findOrder = (numCourses, prerequisites) => {
 	const map = new Array(numCourses).fill(0).map(() => []);
 	const inDegree = new Array(numCourses).fill(0);
 	for (const [v, w] of prerequisites) {

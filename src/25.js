@@ -1,4 +1,4 @@
-var reverseKGroup = (head, k) => {
+const reverseKGroup = (head, k) => {
 	let dummy = new ListNode(-1, head),
 		prev = dummy;
 	while (1) {

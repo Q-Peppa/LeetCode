@@ -5,7 +5,7 @@ function getReverseChar(char) {
  * @param {string} s
  * @return {number}
  */
-var calculateScore = (s) => {
+const calculateScore = (s) => {
 	let ans = 0;
 	const map = new Map();
 	const use = new Set();

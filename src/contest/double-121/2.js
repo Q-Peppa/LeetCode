@@ -11,7 +11,7 @@ function bitCount(n) {
  * @param {number} k
  * @return {number}
  */
-var minOperations = (nums, k) => {
+const minOperations = (nums, k) => {
 	const ori = nums.reduce((pre, cur) => pre ^ cur, 0);
 	if (ori === k) return 0;
 	return bitCount(ori ^ k);

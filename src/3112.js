@@ -4,7 +4,7 @@
  * @param {number[]} disappear
  * @return {number[]}
  */
-var minimumTime = (n, edges, disappear) => {
+const minimumTime = (n, edges, disappear) => {
 	const adj = Array.from({ length: n }, () => []);
 	for (const [u, v, length] of edges) {
 		adj[u].push([v, length]);

@@ -4,7 +4,7 @@ import _ from 'lodash';
  * @param {number[]} nums
  * @return {number}
  */
-var maximizeGreatness = (nums) => {
+const maximizeGreatness = (nums) => {
 	const obj = _.countBy(nums);
 	// 得到每个元素尽量比原数组大的数组
 	// 1. 从小到大排序

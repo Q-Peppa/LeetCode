@@ -2,7 +2,7 @@
  * @param {number[]} height
  * @return {number}
  */
-var maxArea = (height) => {
+const maxArea = (height) => {
 	let left = 0,
 		right = height.length - 1;
 	let ans = 0;

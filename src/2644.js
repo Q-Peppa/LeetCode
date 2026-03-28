@@ -3,7 +3,7 @@
  * @param {number[]} divisors
  * @return {number}
  */
-var maxDivScore = (nums, divisors) => {
+const maxDivScore = (nums, divisors) => {
 	let ans = -1;
 	let maxTimes = -1;
 	divisors.forEach((d) => {

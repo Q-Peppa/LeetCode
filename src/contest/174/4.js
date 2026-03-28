@@ -5,7 +5,7 @@
  * @param {string} target
  * @return {number[]}
  */
-var minimumFlips = (n, edges, start, target) => {
+const minimumFlips = (n, edges, start, target) => {
 	/** @typedef {[number, number]} Neighbor */
 	/** @type {Neighbor[][]} */
 	const adj = Array.from({ length: n }, () => []);

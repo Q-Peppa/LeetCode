@@ -4,7 +4,7 @@ import _ from 'lodash';
  * @param {string} text
  * @return {number}
  */
-var maxRepOpt1 = (text) => {
+const maxRepOpt1 = (text) => {
 	if (new Set(text).size === 1) return text.length;
 	const max = Math.max;
 	const min = Math.min;

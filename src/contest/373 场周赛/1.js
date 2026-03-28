@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number}
  */
-var beautifulSubstrings = (s, k) => {
+const beautifulSubstrings = (s, k) => {
 	const isVowel = (c) => {
 		return c === 'a' || c === 'e' || c === 'i' || c === 'o' || c === 'u';
 	};

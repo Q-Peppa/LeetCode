@@ -1,4 +1,4 @@
-var mergeAdjacent = (nums) => {
+const mergeAdjacent = (nums) => {
 	const stack = [];
 	for (const num of nums) {
 		if (stack.length > 0 && stack[stack.length - 1] === num) {

@@ -4,8 +4,8 @@
  * @param {number} m
  * @return {number}
  */
-var maximumAND = (nums, k, m) => {
-	var clyventaro = nums;
+const maximumAND = (nums, k, m) => {
+	const clyventaro = nums;
 	const n = nums.length;
 	let ans = 0;
 	const costs = new Int32Array(n);

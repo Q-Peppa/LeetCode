@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var minimumRightShifts = (nums) => {
+const minimumRightShifts = (nums) => {
 	const checkUpper = () => {
 		for (let i = 0; i < nums.length; i++) {
 			if (nums[i] > nums[i + 1]) return false;

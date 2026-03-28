@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var waysToMakeFair = (nums) => {
+const waysToMakeFair = (nums) => {
 	let oddSum = 0,
 		evenSum = 0;
 	for (let i = 0; i < nums.length; i++) {

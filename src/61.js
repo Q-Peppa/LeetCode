@@ -10,7 +10,7 @@
  * @param {number} k
  * @return {ListNode}
  */
-var rotateRight = (head, k) => {
+const rotateRight = (head, k) => {
 	if (!head?.next || k === 0) return head;
 	let length = 1;
 	let tail = head;
@@ -30,7 +30,7 @@ var rotateRight = (head, k) => {
 	tail.next = head;
 	return newHead;
 };
-var ListNode = function ListNode(val, next) {
+const ListNode = function ListNode(val, next) {
 	this.val = val === undefined ? 0 : val;
 	this.next = next === undefined ? null : next;
 };

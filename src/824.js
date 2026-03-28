@@ -2,7 +2,7 @@
  * @param {string} sentence
  * @return {string}
  */
-var toGoatLatin = (sentence) => {
+const toGoatLatin = (sentence) => {
 	const vowel = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
 	let ans = '';
 	const arr = sentence.split(' ');

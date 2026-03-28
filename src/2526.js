@@ -2,7 +2,7 @@
  * @param {number} value
  * @param {number} k
  */
-var DataStream = function (value, k) {
+const DataStream = function (value, k) {
 	this.arr = [];
 	this.k = k;
 	this.value = value;
@@ -26,7 +26,7 @@ DataStream.prototype.consec = function (num) {
  * var obj = new DataStream(value, k)
  * var param_1 = obj.consec(num)
  */
-var dataStream = new DataStream(4, 3); // value = 4, k = 3
+const dataStream = new DataStream(4, 3); // value = 4, k = 3
 dataStream.consec(4); // 数据流中只有 1 个整数，所以返回 False 。
 dataStream.consec(4); // 数据流中只有 2 个整数
 // 由于 2 小于 k ，返回 False 。

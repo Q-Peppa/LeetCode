@@ -4,7 +4,7 @@
  * @param {number} y
  * @return {number[]}
  */
-var countOfPairs = (_n, _x, _y) => {
+const countOfPairs = (_n, _x, _y) => {
 	// pass
 };
 

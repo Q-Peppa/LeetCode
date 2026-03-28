@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var minimumSeconds = (nums) => {
+const minimumSeconds = (nums) => {
 	const quotient = (x, y) => Math.floor(x / y);
 	let ans = 1e9;
 	/**

@@ -3,12 +3,12 @@
  * @param {number[]} newInterval
  * @return {number[][]}
  */
-var insert = (intervals, newInterval) => merge([...intervals, newInterval]);
+const insert = (intervals, newInterval) => merge([...intervals, newInterval]);
 /**
  * @param {number[][]} intervals
  * @return {number[][]}
  */
-var merge = (intervals) => {
+const merge = (intervals) => {
 	if (intervals.length === 0) return [];
 	intervals.sort((a, b) => a[0] - b[0]);
 	/** @type {number[][]} */

@@ -3,7 +3,7 @@
  * @param {number} n
  * @return {number}
  */
-var uniquePaths = (m, n) => {
+const uniquePaths = (m, n) => {
 	const { last } = _;
 	const res = new Array(m).fill(0).map((_e) => new Array(n).fill(0));
 	res[0][0] = 1;

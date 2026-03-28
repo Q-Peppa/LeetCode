@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-var romanToInt = (s) => {
+const romanToInt = (s) => {
 	const map = new Map();
 	let res = 0;
 	map.set('IX', 9);

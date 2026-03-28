@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {boolean}
  */
-var hasAllCodes = (s, k) => {
+const hasAllCodes = (s, k) => {
 	const seen = new Set();
 	const totalCodes = 1 << k; // 2^k possible binary codes
 	for (let i = 0; i <= s.length - k; i++) {

@@ -1,4 +1,4 @@
-var maxXor = (nums, k) => {
+const maxXor = (nums, k) => {
 	const n = nums.length;
 	const MAX_NODES = 1250000;
 	const next = new Int32Array(MAX_NODES * 2);

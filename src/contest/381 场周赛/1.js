@@ -2,7 +2,7 @@
  * @param {string} word
  * @return {number}
  */
-var minimumPushes = (word) => {
+const minimumPushes = (word) => {
 	let ans = 1,
 		time = 1;
 	for (let i = 1; i < word.length; i++) {

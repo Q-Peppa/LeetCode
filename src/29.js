@@ -3,7 +3,7 @@
  * @param {number} divisor
  * @return {number}
  */
-var divide = (dividend, divisor) => {
+const divide = (dividend, divisor) => {
 	// Handle overflow case: -2^31 / -1 = 2^31 (overflows 32-bit signed int)
 	if (dividend === -2147483648 && divisor === -1) return 2147483647;
 

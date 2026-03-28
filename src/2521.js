@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var distinctPrimeFactors = (nums) => {
+const distinctPrimeFactors = (nums) => {
 	// 质因数
 	const primeFactors = [];
 	for (let n of nums) {

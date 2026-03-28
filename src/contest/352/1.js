@@ -3,7 +3,7 @@
  * @param {number} threshold
  * @return {number}
  */
-var longestAlternatingSubarray = (nums, threshold) => {
+const longestAlternatingSubarray = (nums, threshold) => {
 	let len = 0;
 	const check = (l, r) => {
 		if (nums.slice(l, r).length === 1) return true;

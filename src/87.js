@@ -3,7 +3,7 @@
  * @param {string} s2
  * @return {boolean}
  */
-var isScramble = (s1, s2) => {
+const isScramble = (s1, s2) => {
 	const memo = new Map();
 
 	const helper = (str1, str2) => {

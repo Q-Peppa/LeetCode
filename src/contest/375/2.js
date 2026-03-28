@@ -14,7 +14,7 @@ function pow(a, b, n) {
  * @param {number} target
  * @return {number[]}
  */
-var getGoodIndices = (variables, target) => {
+const getGoodIndices = (variables, target) => {
 	const res = [];
 	let i = 0;
 	for (const ele of variables) {

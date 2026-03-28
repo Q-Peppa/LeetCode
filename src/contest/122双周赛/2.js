@@ -12,7 +12,7 @@ function countBits(n) {
  * @param {number[]} nums
  * @return {boolean}
  */
-var canSortArray = (nums) => {
+const canSortArray = (nums) => {
 	/**
 	 * In one operation, you can swap any two adjacent elements if they have the same number of set bits. You are allowed to do this operation any number of times (including zero).
 	 *

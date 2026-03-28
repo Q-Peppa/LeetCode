@@ -9,7 +9,7 @@ function conver(char) {
  * @param {number[]} cost
  * @return {number}
  */
-var minimumCost = (source, target, original, changed, cost) => {
+const minimumCost = (source, target, original, changed, cost) => {
 	const max = Number.MAX_SAFE_INTEGER;
 	const graph = new Array(26).fill(0).map(() => new Array(26).fill(max));
 	for (let i = 0; i < 26; i++) {

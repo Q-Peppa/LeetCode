@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var maximumStrongPairXor = (nums) => {
+const maximumStrongPairXor = (nums) => {
 	const ok = (a, b) => {
 		return Math.abs(a - b) <= Math.min(a, b);
 	};

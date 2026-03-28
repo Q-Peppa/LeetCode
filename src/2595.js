@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number[]}
  */
-var evenOddBit = (n) => {
+const evenOddBit = (n) => {
 	const bin = n.toString(2);
 	let left, right;
 	left = right = 0;

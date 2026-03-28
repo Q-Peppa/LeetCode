@@ -6,7 +6,7 @@
  * @param {number[]} cost
  * @return {number}
  */
-var minimumCost = (source, target, original, changed, cost) => {
+const minimumCost = (source, target, original, changed, cost) => {
 	const n = source.length;
 	if (n !== target.length) return -1;
 	if (source === target) return 0;

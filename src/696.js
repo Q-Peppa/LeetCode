@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-var countBinarySubstrings = (s) => {
+const countBinarySubstrings = (s) => {
 	const counts = [];
 	let count = 1;
 	for (let i = 1; i < s.length; i++) {

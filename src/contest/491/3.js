@@ -2,7 +2,7 @@
  * @param {number[][]} grid
  * @return {number}
  */
-var minimumOR = (grid) => {
+const minimumOR = (grid) => {
 	let allBits = 0;
 	for (let i = 0; i < grid.length; i++) {
 		for (let j = 0; j < grid[i].length; j++) {

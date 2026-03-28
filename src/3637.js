@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-var isTrionic = (nums) => {
+const isTrionic = (nums) => {
 	const n = nums.length;
 	if (n < 4) {
 		return false;

@@ -2,7 +2,7 @@
  * @param {string} target
  * @return {string[]}
  */
-var stringSequence = (target) => {
+const stringSequence = (target) => {
 	const res = [];
 	const alpha = new Array(26)
 		.fill(0)

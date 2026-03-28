@@ -3,7 +3,7 @@
  * @param {string} t
  * @return {string}
  */
-var maximumXor = (s, t) => {
+const maximumXor = (s, t) => {
 	let count1 = 0;
 	let count0 = 0;
 	for (const char of t) {

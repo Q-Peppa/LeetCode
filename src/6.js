@@ -3,7 +3,7 @@
  * @param {number} numRows
  * @return {string}
  */
-var convert = (s, numRows) => {
+const convert = (s, numRows) => {
 	const n = s.length,
 		r = numRows;
 	if (r === 1 || r >= n) return s;

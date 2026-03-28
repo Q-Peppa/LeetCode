@@ -4,7 +4,7 @@
  * @param {number} y
  * @return {number[]}
  */
-var countOfPairs = (n, x, y) => {
+const countOfPairs = (n, x, y) => {
 	const g = new Array(n + 1).fill(0);
 	for (let i = 0; i < g.length; i++) {
 		g[i] = new Array(n + 1).fill(0);

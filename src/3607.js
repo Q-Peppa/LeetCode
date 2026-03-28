@@ -4,7 +4,7 @@
  * @param {number[][]} queries
  * @return {number[]}
  */
-var processQueries = (c, connections, queries) => {
+const processQueries = (c, connections, queries) => {
 	const uf = new UnionFind(c + 1);
 	const heap = {}; // root -> PriorityQueue
 	const online = Array(c + 1).fill(true);

@@ -2,7 +2,7 @@
  * @param {number} num
  * @return {string}
  */
-var intToRoman = (num) => {
+const intToRoman = (num) => {
 	const e = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
 	const romans = [
 		'M',

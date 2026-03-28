@@ -9,7 +9,7 @@ const f = (str) => {
  * @param {string} s
  * @return {string}
  */
-var smallestString = (s) => {
+const smallestString = (s) => {
 	const i = s.indexOf('a');
 	if (i === -1) {
 		return f(s);

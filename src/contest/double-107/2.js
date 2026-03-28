@@ -4,7 +4,7 @@
  * @param {number} z
  * @return {number}
  */
-var longestString = (x, y, z) => {
+const longestString = (x, y, z) => {
 	let res = z * 2;
 	let ans = '';
 	while (x > 0 && y > 0) {

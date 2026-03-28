@@ -3,7 +3,7 @@
  * @param {number[][]} queries
  * @return {number}
  */
-var matrixSumQueries = (n, queries) => {
+const matrixSumQueries = (n, queries) => {
 	const row = new Set();
 	const col = new Set();
 	let r, c;

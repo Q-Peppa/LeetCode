@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number}
  */
-var monkeyMove = (n) => {
+const monkeyMove = (n) => {
 	const mod = 1e9 + 7;
 	let res = 1n;
 	let v = 2n;

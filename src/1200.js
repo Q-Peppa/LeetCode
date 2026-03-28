@@ -2,7 +2,7 @@
  * @param {number[]} arr
  * @return {number[][]}
  */
-var minimumAbsDifference = (arr) => {
+const minimumAbsDifference = (arr) => {
 	arr.sort((a, b) => a - b);
 
 	let minDiff = Infinity;

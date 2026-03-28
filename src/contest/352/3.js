@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var continuousSubarrays = (nums) => {
+const continuousSubarrays = (nums) => {
 	let ans = 0;
 	let repeat = 0;
 	for (let i = 0; i < nums.length; i++) {

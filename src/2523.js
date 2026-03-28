@@ -11,7 +11,7 @@ const isPrime = (i) => {
  * @param {number} right
  * @return {number[]}
  */
-var closestPrimes = (left, right) => {
+const closestPrimes = (left, right) => {
 	const bp = [];
 	const length = 10 ** 6;
 	for (let i = 0; i < length; i++) {

@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-var vowelConsonantScore = (s) => {
+const vowelConsonantScore = (s) => {
 	let vowels = 0,
 		consonants = 0;
 	for (const char of s) {

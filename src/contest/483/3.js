@@ -6,7 +6,7 @@
  * @param {number} crossCost
  * @return {number}
  */
-var minimumCost = (s, t, flipCost, swapCost, crossCost) => {
+const minimumCost = (s, t, flipCost, swapCost, crossCost) => {
 	let cnt01 = 0;
 	let cnt10 = 0;
 	const n = s.length;

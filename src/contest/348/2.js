@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var semiOrderedPermutation = (nums) => {
+const semiOrderedPermutation = (nums) => {
 	const n = nums.length;
 	if (nums[0] === 1 && nums.at(-1) === n) return 0;
 	let oneIndex = nums.indexOf(1);

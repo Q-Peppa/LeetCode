@@ -3,7 +3,7 @@
  * @param {number} m
  * @return {number}
  */
-var differenceOfSums = (n, m) => {
+const differenceOfSums = (n, m) => {
 	let canDiv = 0,
 		not = 0;
 	for (let i = 1; i <= n; i++) {

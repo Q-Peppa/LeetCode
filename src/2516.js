@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number}
  */
-var takeCharacters = (s, k) => {
+const takeCharacters = (s, k) => {
 	const n = s.length;
 	let [countA, countB, countC] = [0, 0, 0];
 

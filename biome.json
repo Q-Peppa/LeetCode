@@ -27,7 +27,8 @@
 		"rules": {
 			"recommended": true,
 			"style": {
-				"useBlockStatements": "off"
+				"useBlockStatements": "off",
+				"useConst": "warn"
 			}
 		}
 	},
@@ -42,7 +43,8 @@
 						"noUnusedVariables": "off"
 					},
 					"suspicious": {
-						"noConsole": "off"
+						"noConsole": "off",
+						"noVar": "error"
 					}
 				}
 			}

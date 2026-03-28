@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var findScore = (nums) => {
+const findScore = (nums) => {
 	const sortNums = [...nums].sort((a, b) => a - b);
 	let res = 0;
 	let index = 0;

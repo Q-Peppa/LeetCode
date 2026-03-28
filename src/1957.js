@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {string}
  */
-var makeFancyString = (s) => {
+const makeFancyString = (s) => {
 	let empty = '';
 	let count = 0,
 		pre = '';

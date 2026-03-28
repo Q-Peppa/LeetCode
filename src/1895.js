@@ -2,7 +2,7 @@
  * @param {number[][]} grid
  * @return {number}
  */
-var largestMagicSquare = (grid) => {
+const largestMagicSquare = (grid) => {
 	const rows = grid.length;
 	const cols = grid[0].length;
 	let maxSize = 1;

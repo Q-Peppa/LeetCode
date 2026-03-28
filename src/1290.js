@@ -9,7 +9,7 @@
  * @param {ListNode} head
  * @return {number}
  */
-var getDecimalValue = (head) => {
+const getDecimalValue = (head) => {
 	const v = [];
 	while (head) {
 		v.push(head.val);

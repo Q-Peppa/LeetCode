@@ -3,7 +3,7 @@
  * @param {string} b
  * @return {boolean}
  */
-var checkPalindromeFormation = (a, b) => {
+const checkPalindromeFormation = (a, b) => {
 	const check = (str1, s, e) => {
 		for (; s < e; s++, e--) {
 			if (str1[s] !== str1[e]) {

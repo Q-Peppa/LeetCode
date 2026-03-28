@@ -4,7 +4,7 @@
  * @param {string} s3
  * @return {number}
  */
-var findMinimumOperations = (s1, s2, s3) => {
+const findMinimumOperations = (s1, s2, s3) => {
 	let ans = 0;
 	let f = false;
 	for (let i = 0; i <= 100; i++) {

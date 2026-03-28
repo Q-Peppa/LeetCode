@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-var lengthOfLongestSubstring = (s) => {
+const lengthOfLongestSubstring = (s) => {
 	// Map to store last index of each character
 	const lastIndex = new Map();
 	let left = 0;

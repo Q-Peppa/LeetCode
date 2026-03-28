@@ -3,6 +3,6 @@
  * @param {number} threshold
  * @return {number}
  */
-var maxSideLength = (_mat, _threshold) => {
+const maxSideLength = (_mat, _threshold) => {
 	// TODO
 };

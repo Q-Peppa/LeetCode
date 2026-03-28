@@ -1,4 +1,4 @@
-var camelMatch = (queries, pattern) =>
+const camelMatch = (queries, pattern) =>
 	queries.map((query) => {
 		let i = 0;
 		for (let j = 0; j < query.length; j++) {

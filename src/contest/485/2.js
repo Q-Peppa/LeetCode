@@ -4,7 +4,7 @@
  * @param {number} budget
  * @return {number}
  */
-var maxCapacity = (costs, capacity, budget) => {
+const maxCapacity = (costs, capacity, budget) => {
 	let maxCap = 0;
 	const n = costs.length;
 

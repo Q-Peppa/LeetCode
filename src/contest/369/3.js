@@ -58,7 +58,7 @@ class SegmentTree {
  * @param {number} k
  * @return {number}
  */
-var minIncrementOperations = (nums, k) => {
+const minIncrementOperations = (nums, k) => {
 	// if(nums.length)
 	const st = new SegmentTree(nums);
 	let res = 0;

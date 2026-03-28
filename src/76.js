@@ -3,7 +3,7 @@
  * @param {string} t
  * @return {string}
  */
-var minWindow = (s, t) => {
+const minWindow = (s, t) => {
 	const need = new Map();
 	for (let i = 0; i < t.length; i++) {
 		need.set(t[i], (need.get(t[i]) ?? 0) + 1);

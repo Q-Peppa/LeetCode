@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var maximumCount = (nums) => {
+const maximumCount = (nums) => {
 	let [pos, neg] = [0, 0];
 
 	for (const i of nums) {

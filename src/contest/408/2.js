@@ -16,7 +16,7 @@ function quick() {
  * @param {number} r
  * @return {number}
  */
-var nonSpecialCount = (l, r) => {
+const nonSpecialCount = (l, r) => {
 	const T = r - l + 1;
 	quick();
 	const sqrt = (v) => Math.floor(Math.sqrt(v));
