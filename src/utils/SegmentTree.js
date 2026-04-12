@@ -1,9 +1,9 @@
-class SegmentTree {
+export default class SegmentTree {
 	constructor(nums, fn) {
 		this.arr = nums;
 		this.tree = [];
-		this.init(0, 0, this.arr.length - 1);
 		this.merge = fn;
+		this.init(0, 0, this.arr.length - 1);
 	}
 	init(node, s, e) {
 		if (s === e) {
@@ -13,8 +13,8 @@ class SegmentTree {
 		const mid = (s + e) >> 1;
 		const l = node * 2 + 1;
 		const r = node * 2 + 2;
-		this.build(l, s, mid);
-		this.build(r, mid + 1, e);
+		this.init(l, s, mid);
+		this.init(r, mid + 1, e);
 		this.tree[node] = this.merge(this.tree[l], this.tree[r]);
 	}
 	query(l, r) {
