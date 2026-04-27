@@ -85,7 +85,8 @@ class MyClass {
 
 ### Optimization Guidelines
 - Use **Bit Manipulation** for state compression
-- Use **TypedArrays** (e.g., `Int32Array`) for fixed-size arrays
+- Use **TypedArrays** (e.g., `Int32Array`) for fixed-size arrays where values fit in 32-bit
+- **Never** use `Int32Array` for DP memoization counts (overflow > 2³¹-1); use plain `Array` instead
 - Use `Math.clz32` for fast MSB calculations
 - Use `BigInt` for numbers exceeding $2^{53}-1$
 - Prefer bitwise shifts: `(s + e) >> 1` for midpoint
